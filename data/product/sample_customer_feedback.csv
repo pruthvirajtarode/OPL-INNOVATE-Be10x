@@ -1,0 +1,11 @@
+Ticket_ID,Date,Customer_Segment,Category,Feedback_Text,Sentiment
+T-1001,2024-10-01,Enterprise,UI/UX,"The new dashboard is very clean, but I can't find the export button anymore.",Neutral
+T-1002,2024-10-01,SMB,Billing,"I keep getting charged twice for my monthly subscription. Please fix this ASAP!",Negative
+T-1003,2024-10-02,Enterprise,Performance,"Reports are taking over 2 minutes to load today.",Negative
+T-1004,2024-10-02,Startup,Features,"Love the new AI integration. It saved me 3 hours this week.",Positive
+T-1005,2024-10-03,Enterprise,Support,"Your support team was very helpful in resolving our API rate limit issue.",Positive
+T-1006,2024-10-03,SMB,Features,"When will you support integration with Xero? We really need this.",Neutral
+T-1007,2024-10-04,Enterprise,Performance,"The system timed out while I was uploading a large dataset.",Negative
+T-1008,2024-10-05,SMB,UI/UX,"I'm confused by the new settings layout. Where did the user management go?",Negative
+T-1009,2024-10-05,Startup,Pricing,"The new startup tier is perfect for our needs.",Positive
+T-1010,2024-10-06,Enterprise,Features,"We need Single Sign-On before we can roll this out to our whole team.",Neutral

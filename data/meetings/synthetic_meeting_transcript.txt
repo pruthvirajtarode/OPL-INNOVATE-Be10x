@@ -1,0 +1,23 @@
+[SYNTHETIC TRAINING DATA - NOT REAL COMPANY INFORMATION]
+
+MEETING TRANSCRIPT
+Date: October 14, 2024
+Topic: Q4 Mobile App Redesign Sync
+
+Attendees: 
+- Alex (Product)
+- Jamie (Design)
+- Sam (Engineering)
+
+[00:00] Alex: Alright, let's get started. The main goal today is to align on the Q4 mobile app redesign scope. Are we still good to target November 15th for the beta rollout?
+[00:15] Sam: From an engineering perspective, November 15th is tight. We still haven't received the final assets for the dark mode toggle. 
+[00:25] Jamie: Sorry about that. The design team got pulled into the web portal fix. I can have the dark mode assets to you by this Thursday, end of day.
+[00:35] Sam: If I have them by Thursday, we can still hit the 15th. But we'll need to drop the custom animations on the settings page to save time.
+[00:45] Alex: That's a fair trade-off. Let's drop the settings animations for V1. We can push those to V1.1 in December.
+[00:55] Jamie: Works for me. What about the accessibility review? Who is handling that?
+[01:05] Alex: Good point. I'll reach out to the QA team and assign an accessibility auditor. I'll do that this afternoon.
+[01:15] Sam: One more risk factor: the API gateway migration is happening on November 10th. If that goes wrong, the app won't be able to authenticate users during the beta launch.
+[01:30] Alex: Okay, that's a major dependency. Sam, can you set up a sync with the backend team to ensure we have a rollback plan for the gateway migration? 
+[01:40] Sam: Yeah, I'll schedule that for next Tuesday.
+[01:45] Alex: Perfect. So to summarize: Jamie gets assets done by Thursday. Sam and team drop animations to hit Nov 15. I'll get QA on the accessibility review, and Sam will coordinate with backend on the migration risk. 
+[02:00] Jamie: Sounds like a plan. Thanks everyone.

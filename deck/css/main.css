@@ -1,0 +1,378 @@
+/* Deck Design System */
+:root {
+  /* Colors */
+  --bg-color: #0f172a; /* Deep navy */
+  --bg-color-alt: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border: #334155;
+  
+  /* App Colors - Microsoft Inspired */
+  --ms-blue: #0078d4; /* Generic MS Blue */
+  --ms-word: #2b579a;
+  --ms-excel: #217346;
+  --ms-powerpoint: #b7472a;
+  --ms-teams: #5059c9;
+  --ms-outlook: #0078d4;
+  --ms-copilot: #10a37f; /* Often depicted with teal/purple gradients, we'll use a gradient later */
+  
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  
+  /* Typography */
+  --font-main: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+  
+  /* Layout */
+  --slide-width: 1920px;
+  --slide-height: 1080px;
+  --padding-x: 120px;
+  --padding-y: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Presentation Container (Scales to fit screen) */
+#presentation-container {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  position: relative;
+  background-color: var(--bg-color);
+  transform-origin: top left;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+/* Slides */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--padding-y) var(--padding-x);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+/* Typography Details */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.text-highlight {
+  color: var(--ms-blue);
+  font-weight: 600;
+}
+
+/* Layout Utilities */
+.center-all {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  height: 100%;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Cards & UI Elements */
+.card {
+  background-color: var(--bg-color-alt);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 3rem;
+}
+
+.prompt-box {
+  background-color: #000;
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--ms-copilot);
+  border-radius: 12px;
+  padding: 3rem;
+  font-family: var(--font-mono);
+  font-size: 1.8rem;
+  color: #a5b4fc;
+  line-height: 1.5;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.prompt-box.bad {
+  border-left-color: var(--danger);
+  color: var(--text-secondary);
+}
+
+/* Gradient text for Copilot */
+.copilot-text {
+  background: linear-gradient(135deg, #10a37f 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* App Headers */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.app-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.app-icon.outlook { background-color: var(--ms-outlook); }
+.app-icon.word { background-color: var(--ms-word); }
+.app-icon.excel { background-color: var(--ms-excel); }
+.app-icon.powerpoint { background-color: var(--ms-powerpoint); }
+.app-icon.teams { background-color: var(--ms-teams); }
+
+/* Buttons & Interactions */
+.btn {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--bg-color-alt);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--border);
+}
+
+.btn.primary {
+  background-color: var(--ms-blue);
+  border-color: var(--ms-blue);
+}
+
+.btn.primary:hover {
+  background-color: #005a9e;
+}
+
+/* Footer / Navigation Hint */
+.slide-footer {
+  position: absolute;
+  bottom: 40px;
+  left: 120px;
+  right: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* UI Overlays */
+#ui-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.ui-btn {
+  pointer-events: auto;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  backdrop-filter: blur(4px);
+}
+.ui-btn:hover {
+  background: var(--border);
+  color: var(--text-primary);
+}
+
+/* Timer */
+#timer-container {
+  pointer-events: auto;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(8px);
+  display: none; /* Hidden by default */
+}
+#timer-container.active {
+  display: flex;
+}
+#timer-display {
+  font-size: 2.5rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-primary);
+  width: 120px;
+  text-align: center;
+}
+.timer-controls button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+.timer-controls button:hover {
+  color: var(--text-primary);
+}
+
+/* Trainer Mode Overlay */
+#trainer-overlay {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 450px;
+  background-color: rgba(30, 41, 59, 0.95);
+  border: 2px solid var(--warning);
+  border-radius: 16px;
+  padding: 30px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  display: none;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  color: white;
+  pointer-events: auto;
+}
+
+#trainer-overlay.active {
+  display: block;
+}
+
+.trainer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+.trainer-header h4 {
+  color: var(--warning);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.trainer-section {
+  margin-bottom: 20px;
+}
+.trainer-section h5 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.trainer-section p {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.trainer-rescue {
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 4px solid var(--warning);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+/* Helpers */
+.hidden { display: none !important; }

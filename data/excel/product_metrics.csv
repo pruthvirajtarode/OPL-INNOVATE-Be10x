@@ -1,0 +1,21 @@
+Date,Feature,Region,Users,Active_Users,Tickets,Conversion_Rate,Response_Time_ms,Status
+2024-10-01,Core Platform,NA,15000,12500,45,0.08,120,Healthy
+2024-10-01,Core Platform,EMEA,12000,9000,30,0.07,135,Healthy
+2024-10-01,Reporting Module,NA,8000,3000,85,0.05,450,Warning
+2024-10-01,Reporting Module,EMEA,6000,2100,60,0.04,480,Warning
+2024-10-02,Core Platform,NA,15200,12600,42,0.08,118,Healthy
+2024-10-02,Core Platform,EMEA,12100,9100,28,0.07,132,Healthy
+2024-10-02,Reporting Module,NA,8100,3100,92,0.05,520,Critical
+2024-10-02,Reporting Module,EMEA,6100,2200,65,0.04,540,Critical
+2024-10-03,Core Platform,NA,15500,12800,38,0.09,115,Healthy
+2024-10-03,Core Platform,EMEA,12300,9300,31,0.07,130,Healthy
+2024-10-03,Reporting Module,NA,8300,2800,110,0.04,850,Critical
+2024-10-03,Reporting Module,EMEA,6200,2000,80,0.03,890,Critical
+2024-10-04,Core Platform,NA,15600,12900,40,0.08,119,Healthy
+2024-10-04,Core Platform,EMEA,12500,9500,29,0.08,128,Healthy
+2024-10-04,Reporting Module,NA,8350,2500,145,0.03,1200,Incident
+2024-10-04,Reporting Module,EMEA,6300,1800,95,0.02,1250,Incident
+2024-10-05,Core Platform,NA,15800,13100,45,0.08,122,Healthy
+2024-10-05,Core Platform,EMEA,12600,9600,33,0.07,133,Healthy
+2024-10-05,Reporting Module,NA,8400,2900,50,0.05,250,Healthy
+2024-10-05,Reporting Module,EMEA,6400,2300,35,0.04,265,Healthy

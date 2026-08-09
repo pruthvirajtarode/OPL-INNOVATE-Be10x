@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Workbook - Microsoft Copilot Training</title>
+    <meta name="description" content="Participant workbook for the Microsoft Copilot interactive training session.">
+    <link rel="stylesheet" href="css/workbook.css">
+</head>
+<body>
+    <div class="container">
+        <!-- COVER -->
+        <header>
+            <span class="eyebrow">OPL INNOVATE × Be10x</span>
+            <h1>MICROSOFT COPILOT</h1>
+            <p>From Prompt to Productivity</p>
+        </header>
+
+        <div class="cover-fields">
+            <div class="form-group">
+                <label for="participant-name">Participant:</label>
+                <input type="text" id="participant-name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="participant-dept">Department:</label>
+                <input type="text" id="participant-dept" placeholder="Your Department">
+            </div>
+            <div class="form-group">
+                <label for="participant-role">Role:</label>
+                <input type="text" id="participant-role" placeholder="Your Role">
+            </div>
+            <div class="form-group">
+                <label for="session-date">Date:</label>
+                <input type="text" id="session-date" placeholder="Session Date">
+            </div>
+        </div>
+        
+        <div class="form-group" style="margin-top: 40px; padding: 20px; background-color: var(--bg-color); border-radius: 8px;">
+            <label for="workflow-target" style="color: var(--accent); font-size: 1.2rem;">My Workflow Target:</label>
+            <input type="text" id="workflow-target" placeholder="e.g. Weekly Status Report">
+        </div>
+
+        <div class="page-break"><span>Page 1</span></div>
+
+        <!-- PAGE 1: REPEATED TASK -->
+        <h2>My Repeated Task</h2>
+        <div class="form-group">
+            <label for="task-desc">What task do I repeat every week?</label>
+            <textarea id="task-desc"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="task-time">How long does it take?</label>
+            <input type="text" id="task-time">
+        </div>
+        <div class="form-group">
+            <label for="task-frustration">What makes it frustrating?</label>
+            <textarea id="task-frustration"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="task-help">Where could Copilot help?</label>
+            <textarea id="task-help"></textarea>
+        </div>
+
+        <div class="page-break"><span>Page 2</span></div>
+
+        <!-- PAGE 2: PROMPT BUILDER -->
+        <h2>Prompt Builder</h2>
+        <div class="form-group">
+            <label for="prompt-task">TASK:</label>
+            <input type="text" id="prompt-task" placeholder="What do you want it to do?">
+        </div>
+        <div class="form-group">
+            <label for="prompt-context">CONTEXT:</label>
+            <input type="text" id="prompt-context" placeholder="Audience / Goal?">
+        </div>
+        <div class="form-group">
+            <label for="prompt-source">SOURCE:</label>
+            <input type="text" id="prompt-source" placeholder="Which files/data?">
+        </div>
+        <div class="form-group">
+            <label for="prompt-constraint">CONSTRAINT:</label>
+            <input type="text" id="prompt-constraint" placeholder="Limits or rules?">
+        </div>
+        <div class="form-group">
+            <label for="prompt-output">OUTPUT:</label>
+            <input type="text" id="prompt-output" placeholder="Format / Tone / Length?">
+        </div>
+        <div class="form-group" style="margin-top: 30px;">
+            <label for="prompt-final" style="color: var(--accent);">MY PROMPT:</label>
+            <textarea id="prompt-final" placeholder="Combine them here..."></textarea>
+        </div>
+
+        <div class="page-break"><span>Page 3</span></div>
+
+        <!-- OUTLOOK -->
+        <h2>Outlook</h2>
+        <div class="form-group"><label for="out-summary">Email summary:</label><textarea id="out-summary"></textarea></div>
+        <div class="form-group"><label for="out-decisions">Decisions:</label><textarea id="out-decisions"></textarea></div>
+        <div class="form-group"><label for="out-actions">Actions:</label><textarea id="out-actions"></textarea></div>
+        <div class="form-group"><label for="out-draft">Draft reply:</label><textarea id="out-draft"></textarea></div>
+        <div class="form-group"><label for="out-tone">Tone adjustment:</label><input type="text" id="out-tone"></div>
+
+        <div class="page-break"><span>Page 4</span></div>
+
+        <!-- CAPSTONE -->
+        <h2>Capstone Challenge</h2>
+        <div class="form-group"><label for="cap-problem">Problem:</label><input type="text" id="cap-problem"></div>
+        <div class="form-group"><label for="cap-input">Input Data:</label><input type="text" id="cap-input"></div>
+        <div class="form-group"><label for="cap-output">Desired Output:</label><input type="text" id="cap-output"></div>
+        <div class="form-group"><label for="cap-workflow">Copilot Workflow (Steps):</label><textarea id="cap-workflow"></textarea></div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; padding: 20px; background: #f0fdf4; border-radius: 8px;">
+            <div class="form-group" style="margin-bottom: 0;">
+                <label for="cap-before">Time Before:</label>
+                <input type="text" id="cap-before">
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+                <label for="cap-after">Time After (with Copilot):</label>
+                <input type="text" id="cap-after">
+            </div>
+        </div>
+
+        <!-- FOOTER ACTIONS -->
+        <div class="footer-actions">
+            <button class="btn" onclick="printWorkbook()">🖨️ Print / Save PDF</button>
+            <button class="btn secondary" onclick="resetWorkbook()">Reset Session</button>
+        </div>
+    </div>
+
+    <script src="js/workbook.js"></script>
+</body>
+</html>

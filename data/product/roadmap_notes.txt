@@ -1,0 +1,20 @@
+[SYNTHETIC TRAINING DATA - NOT REAL COMPANY INFORMATION]
+
+H2 Product Roadmap Draft Notes
+
+Themes for H2:
+1. Enterprise Security
+2. Self-Serve Onboarding
+3. AI Assistance
+
+Key Deliverables:
+- Q3: Single Sign-On (SAML/OAuth) for Enterprise Tier
+- Q3: Automated onboarding wizard for SMB customers
+- Q4: AI chat widget for support deflection
+- Q4: Role-based access control (RBAC) overhaul
+
+Dropped items (moved to next year):
+- Custom dashboard builder (too complex right now)
+- Native iPad app (low usage data on tablets)
+
+Focus area for marketing: Push the security features hard in Q3 to help sales close Q4 enterprise deals.

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Copilot Training</title>
+    <meta name="description" content="Interactive Microsoft Copilot training presentation for IT and Product teams.">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div id="presentation-container">
+        
+        <!-- ============================================== -->
+        <!-- MODULE 0: OPEN -->
+        <!-- ============================================== -->
+        <section class="slide active" id="slide-1" data-module="Open">
+            <div class="center-all" style="height: 100%;">
+                <span class="eyebrow">OPL Innovate × Be10x</span>
+                <h1>MICROSOFT COPILOT</h1>
+                <h2>From Prompt to Productivity</h2>
+                <div style="margin-top: 4rem;">
+                    <p>3 Hours. 5 Apps. 1 Workflow.</p>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span>Press Space or Right Arrow to begin</span>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-2" data-module="Open">
+            <div class="center-all flex-col" style="height: 100%;">
+                <h2>How much of your work is actually <span class="text-highlight">thinking</span>...</h2>
+                <h2>and how much is searching, rewriting, summarizing, formatting, analyzing, and following up?</h2>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-3" data-module="Open" data-trainer-objective="Set the core paradigm" data-trainer-say="Copilot is not a chatbot. It's an AI layer inside the workflow you already use." data-trainer-watch="Make sure they understand it uses existing tenant data.">
+            <div class="center-all flex-col" style="height: 100%;">
+                <h2 style="margin-bottom: 3rem;">YOUR WORKFLOW ALREADY HAS THE DATA.</h2>
+                <h1 class="copilot-text">COPILOT HELPS YOU WORK WITH IT.</h1>
+                
+                <div class="grid-3" style="margin-top: 3rem; text-align: left;">
+                    <div class="card">
+                        <h3>Ask</h3>
+                        <p>Find information quickly.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Create</h3>
+                        <p>Draft content instantly.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Analyze</h3>
+                        <p>Spot trends in data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-4" data-module="Open" data-trainer-objective="Interactive Activity" data-trainer-time="5 min">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">Opening Activity</span>
+                <h1>What is one task you repeat every week that you wish took 10 minutes instead of 45?</h1>
+                <p>Open your Participant Workbook and fill out your <span class="text-highlight">Workflow Target</span>.</p>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- MODULE 1: MEET COPILOT -->
+        <!-- ============================================== -->
+        <section class="slide" id="slide-5" data-module="Meet Copilot">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">Module 1</span>
+                <h1>The Copilot Landscape</h1>
+                
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="app-icon" style="background: linear-gradient(135deg, #10a37f, #2563eb);">C</div>
+                        <h3 style="margin-top: 1rem;">Copilot Chat</h3>
+                        <p>"Think"</p>
+                        <p style="font-size: 1.2rem; margin-top: 1rem;">General conversational, research, and drafting experience.</p>
+                    </div>
+                    <div class="card" style="border-color: var(--ms-blue);">
+                        <div class="app-icon" style="background: var(--ms-blue);">365</div>
+                        <h3 style="margin-top: 1rem;">M365 Copilot</h3>
+                        <p>"Work"</p>
+                        <p style="font-size: 1.2rem; margin-top: 1rem;">Works within your Microsoft 365 apps and organizational workflow.</p>
+                    </div>
+                    <div class="card">
+                        <div class="app-icon" style="background: #24292e;">GH</div>
+                        <h3 style="margin-top: 1rem;">GitHub Copilot</h3>
+                        <p>"Code"</p>
+                        <p style="font-size: 1.2rem; margin-top: 1rem;">Coding assistance inside your IDE.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-6" data-module="Meet Copilot" data-trainer-objective="Interactive Quiz" data-trainer-say="Let's test this out. Which Copilot would you use?">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">Interactive Activity: Which Copilot?</span>
+                <h2>"I have 80 unread emails and need to understand what matters."</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <button class="btn" onclick="showFeedback('slide-6-feedback', false)">Copilot Chat</button>
+                    <button class="btn" onclick="showFeedback('slide-6-feedback', true, 'Microsoft 365 / Outlook Copilot context.')">M365 Copilot</button>
+                    <button class="btn" onclick="showFeedback('slide-6-feedback', false)">GitHub Copilot</button>
+                </div>
+                <div id="slide-6-feedback" style="margin-top: 2rem; font-size: 2rem; display: none;"></div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-7" data-module="Meet Copilot">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">The Formula</span>
+                <h1>Prompting Framework</h1>
+                <div class="prompt-box" style="margin-bottom: 2rem;">
+                    TASK + CONTEXT + SOURCE + CONSTRAINT + OUTPUT
+                </div>
+                <p><strong>TASK:</strong> What do you want Copilot to do?<br>
+                <strong>CONTEXT:</strong> Who is the audience? What is the goal?<br>
+                <strong>SOURCE:</strong> Which files/data should it use?<br>
+                <strong>CONSTRAINT:</strong> What limits? (e.g., "Use only provided info")<br>
+                <strong>OUTPUT:</strong> Format, length, tone.</p>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-8" data-module="Meet Copilot" data-trainer-objective="Prompt Rescue" data-trainer-say="Ask participants what is missing here." data-trainer-rescue="Missing: Audience, length, purpose, format, source.">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">Prompt Rescue</span>
+                <h2>Fix this prompt:</h2>
+                <div class="prompt-box bad" style="margin: 2rem 0;">
+                    "Summarize this."
+                </div>
+                <div id="slide-8-reveal" style="display: none;">
+                    <h2>Better:</h2>
+                    <div class="prompt-box">
+                        "You are a product manager. Draft a concise 5-bullet update to the engineering team summarizing the attached project brief. Tone should be clear and accountable."
+                    </div>
+                </div>
+                <button class="btn" style="width: 200px;" onclick="document.getElementById('slide-8-reveal').style.display='block'; this.style.display='none';">Reveal</button>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-9" data-module="Meet Copilot">
+            <div class="center-all flex-col" style="height: 100%;">
+                <span class="eyebrow">Data & Security</span>
+                <h1 style="color: var(--danger);">ACCESS ≠ MAGIC</h1>
+                <h2>Copilot does not magically give you access to everything.</h2>
+                <p style="margin-top: 2rem;">It uses your existing permissions.<br>Always use approved company accounts and verify important outputs.</p>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- MODULE 2: APPS -->
+        <!-- ============================================== -->
+        <section class="slide" id="slide-10" data-module="Apps">
+            <div class="center-all flex-col" style="height: 100%;">
+                <span class="eyebrow">Module 2</span>
+                <h1>Copilot Inside Daily Apps</h1>
+                <p>Outlook, Word, Excel, PowerPoint, Teams</p>
+            </div>
+        </section>
+
+        <!-- OUTLOOK -->
+        <section class="slide" id="slide-11" data-module="Outlook" data-trainer-objective="Demonstrate Outlook email synthesis" data-trainer-time="8 min">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <div class="app-header">
+                    <div class="app-icon outlook">O</div>
+                    <h2>Outlook</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <h3>Scenario</h3>
+                        <p>A product manager returns after two days away. They have a long email thread involving engineering, customer success, and a release schedule.</p>
+                        <h3 style="margin-top: 2rem;">Task</h3>
+                        <div class="prompt-box">"Catch me up. What happened? What was decided? What needs my action?"</div>
+                    </div>
+                    <div class="card">
+                        <h3>Hands-On</h3>
+                        <p>Open your Workbook. Go to the Outlook section and read the Synthetic Email Thread from your Data Pack.</p>
+                        <p style="margin-top: 1rem; color: var(--warning);">Would you send Copilot's reply without checking it? NO.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORD -->
+        <section class="slide" id="slide-12" data-module="Word" data-trainer-time="10 min">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <div class="app-header">
+                    <div class="app-icon word">W</div>
+                    <h2>Word</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <h3>From Messy to Structured</h3>
+                        <p>Turn rough project notes into a professional project brief.</p>
+                        <div class="prompt-box" style="margin-top: 2rem;">"Rewrite these notes into a project brief. Include sections for Problem, Goal, Scope, Timeline, and Risks."</div>
+                    </div>
+                    <div class="card">
+                        <h3>Level Up</h3>
+                        <p>"Rewrite this for a senior stakeholder."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXCEL -->
+        <section class="slide" id="slide-13" data-module="Excel" data-trainer-watch="Do not teach Excel as magic. Require validation.">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <div class="app-header">
+                    <div class="app-icon excel">X</div>
+                    <h2>Excel</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <h3>Analyze and Insight</h3>
+                        <p>Ask natural-language questions about your data table.</p>
+                        <ul style="font-size: 1.8rem; line-height: 1.6; margin-left: 2rem; margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Which product has the highest volume?</li>
+                            <li>What is the average resolution time?</li>
+                            <li>Create one useful chart.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Level Up</h3>
+                        <p>"What evidence in the data supports each recommendation?"</p>
+                        <p style="font-size: 1.2rem; margin-top: 1rem;">This teaches analytical grounding. No invented conclusions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POWERPOINT -->
+        <section class="slide" id="slide-14" data-module="PowerPoint">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <div class="app-header">
+                    <div class="app-icon powerpoint">P</div>
+                    <h2>PowerPoint</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <h3>Document to Presentation</h3>
+                        <p>Transform a 1-page project brief into a 6-slide executive presentation.</p>
+                        <div class="prompt-box" style="margin-top: 2rem;">"Create a presentation from [file]. Provide speaker notes for each slide."</div>
+                    </div>
+                    <div class="card">
+                        <h3>Structure</h3>
+                        <ol style="font-size: 1.5rem; line-height: 1.6; margin-left: 2rem; margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Problem</li>
+                            <li>Current situation</li>
+                            <li>Insight</li>
+                            <li>Proposed solution</li>
+                            <li>Impact</li>
+                            <li>Next steps</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAMS -->
+        <section class="slide" id="slide-15" data-module="Teams" data-trainer-rescue="If owner is missing, Copilot should NOT invent one.">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <div class="app-header">
+                    <div class="app-icon teams">T</div>
+                    <h2>Teams</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <h3>Meeting Recap</h3>
+                        <p>Extract decisions, action items, and follow-ups from transcripts.</p>
+                        <div class="prompt-box" style="margin-top: 2rem;">"What did we decide? List action items with owner and due date. Draft the follow-up message."</div>
+                    </div>
+                    <div class="card" style="border-color: var(--danger);">
+                        <h3 style="color: var(--danger);">Spot the Problem</h3>
+                        <p>If the transcript doesn't specify an owner or due date, but Copilot lists one anyway.</p>
+                        <p style="margin-top: 1rem;"><strong>Lesson:</strong> Copilot hallucinated. Always use [confirm owner] placeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- MODULE 3: CROSS-APP -->
+        <!-- ============================================== -->
+        <section class="slide" id="slide-16" data-module="Cross-App">
+            <div class="center-all flex-col" style="height: 100%;">
+                <span class="eyebrow">Module 3</span>
+                <h1>ONE WORK ITEM. FIVE APPS.</h1>
+                <div style="display: flex; gap: 1rem; align-items: center; justify-content: center; margin-top: 2rem;">
+                    <div class="app-icon teams">T</div> <span style="font-size: 3rem;">→</span>
+                    <div class="app-icon outlook">O</div> <span style="font-size: 3rem;">→</span>
+                    <div class="app-icon word">W</div> <span style="font-size: 3rem;">→</span>
+                    <div class="app-icon excel">X</div> <span style="font-size: 3rem;">→</span>
+                    <div class="app-icon powerpoint">P</div>
+                </div>
+                <p style="margin-top: 3rem;">Transform work across applications.</p>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-17" data-module="Advanced">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">Advanced Workflows</span>
+                <h2>Grounding & Verification</h2>
+                <div class="prompt-box" style="margin: 2rem 0;">
+                    "Using ONLY the attached project brief and meeting notes..."
+                </div>
+                <p>Don't just ask for an answer. Tell Copilot what it should use.</p>
+                <div class="grid-2" style="margin-top: 2rem;">
+                    <div class="card"><h3>1. Ground the output</h3></div>
+                    <div class="card"><h3>2. Verify the output</h3></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="slide" id="slide-18" data-module="Agents">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <span class="eyebrow">Overview</span>
+                <h2>Agents & Copilot Studio</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <div class="card">
+                        <h3>Prompt</h3>
+                        <p>One instruction.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Workflow</h3>
+                        <p>Repeatable sequence.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Agent</h3>
+                        <p>Goal-oriented assistant with knowledge & tools.</p>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem; font-size: 1.2rem;">Availability depends on licensing, tenant configuration and governance.</p>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- GITHUB COPILOT -->
+        <!-- ============================================== -->
+        <section class="slide" id="slide-19" data-module="GitHub Copilot" data-trainer-say="Because we have IT/Product here, let's look at code.">
+            <div class="flex-col" style="height: 100%; justify-content: center;">
+                <div class="app-header">
+                    <div class="app-icon" style="background: #24292e;">GH</div>
+                    <h2>GitHub Copilot</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <ul style="font-size: 2rem; line-height: 1.8; margin-left: 2rem; color: var(--text-secondary);">
+                            <li>Explain code</li>
+                            <li>Refactor for readability</li>
+                            <li>Generate unit tests</li>
+                            <li>Identify edge cases</li>
+                            <li>Review pull requests</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Demo</h3>
+                        <p>Check the <code>api_service.js</code> in your data pack.</p>
+                        <div class="prompt-box" style="margin-top: 1rem; font-size: 1.2rem;">"Review this code for bugs. Find the intentional code smell and missing validation."</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- CAPSTONE -->
+        <!-- ============================================== -->
+        <section class="slide" id="slide-20" data-module="Capstone" data-trainer-time="20 min">
+            <div class="center-all flex-col" style="height: 100%;">
+                <span class="eyebrow">Capstone</span>
+                <h1>Start with a Real Problem.</h1>
+                <p>Choose your path:</p>
+                <div class="grid-2" style="width: 100%; text-align: left; margin-top: 2rem;">
+                    <div class="card">
+                        <h3 class="text-highlight">Option A - IT</h3>
+                        <p>Teams notes + Incident data</p>
+                        <p style="font-size: 1.2rem; margin-top: 1rem;">Create: Action summary, Follow-up, Incident brief, Analysis, Management summary.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-highlight">Option B - Product</h3>
+                        <p>Customer feedback + Roadmap</p>
+                        <p style="font-size: 1.2rem; margin-top: 1rem;">Create: Themes, Analysis, Product brief, Stakeholder email, Executive summary.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="slide" id="slide-21" data-module="Value">
+            <div class="center-all flex-col" style="height: 100%;">
+                <span class="eyebrow">The Value</span>
+                <h2>Remember the task you wanted to make faster at the start?</h2>
+                <div class="grid-2" style="margin: 3rem 0;">
+                    <div class="card">
+                        <h3>Before</h3>
+                        <p>High Time, High Friction</p>
+                    </div>
+                    <div class="card" style="border-color: var(--success);">
+                        <h3 style="color: var(--success);">After</h3>
+                        <p>Time Saved, Quality Improved</p>
+                    </div>
+                </div>
+                <h1>DON'T USE COPILOT TO DO MORE WORK.</h1>
+                <h2 class="copilot-text" style="font-weight: 700;">USE COPILOT TO REMOVE LOW-VALUE WORK.</h2>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- UI Overlay Controls -->
+    <div id="ui-layer">
+        <div>
+            <button class="ui-btn" id="btn-prev">← Previous</button>
+            <span id="slide-counter" style="margin-left: 20px; color: var(--text-muted);">1 / 21</span>
+        </div>
+        
+        <div id="timer-container">
+            <div class="timer-controls">
+                <button onclick="setTimer(3)">3m</button>
+                <button onclick="setTimer(5)">5m</button>
+                <button onclick="setTimer(10)">10m</button>
+            </div>
+            <div id="timer-display">00:00</div>
+            <div class="timer-controls">
+                <button onclick="toggleTimer()" id="btn-timer-play">▶</button>
+                <button onclick="resetTimer()">⟲</button>
+                <button onclick="hideTimer()">✕</button>
+            </div>
+        </div>
+        
+        <div>
+            <button class="ui-btn" onclick="showTimer()" style="margin-right: 10px;">⏱ Timer</button>
+            <button class="ui-btn" id="btn-next">Next →</button>
+        </div>
+    </div>
+
+    <!-- Trainer Dashboard Overlay (Hidden by default) -->
+    <div id="trainer-overlay">
+        <div class="trainer-header">
+            <h4>Trainer Dashboard</h4>
+            <span id="trainer-module-badge" style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Module</span>
+        </div>
+        <div class="trainer-section">
+            <h5>Objective</h5>
+            <p id="trainer-obj">Set the context.</p>
+        </div>
+        <div class="trainer-section" id="trainer-say-container">
+            <h5>Say</h5>
+            <p id="trainer-say">...</p>
+        </div>
+        <div class="trainer-section trainer-rescue" id="trainer-rescue-container" style="display: none;">
+            <h5>Watch For / Rescue</h5>
+            <p id="trainer-rescue">...</p>
+        </div>
+        <div class="trainer-section">
+            <h5>Time / Pacing</h5>
+            <p id="trainer-time">As needed</p>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 20px; text-align: center;">Press Shift+T to close</p>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/trainer.js"></script>
+</body>
+</html>

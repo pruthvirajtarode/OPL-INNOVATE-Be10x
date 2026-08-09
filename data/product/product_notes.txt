@@ -1,0 +1,36 @@
+[SYNTHETIC TRAINING DATA - NOT REAL COMPANY INFORMATION]
+
+RAW PROJECT NOTES: INVENTORY SYSTEM UPGRADE
+
+Problem:
+Warehouse staff complain the current barcode scanner app is too slow. It takes 4-5 seconds to register a scan. This creates bottlenecks at loading docks. Also, offline mode doesn't sync properly when they walk into wifi dead zones. 
+
+Goal:
+Update the inventory scanning app to reduce scan latency to under 1 second. Fix offline sync queue so data isn't lost. 
+
+Scope:
+- rewrite scanning module using new camera API
+- implement local SQLite database for robust offline queuing
+- add visual indicator (green/red flash) on successful/failed scan
+- only targeting Android devices (Zebra scanners)
+
+Out of scope (Non-goals):
+- No iOS version
+- Not changing the central database schema
+- Not adding new reporting features in this phase
+
+Timeline:
+Kickoff next week. Development 4 weeks. Testing 2 weeks. Rollout to Warehouse A first. 
+
+Risks:
+- New camera API might drain battery faster
+- Warehouse wifi is notoriously spotty, making testing hard
+
+Dependencies:
+- Need 3 physical Zebra scanner devices for the dev team
+- Need IT to approve the new local storage security policy
+
+Next steps:
+- order the test devices
+- draft technical spec for SQLite sync 
+- review with operations manager
