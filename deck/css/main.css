@@ -268,15 +268,19 @@ p {
   background: rgba(15, 23, 42, 0.8);
   border: 1px solid var(--border);
   color: var(--text-secondary);
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   backdrop-filter: blur(4px);
 }
 .ui-btn:hover {
   background: var(--border);
   color: var(--text-primary);
+}
+
+#slide-counter {
+  font-size: 1.5rem;
 }
 
 /* Timer */
@@ -285,10 +289,10 @@ p {
   background: rgba(15, 23, 42, 0.9);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 15px 25px;
+  padding: 15px 30px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   backdrop-filter: blur(8px);
   display: none; /* Hidden by default */
 }
@@ -296,20 +300,20 @@ p {
   display: flex;
 }
 #timer-display {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: var(--font-mono);
   font-weight: 700;
   color: var(--text-primary);
-  width: 120px;
+  width: 160px;
   text-align: center;
 }
 .timer-controls button {
   background: none;
   border: none;
   color: var(--text-secondary);
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
 }
 .timer-controls button:hover {
   color: var(--text-primary);
@@ -318,13 +322,13 @@ p {
 /* Trainer Mode Overlay */
 #trainer-overlay {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 450px;
+  top: 60px;
+  right: 60px;
+  width: 600px;
   background-color: rgba(30, 41, 59, 0.95);
   border: 2px solid var(--warning);
   border-radius: 16px;
-  padding: 30px;
+  padding: 40px;
   z-index: 1000;
   backdrop-filter: blur(10px);
   display: none;
@@ -341,36 +345,40 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .trainer-header h4 {
   color: var(--warning);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+#trainer-module-badge {
+  font-size: 1.2rem !important;
+  padding: 6px 12px !important;
+}
 
 .trainer-section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .trainer-section h5 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: var(--text-muted);
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .trainer-section p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--text-primary);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .trainer-rescue {
   background: rgba(245, 158, 11, 0.1);
   border-left: 4px solid var(--warning);
-  padding: 15px;
+  padding: 20px;
   border-radius: 4px;
 }
 

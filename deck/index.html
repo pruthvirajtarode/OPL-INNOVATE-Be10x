@@ -404,61 +404,59 @@
                 <h1>DON'T USE COPILOT TO DO MORE WORK.</h1>
                 <h2 class="copilot-text" style="font-weight: 700;">USE COPILOT TO REMOVE LOW-VALUE WORK.</h2>
             </div>
-        </section>
-
-    </div>
-
-    <!-- UI Overlay Controls -->
-    <div id="ui-layer">
-        <div style="display: flex; align-items: center;">
-            <a href="../index.html" class="ui-btn" style="text-decoration: none; margin-right: 10px;" title="Back to Home">🏠 Home</a>
-            <button class="ui-btn" id="btn-prev">← Previous</button>
-            <span id="slide-counter" style="margin-left: 20px; color: var(--text-muted);">1 / 21</span>
-        </div>
         
-        <div id="timer-container">
-            <div class="timer-controls">
-                <button onclick="setTimer(3)">3m</button>
-                <button onclick="setTimer(5)">5m</button>
-                <button onclick="setTimer(10)">10m</button>
+        <!-- UI Overlay Controls -->
+        <div id="ui-layer">
+            <div style="display: flex; align-items: center;">
+                <a href="../index.html" class="ui-btn" style="text-decoration: none; margin-right: 10px;" title="Back to Home">🏠 Home</a>
+                <button class="ui-btn" id="btn-prev">← Previous</button>
+                <span id="slide-counter" style="margin-left: 20px; color: var(--text-muted);">1 / 21</span>
             </div>
-            <div id="timer-display">00:00</div>
-            <div class="timer-controls">
-                <button onclick="toggleTimer()" id="btn-timer-play">▶</button>
-                <button onclick="resetTimer()">⟲</button>
-                <button onclick="hideTimer()">✕</button>
+            
+            <div id="timer-container">
+                <div class="timer-controls">
+                    <button onclick="setTimer(3)">3m</button>
+                    <button onclick="setTimer(5)">5m</button>
+                    <button onclick="setTimer(10)">10m</button>
+                </div>
+                <div id="timer-display">00:00</div>
+                <div class="timer-controls">
+                    <button onclick="toggleTimer()" id="btn-timer-play">▶</button>
+                    <button onclick="resetTimer()">⟲</button>
+                    <button onclick="hideTimer()">✕</button>
+                </div>
+            </div>
+            
+            <div>
+                <button class="ui-btn" onclick="showTimer()" style="margin-right: 10px;">⏱ Timer</button>
+                <button class="ui-btn" id="btn-next">Next →</button>
             </div>
         </div>
-        
-        <div>
-            <button class="ui-btn" onclick="showTimer()" style="margin-right: 10px;">⏱ Timer</button>
-            <button class="ui-btn" id="btn-next">Next →</button>
-        </div>
-    </div>
 
-    <!-- Trainer Dashboard Overlay (Hidden by default) -->
-    <div id="trainer-overlay">
-        <div class="trainer-header">
-            <h4>Trainer Dashboard</h4>
-            <span id="trainer-module-badge" style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Module</span>
+        <!-- Trainer Dashboard Overlay (Hidden by default) -->
+        <div id="trainer-overlay">
+            <div class="trainer-header">
+                <h4>Trainer Dashboard</h4>
+                <span id="trainer-module-badge" style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; white-space: nowrap; margin-left: 10px;">Module</span>
+            </div>
+            <div class="trainer-section">
+                <h5>Objective</h5>
+                <p id="trainer-obj">Set the context.</p>
+            </div>
+            <div class="trainer-section" id="trainer-say-container">
+                <h5>Say</h5>
+                <p id="trainer-say">...</p>
+            </div>
+            <div class="trainer-section trainer-rescue" id="trainer-rescue-container" style="display: none;">
+                <h5>Watch For / Rescue</h5>
+                <p id="trainer-rescue">...</p>
+            </div>
+            <div class="trainer-section">
+                <h5>Time / Pacing</h5>
+                <p id="trainer-time">As needed</p>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 20px; text-align: center;">Press Shift+T to close</p>
         </div>
-        <div class="trainer-section">
-            <h5>Objective</h5>
-            <p id="trainer-obj">Set the context.</p>
-        </div>
-        <div class="trainer-section" id="trainer-say-container">
-            <h5>Say</h5>
-            <p id="trainer-say">...</p>
-        </div>
-        <div class="trainer-section trainer-rescue" id="trainer-rescue-container" style="display: none;">
-            <h5>Watch For / Rescue</h5>
-            <p id="trainer-rescue">...</p>
-        </div>
-        <div class="trainer-section">
-            <h5>Time / Pacing</h5>
-            <p id="trainer-time">As needed</p>
-        </div>
-        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 20px; text-align: center;">Press Shift+T to close</p>
     </div>
 
     <script src="js/main.js"></script>
