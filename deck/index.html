@@ -174,6 +174,11 @@
                         <p>A product manager returns after two days away. They have a long email thread involving engineering, customer success, and a release schedule.</p>
                         <h3 style="margin-top: 2rem;">Task</h3>
                         <div class="prompt-box">"Catch me up. What happened? What was decided? What needs my action?"</div>
+                        <div class="mock-output" style="margin-top: 15px;">
+                            <strong>Summary:</strong> Engineering delayed the V2 release to Friday.<br>
+                            <strong>Decisions:</strong> Customer Success will notify key accounts.<br>
+                            <strong>Action needed:</strong> You need to approve the draft comms.
+                        </div>
                     </div>
                     <div class="card">
                         <h3>Hands-On</h3>
@@ -197,9 +202,12 @@
                         <p>Turn rough project notes into a professional project brief.</p>
                         <div class="prompt-box" style="margin-top: 2rem;">"Rewrite these notes into a project brief. Include sections for Problem, Goal, Scope, Timeline, and Risks."</div>
                     </div>
-                    <div class="card">
-                        <h3>Level Up</h3>
-                        <p>"Rewrite this for a senior stakeholder."</p>
+                    <div class="card" style="background: rgba(0,0,0,0.2);">
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--ms-copilot);">✨</span> Rewrite Generated</h3>
+                        <div class="mock-output" style="margin-top: 15px;">
+                            <strong>Before:</strong> I think we should maybe try to launch next month if we can.<br><br>
+                            <strong>After:</strong> Our target launch is scheduled for next month, pending final QA.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -222,10 +230,16 @@
                             <li>Create one useful chart.</li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <h3>Level Up</h3>
-                        <p>"What evidence in the data supports each recommendation?"</p>
-                        <p style="font-size: 1.2rem; margin-top: 1rem;">This teaches analytical grounding. No invented conclusions.</p>
+                    <div class="card" style="display: flex; flex-direction: column; justify-content: center; background: rgba(0,0,0,0.2);">
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--ms-copilot);">✨</span> Chart Generated</h3>
+                        <p style="font-size: 1.2rem; color: var(--text-secondary);">"Revenue by Region"</p>
+                        <div class="mock-chart">
+                            <div class="mock-bar" style="height: 40%;"></div>
+                            <div class="mock-bar" style="height: 70%;"></div>
+                            <div class="mock-bar" style="height: 90%;"></div>
+                            <div class="mock-bar" style="height: 50%;"></div>
+                            <div class="mock-bar" style="height: 85%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,16 +258,35 @@
                         <p>Transform a 1-page project brief into a 6-slide executive presentation.</p>
                         <div class="prompt-box" style="margin-top: 2rem;">"Create a presentation from [file]. Provide speaker notes for each slide."</div>
                     </div>
-                    <div class="card">
-                        <h3>Structure</h3>
-                        <ol style="font-size: 1.5rem; line-height: 1.6; margin-left: 2rem; margin-top: 1rem; color: var(--text-secondary);">
-                            <li>Problem</li>
-                            <li>Current situation</li>
-                            <li>Insight</li>
-                            <li>Proposed solution</li>
-                            <li>Impact</li>
-                            <li>Next steps</li>
-                        </ol>
+                    <div class="card" style="display: flex; flex-direction: column; justify-content: center; background: rgba(0,0,0,0.2);">
+                        <h3 style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--ms-copilot);">✨</span> Deck Generated</h3>
+                        <div class="mock-slide-deck">
+                            <div class="mock-slide">
+                                <div class="mock-slide-title" style="width: 80%; margin: auto; margin-top: 20px;"></div>
+                                <div class="mock-slide-line" style="width: 40%; margin: auto;"></div>
+                            </div>
+                            <div class="mock-slide">
+                                <div class="mock-slide-title"></div>
+                                <div class="mock-slide-line"></div>
+                                <div class="mock-slide-line"></div>
+                                <div class="mock-slide-line" style="width: 60%;"></div>
+                            </div>
+                            <div class="mock-slide">
+                                <div class="mock-slide-title" style="width: 50%;"></div>
+                                <div style="display: flex; gap: 10px; margin-top: 5px;">
+                                    <div class="mock-slide-line" style="height: 40px; width: 40px; border-radius: 50%; background: #94a3b8;"></div>
+                                    <div style="flex: 1;">
+                                        <div class="mock-slide-line"></div>
+                                        <div class="mock-slide-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mock-slide">
+                                <div class="mock-slide-title"></div>
+                                <div class="mock-slide-line"></div>
+                                <div class="mock-slide-line" style="width: 80%;"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,6 +304,13 @@
                         <h3>Meeting Recap</h3>
                         <p>Extract decisions, action items, and follow-ups from transcripts.</p>
                         <div class="prompt-box" style="margin-top: 2rem;">"What did we decide? List action items with owner and due date. Draft the follow-up message."</div>
+                        <div class="mock-output" style="margin-top: 15px;">
+                            <strong>Decisions:</strong><br>
+                            - Drop settings animations for V1.<br>
+                            <strong>Action Items:</strong><br>
+                            - @Jamie: provide dark mode assets.<br>
+                            - @Sam: coordinate with backend team.
+                        </div>
                     </div>
                     <div class="card" style="border-color: var(--danger);">
                         <h3 style="color: var(--danger);">Spot the Problem</h3>
@@ -404,6 +444,7 @@
                 <h1>DON'T USE COPILOT TO DO MORE WORK.</h1>
                 <h2 class="copilot-text" style="font-weight: 700;">USE COPILOT TO REMOVE LOW-VALUE WORK.</h2>
             </div>
+        </section>
         
         <!-- UI Overlay Controls -->
         <div id="ui-layer">

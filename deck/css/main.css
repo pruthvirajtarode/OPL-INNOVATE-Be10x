@@ -382,5 +382,73 @@ p {
   border-radius: 4px;
 }
 
+/* Mockups for UI Output */
+.mock-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 10px;
+  height: 180px;
+  border-bottom: 2px solid var(--border);
+  border-left: 2px solid var(--border);
+  padding: 10px 10px 0 10px;
+  margin-top: 20px;
+}
+.mock-bar {
+  background-color: var(--ms-excel);
+  width: 50px;
+  border-radius: 4px 4px 0 0;
+  animation: growUp 1s ease-out forwards;
+  transform-origin: bottom;
+  box-shadow: 0 -4px 10px rgba(33, 115, 70, 0.3);
+}
+@keyframes growUp {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+.mock-slide-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.mock-slide {
+  background: #f8fafc;
+  border-radius: 6px;
+  aspect-ratio: 16/9;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.mock-slide-title {
+  height: 12px;
+  background: var(--ms-powerpoint);
+  width: 60%;
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+.mock-slide-line {
+  height: 6px;
+  background: #cbd5e1;
+  width: 90%;
+  margin-bottom: 8px;
+  border-radius: 2px;
+}
+
+.mock-output {
+  background: rgba(15, 23, 42, 0.6);
+  border-left: 4px solid var(--ms-copilot);
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+.mock-output strong {
+  color: var(--text-primary);
+}
+
 /* Helpers */
 .hidden { display: none !important; }
