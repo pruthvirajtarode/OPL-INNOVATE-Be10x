@@ -751,12 +751,12 @@ DO NOT invent information."</div>
 
 <section class="slide" id="slide-21" data-module="Advanced"
   data-trainer-say="Module 3. The WOW module. We chain everything together and demonstrate the real power of Copilot across multiple applications, introduce Copilot Pages, custom Agents, and dive deep into GitHub Copilot."
-  data-trainer-time="1:30–2:30">
+  data-trainer-time="1:30–3:00">
   <div class="module-title-slide">
     <div class="mod-number">ADVANCED MODULE 3</div>
     <h1>CROSS-APP &<br><span class="grad-text">TECHNICAL POWER USE</span></h1>
     <p>Cross-app workflows · Copilot Pages · Advanced Grounding · Agents & Copilot Studio · GitHub Copilot</p>
-    <div class="mod-time">60 MIN</div>
+    <div class="mod-time">90 MIN</div>
   </div>
 </section>
 
@@ -865,29 +865,29 @@ DO NOT invent information."</div>
 
 <!-- ─── AGENTS & EXTENSIBILITY ─── -->
 <section class="slide" id="slide-25" data-module="Advanced"
-  data-trainer-say="Explain Copilot Studio and Custom Agents. What they are, what they can do, and where they fit in OPL's ecosystem."
-  data-trainer-time="7 min">
+  data-trainer-say="Explain Copilot Studio and Custom Agents in depth. Show how Declarative Agents map to OPL's actual data needs."
+  data-trainer-time="5 min">
   <div class="full-slide">
-    <div class="eyebrow">AGENTS & EXTENSIBILITY (OVERVIEW)</div>
-    <h2>What custom agents and Copilot Studio can do, and where they fit</h2>
+    <div class="eyebrow">AGENTS & EXTENSIBILITY (DEEP DIVE)</div>
+    <h2>Building custom intelligence with Copilot Studio</h2>
     <div class="three-col" style="margin-top:2rem;">
       <div class="feature-card highlight-card">
         <div class="fc-icon" style="background:#8b5cf6;">A</div>
         <h3>Declarative Agents</h3>
-        <p>Custom tailored versions of Copilot with specific instructions, knowledge bases, and skills.</p>
-        <div class="opl-example">OPL Use: "OAM+ API Support Agent" trained on all API docs to assist integrators.</div>
+        <p>Custom tailored versions of Copilot with specific instructions, knowledge bases, and skills. Can be grounded on SharePoint sites, specific files, or Graph API.</p>
+        <div class="opl-example">OPL Use: "OAM+ API Support Agent" grounded exclusively on OPL's API swagger docs and historical incident tickets.</div>
       </div>
       <div class="feature-card">
         <div class="fc-icon" style="background:#0ea5e9;">CS</div>
-        <h3>Copilot Studio</h3>
-        <p>The low-code platform to build, manage, and publish custom agents across your organization.</p>
-        <div class="opl-example">Where they fit: Automating routine internal IT, Risk, and Operations workflows.</div>
+        <h3>Copilot Studio Canvas</h3>
+        <p>The low-code platform to build conversational logic, manage authentication, and deploy custom agents across Teams, Web, and M365.</p>
+        <div class="opl-example">OPL Use: Building an agent that allows Relationship Managers to query MSME portfolio status in natural language.</div>
       </div>
       <div class="feature-card">
         <div class="fc-icon" style="background:#f59e0b;">API</div>
         <h3>Plugins & Actions</h3>
-        <p>Connect Copilot directly to OPL's internal systems (like Jira, ServiceNow, or custom APIs).</p>
-        <div class="opl-example">OPL Use: Copilot fetches real-time API latency via a custom plugin.</div>
+        <p>Enable Agents to take action by connecting to internal systems via OpenAPI specs (REST APIs) or Power Automate flows.</p>
+        <div class="opl-example">OPL Use: Copilot fetches real-time API latency via a custom OAM+ plugin and can trigger a JIRA ticket creation.</div>
       </div>
     </div>
     <div class="disclaimer-bar">Extensibility requires appropriate administrative permissions and security reviews within the M365 tenant.</div>
@@ -896,13 +896,13 @@ DO NOT invent information."</div>
 
 <!-- ─── GITHUB COPILOT ADVANCED ─── -->
 <section class="slide" id="slide-26" data-module="Advanced"
-  data-trainer-say="Deep dive into GitHub Copilot for engineering. This is beyond basic code completion."
-  data-trainer-time="10 min"
-  data-trainer-rescue="Show how chat can explain code, generate tests, and review PRs.">
+  data-trainer-say="Deep dive into GitHub Copilot for engineering. This is beyond basic code completion. Show advanced context gathering and chat."
+  data-trainer-time="5 min"
+  data-trainer-rescue="Emphasize how it understands the entire workspace, not just the active file.">
   <div class="app-slide">
     <div class="app-header-row">
       <div class="app-chip github-chip">FOR ENGINEERING</div>
-      <h2>GitHub Copilot — Inline completion, chat, refactoring, and PRs</h2>
+      <h2>GitHub Copilot — Advanced Context & Workflows</h2>
     </div>
     <div class="split-slide" style="margin-top:2rem;">
       <div class="split-left">
@@ -919,21 +919,67 @@ DO NOT invent information."</div>
       try {
         throw new Exception("Failed");
       } catch (Exception e) {
-        <span class="code-smell">// DO NOTHING ← CODE SMELL</span>
+        <span class="code-smell">// DO NOTHING ← SILENT FAILURE SMELL</span>
       }
     }
   }
 }</code></pre>
         </div>
+        <div class="prompt-box-sm" style="margin-top:1rem;">
+          <strong>@workspace /explain</strong> Why is this code failing silently, and how does it impact the OAM+ monitoring dashboard?
+        </div>
       </div>
       <div class="split-right">
-        <h3>Engineering Capabilities</h3>
+        <h3>Advanced Engineering Capabilities</h3>
         <div class="task-list">
-          <div class="task-item"><span class="gh-badge" style="background:#2ea043;">Completion</span><strong>Inline Completion:</strong> As you type, Copilot suggests whole lines or functions.</div>
-          <div class="task-item"><span class="gh-badge" style="background:#1f6feb;">Chat</span><strong>Copilot Chat:</strong> Ask architectural questions or get explanations of complex codeblocks.</div>
-          <div class="task-item"><span class="gh-badge" style="background:#8957e5;">Refactor</span><strong>Explain & Refactor:</strong> "Identify the code smell in this block and rewrite it with proper logging."</div>
-          <div class="task-item task-critical"><span class="gh-badge" style="background:#d1242f;">Test</span><strong>Generate Tests:</strong> Automatically create unit tests, covering edge cases like the silent failure.</div>
-          <div class="task-item"><span class="gh-badge" style="background:#e3b341; color:#000;">PR Review</span><strong>Review Pull Requests:</strong> Summarise PR changes and spot potential issues before merging.</div>
+          <div class="task-item"><span class="gh-badge" style="background:#2ea043;">Context</span><strong>@workspace Context:</strong> Copilot indexes your entire repository to provide accurate answers across multiple files.</div>
+          <div class="task-item"><span class="gh-badge" style="background:#1f6feb;">Chat</span><strong>Slash Commands:</strong> Use <code>/explain</code>, <code>/fix</code>, <code>/tests</code> to immediately trigger complex developer workflows.</div>
+          <div class="task-item"><span class="gh-badge" style="background:#8957e5;">Refactor</span><strong>Inline Chat (Cmd+I):</strong> Highlight the code smell and type "Refactor this to use SLF4J logging and throw a custom OAMException."</div>
+          <div class="task-item task-critical"><span class="gh-badge" style="background:#d1242f;">Test</span><strong>Automated Test Generation:</strong> Generates mocked unit tests covering edge cases like the silent failure above.</div>
+          <div class="task-item"><span class="gh-badge" style="background:#e3b341; color:#000;">CLI & PR</span><strong>Copilot in the CLI & PRs:</strong> Get help with git commands and automatically summarize PR changes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODULE 3 ACTIVITY ─── -->
+<section class="slide" id="slide-26b" data-module="Advanced"
+  data-trainer-say="This is the 30-minute activity for Module 3. Have the engineering/IT folks do the GitHub Copilot track, and the business/ops folks do the Copilot Studio track."
+  data-trainer-time="30 min">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip" style="background:var(--amber);color:#000;">ACTIVITY</div>
+      <h2>Module 3 Hands-on Challenge</h2>
+      <div class="timer-hint" style="margin-left:auto;margin-top:0;">⏱ 30 MIN</div>
+    </div>
+    
+    <p style="font-size:1.3rem; margin: 1.5rem 0; color:var(--text-secondary);">Choose the track that aligns with your role. You have 30 minutes to complete the objective and prepare a quick showcase.</p>
+
+    <div class="split-slide" style="margin-top:1rem;">
+      <div class="split-left">
+        <div class="opl-product-callout" style="border-color:#0ea5e9; background:rgba(14, 165, 233, 0.05);">
+          <h3 style="color:#0ea5e9; margin-top:0;">Track A: Copilot Studio (Business & Ops)</h3>
+          <p><strong>Goal:</strong> Design a Declarative Agent for OPL's Operations.</p>
+          <div class="exercise-list" style="margin-top:1.5rem;">
+            <div class="ex-item"><span class="ex-num" style="background:#0ea5e9;">01</span>Define instructions (persona, tone, boundaries).</div>
+            <div class="ex-item"><span class="ex-num" style="background:#0ea5e9;">02</span>Identify exactly which 3 synthetic datasets to use for grounding.</div>
+            <div class="ex-item"><span class="ex-num" style="background:#0ea5e9;">03</span>Draft logic: What happens if asked "Why did Vendor_B fail?"</div>
+            <div class="ex-item ex-item-key" style="border-color:rgba(14, 165, 233, 0.4);"><span class="ex-num" style="background:#0ea5e9;">04</span>Deliverable: A 1-page architecture sketch.</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="split-right">
+        <div class="opl-product-callout" style="border-color:var(--text-muted); background:rgba(255, 255, 255, 0.03);">
+          <h3 style="color:var(--text); margin-top:0;">Track B: GitHub Copilot (Engineering & IT)</h3>
+          <p><strong>Goal:</strong> Fix and test the broken <code>api_service.java</code>.</p>
+          <div class="exercise-list" style="margin-top:1.5rem;">
+            <div class="ex-item"><span class="ex-num" style="background:var(--text-muted);color:#000;">01</span>Use Copilot Chat to explain the silent failure vulnerability.</div>
+            <div class="ex-item"><span class="ex-num" style="background:var(--text-muted);color:#000;">02</span>Use Inline Chat to add SLF4J logging and error handling.</div>
+            <div class="ex-item"><span class="ex-num" style="background:var(--text-muted);color:#000;">03</span>Use <code>/tests</code> to generate a mocked JUnit test suite.</div>
+            <div class="ex-item ex-item-key" style="border-color:var(--text-muted);"><span class="ex-num" style="background:var(--text-muted);color:#000;">04</span>Deliverable: Refactored code + tests.</div>
+          </div>
         </div>
       </div>
     </div>
