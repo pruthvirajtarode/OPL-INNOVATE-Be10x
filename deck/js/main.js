@@ -88,11 +88,12 @@ function prevSlide() {
 }
 
 function goToSlide(slideNum) {
-    document.querySelectorAll('.slide').forEach(slide => {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => {
         slide.classList.remove('active');
     });
     
-    const targetSlide = document.getElementById(`slide-${slideNum}`);
+    const targetSlide = slides[slideNum - 1];
     if (targetSlide) {
         targetSlide.classList.add('active');
         currentSlide = slideNum;
