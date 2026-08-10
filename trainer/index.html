@@ -3,57 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainer Dashboard | OPL Innovate</title>
+    <title>OPL Innovate | Trainer Control Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #0B1D3A;
-            --text: #FFF;
-            --accent: #F29F05;
-            --gray: #1e293b;
+            --opl-navy-deep: #060F21;
+            --opl-navy: #0B1D3A;
+            --opl-surface: #122447;
+            --opl-surface-light: #1E3A8A;
+            --opl-amber: #F59E0B;
+            --opl-text: #F8FAFC;
+            --opl-text-muted: #94A3B8;
+            --opl-border: rgba(255,255,255,0.1);
+            
+            --status-public: #10B981;
+            --status-synth: #F59E0B;
+            --status-error: #EF4444;
         }
-        body { font-family: sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .card { background: var(--gray); padding: 20px; border-radius: 8px; }
-        input, button { padding: 10px; font-size: 1rem; margin-top: 10px; }
-        button { background: var(--accent); border: none; cursor: pointer; font-weight: bold; }
-        #result { margin-top: 20px; font-weight: bold; font-size: 1.2rem; }
-        .badge { padding: 5px 10px; border-radius: 4px; display: inline-block; }
-        .public { background: #10b981; }
-        .synthetic { background: var(--accent); color: var(--bg); }
-        .unverified { background: #ef4444; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--opl-navy-deep);
+            color: var(--opl-text);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        .header {
+            border-bottom: 1px solid var(--opl-border);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+        .header .eyebrow {
+            color: var(--opl-amber);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 30px;
+        }
+        @media(max-width: 900px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background: var(--opl-surface);
+            border: 1px solid var(--opl-border);
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--opl-border);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Fact Checker */
+        .search-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            flex: 1;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--opl-border);
+            border-radius: 8px;
+            padding: 15px 20px;
+            color: var(--opl-text);
+            font-size: 1.1rem;
+            font-family: 'Inter', sans-serif;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--opl-amber);
+        }
+        button.btn-primary {
+            background: var(--opl-amber);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        button.btn-primary:hover {
+            background: #D97706;
+        }
+
+        /* Results Area */
+        #result-area {
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 25px;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .empty-state {
+            color: var(--opl-text-muted);
+            text-align: center;
+            font-style: italic;
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 15px;
+        }
+        .badge.public { background: rgba(16,185,129,0.15); color: var(--status-public); border: 1px solid var(--status-public); }
+        .badge.synth { background: rgba(245,158,11,0.15); color: var(--status-synth); border: 1px solid var(--status-synth); }
+        .badge.error { background: rgba(239,68,68,0.15); color: var(--status-error); border: 1px solid var(--status-error); }
+        
+        .result-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .q-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--opl-border);
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: var(--opl-text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .q-link:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .q-icon { font-size: 1.2rem; margin-right: 15px; }
+
     </style>
 </head>
 <body>
-    <h1>Trainer Dashboard & Fact Checker</h1>
-    <div class="grid">
-        <div class="card">
-            <h2>Company Fact Checker</h2>
-            <p>Paste a claim Copilot made to verify if it is grounded in public data or synthetic data.</p>
-            <input type="text" id="claim" placeholder="e.g. OPL has 360+ employees" style="width: 80%;">
-            <button onclick="checkFact()">Verify Claim</button>
-            <div id="result"></div>
+    <div class="container">
+        <div class="header">
+            <div>
+                <span class="eyebrow">Trainer Backstage</span>
+                <h1>Control Center & Fact Checker</h1>
+            </div>
+            <a href="../index.html" style="color:var(--opl-text-muted); text-decoration:none;">← Back to Home</a>
         </div>
-        <div class="card">
-            <h2>Session Status</h2>
-            <p><strong>Current Module:</strong> <span id="module">Module 2</span></p>
-            <p><strong>Elapsed Time:</strong> 1h 15m</p>
-            <button onclick="window.open('../deck/index.html?trainer=true', '_blank')">Launch Deck (Trainer Mode)</button>
+
+        <div class="grid">
+            <!-- Fact Checker Card -->
+            <div class="card">
+                <h2>🔍 Live Fact Checker</h2>
+                <p style="color:var(--opl-text-muted); margin-bottom: 25px;">
+                    During the session, if a participant asks <em>"Is this number real?"</em> after Copilot generates a response, paste the claim here to instantly verify its source.
+                </p>
+                
+                <div class="search-box">
+                    <input type="text" id="claim" placeholder="Paste claim here... e.g., 'OPL has 235+ banks'">
+                    <button class="btn-primary" onclick="checkFact()">Verify</button>
+                </div>
+
+                <div id="result-area">
+                    <div class="empty-state" id="empty-state">Waiting for claim to verify...</div>
+                    <div id="active-result" style="display:none;">
+                        <div id="res-badge" class="badge"></div>
+                        <div id="res-desc" class="result-desc"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links Card -->
+            <div class="card">
+                <h2>🚀 Launch Modules</h2>
+                <div class="quick-links">
+                    <a href="../deck/index.html?trainer=true" target="_blank" class="q-link">
+                        <span><span class="q-icon">🖥️</span> Presentation Deck (Trainer Mode)</span>
+                        <span style="color:var(--opl-text-muted)">→</span>
+                    </a>
+                    <a href="../workbook/index.html" target="_blank" class="q-link">
+                        <span><span class="q-icon">📓</span> Participant Workbook</span>
+                        <span style="color:var(--opl-text-muted)">→</span>
+                    </a>
+                    <a href="../charts/index.html" target="_blank" class="q-link">
+                        <span><span class="q-icon">📊</span> Data Analytics Lab</span>
+                        <span style="color:var(--opl-text-muted)">→</span>
+                    </a>
+                    <a href="../quick-reference/index.html" target="_blank" class="q-link">
+                        <span><span class="q-icon">📖</span> Quick Reference Guide</span>
+                        <span style="color:var(--opl-text-muted)">→</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
+        // Listen for Enter key
+        document.getElementById('claim').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') checkFact();
+        });
+
         function checkFact() {
-            const claim = document.getElementById('claim').value.toLowerCase();
-            const resultDiv = document.getElementById('result');
+            const input = document.getElementById('claim').value.toLowerCase().trim();
+            const emptyState = document.getElementById('empty-state');
+            const activeResult = document.getElementById('active-result');
+            const badge = document.getElementById('res-badge');
+            const desc = document.getElementById('res-desc');
             
-            if (claim.includes('360') || claim.includes('235') || claim.includes('employees') || claim.includes('banks')) {
-                resultDiv.innerHTML = '<span class="badge public">PUBLIC FACT</span> <p>Matches OPL website metrics.</p>';
-            } else if (claim.includes('west') || claim.includes('approval rate') || claim.includes('vendor') || claim.includes('latency')) {
-                resultDiv.innerHTML = '<span class="badge synthetic">SYNTHETIC ANALYSIS</span> <p>Generated from training dataset. Do not claim this as actual OPL performance.</p>';
-            } else if (claim.trim() !== '') {
-                resultDiv.innerHTML = '<span class="badge unverified">UNVERIFIED / HALLUCINATION</span> <p>Not established in training materials.</p>';
-            } else {
-                resultDiv.innerHTML = '';
+            if (!input) {
+                emptyState.style.display = 'block';
+                activeResult.style.display = 'none';
+                return;
+            }
+
+            emptyState.style.display = 'none';
+            activeResult.style.display = 'block';
+
+            // Simple Keyword Matching Logic for the Trainer
+            if (input.includes('360') || input.includes('235') || input.includes('6,00,000') || input.includes('600000') || input.includes('lakh') || input.includes('employee') || input.includes('partner')) {
+                badge.className = 'badge public';
+                badge.innerText = '✅ PUBLIC OPL FACT';
+                desc.innerHTML = '<strong>Grounding:</strong> This aligns with OPL\'s official public website metrics. It is safe to claim.';
+            } 
+            else if (input.includes('west') || input.includes('approval') || input.includes('vendor') || input.includes('latency') || input.includes('dpd') || input.includes('retail') || input.includes('anomaly')) {
+                badge.className = 'badge synth';
+                badge.innerText = '🔬 SYNTHETIC ANALYSIS';
+                desc.innerHTML = '<strong>Grounding:</strong> This is a valid conclusion derived from the <em>Synthetic Training Dataset</em>. <br><br>⚠️ <strong>Trainer Action:</strong> Remind the class that this is for training purposes only and does NOT represent actual OPL operational performance.';
+            } 
+            else {
+                badge.className = 'badge error';
+                badge.innerText = '❌ UNVERIFIED / HALLUCINATION';
+                desc.innerHTML = '<strong>Grounding:</strong> This claim is <strong>NOT</strong> present in any public documentation or synthetic dataset provided for this workshop. <br><br>⚠️ <strong>Trainer Action:</strong> Flag this as an AI hallucination. This is a crucial teaching moment for verification.';
             }
         }
     </script>
