@@ -1,0 +1,7 @@
+Monthly MSME Lending Portfolio Review
+
+Product Manager: The MSME portfolio grew by 15% this quarter.
+Risk Lead: We noticed high DPD in the Retail sector in the East region.
+Engineering Lead: The BSA parser needs an update to handle new HDFC statement formats.
+Operations Lead: I will coordinate with the partner banks.
+[No date specified for BSA update]

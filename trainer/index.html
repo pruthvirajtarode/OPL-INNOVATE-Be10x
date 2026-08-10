@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard | OPL Innovate</title>
+    <style>
+        :root {
+            --bg: #0B1D3A;
+            --text: #FFF;
+            --accent: #F29F05;
+            --gray: #1e293b;
+        }
+        body { font-family: sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: var(--gray); padding: 20px; border-radius: 8px; }
+        input, button { padding: 10px; font-size: 1rem; margin-top: 10px; }
+        button { background: var(--accent); border: none; cursor: pointer; font-weight: bold; }
+        #result { margin-top: 20px; font-weight: bold; font-size: 1.2rem; }
+        .badge { padding: 5px 10px; border-radius: 4px; display: inline-block; }
+        .public { background: #10b981; }
+        .synthetic { background: var(--accent); color: var(--bg); }
+        .unverified { background: #ef4444; }
+    </style>
+</head>
+<body>
+    <h1>Trainer Dashboard & Fact Checker</h1>
+    <div class="grid">
+        <div class="card">
+            <h2>Company Fact Checker</h2>
+            <p>Paste a claim Copilot made to verify if it is grounded in public data or synthetic data.</p>
+            <input type="text" id="claim" placeholder="e.g. OPL has 360+ employees" style="width: 80%;">
+            <button onclick="checkFact()">Verify Claim</button>
+            <div id="result"></div>
+        </div>
+        <div class="card">
+            <h2>Session Status</h2>
+            <p><strong>Current Module:</strong> <span id="module">Module 2</span></p>
+            <p><strong>Elapsed Time:</strong> 1h 15m</p>
+            <button onclick="window.open('../deck/index.html?trainer=true', '_blank')">Launch Deck (Trainer Mode)</button>
+        </div>
+    </div>
+
+    <script>
+        function checkFact() {
+            const claim = document.getElementById('claim').value.toLowerCase();
+            const resultDiv = document.getElementById('result');
+            
+            if (claim.includes('360') || claim.includes('235') || claim.includes('employees') || claim.includes('banks')) {
+                resultDiv.innerHTML = '<span class="badge public">PUBLIC FACT</span> <p>Matches OPL website metrics.</p>';
+            } else if (claim.includes('west') || claim.includes('approval rate') || claim.includes('vendor') || claim.includes('latency')) {
+                resultDiv.innerHTML = '<span class="badge synthetic">SYNTHETIC ANALYSIS</span> <p>Generated from training dataset. Do not claim this as actual OPL performance.</p>';
+            } else if (claim.trim() !== '') {
+                resultDiv.innerHTML = '<span class="badge unverified">UNVERIFIED / HALLUCINATION</span> <p>Not established in training materials.</p>';
+            } else {
+                resultDiv.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>

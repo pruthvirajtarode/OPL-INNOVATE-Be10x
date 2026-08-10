@@ -1,0 +1,10 @@
+Subject: Q3 MSME Portfolio Review — Action Required
+
+From: Risk Lead
+Hi team, we need to review the Q3 portfolio. Vendor_B API is showing 12% failure rate impacting underwriting TAT.
+
+From: Engineering Lead
+We will investigate the Vendor_B API integration by Friday.
+
+From: Product Manager
+Please summarize this thread and draft a reply to Business.

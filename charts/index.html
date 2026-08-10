@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPL Innovate | Chart Library</title>
+    <!-- Offline Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --opl-navy: #0B1D3A;
+            --opl-blue: #1A3C6D;
+            --opl-amber: #F29F05;
+            --opl-white: #FFFFFF;
+            --opl-gray: #F4F5F7;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--opl-gray);
+            margin: 0;
+            padding: 20px;
+            color: var(--opl-navy);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-weight: 600;
+        }
+        .badge-synthetic {
+            background-color: var(--opl-amber);
+            color: var(--opl-navy);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--opl-white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: var(--opl-navy);
+        }
+        .card .source {
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 15px;
+            display: block;
+        }
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>OPL Innovate Data Analytics Lab</h1>
+        <span class="badge-synthetic">SYNTHETIC OPL-ALIGNED DATA</span>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Approval Trend by Sector</h3>
+            <span class="source">Source: Synthetic OPL-aligned training dataset (OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv)</span>
+            <canvas id="chartApproval"></canvas>
+            <p style="font-size: 0.8rem; margin-top: 10px;"><strong>What Copilot can do:</strong> "Generate a chart showing approval rates by sector."</p>
+        </div>
+
+        <div class="card">
+            <h3>API Latency Distribution</h3>
+            <span class="source">Source: Synthetic OPL-aligned training dataset (OPL_OAM_API_OPERATIONS_TRAINING.csv)</span>
+            <canvas id="chartLatency"></canvas>
+            <p style="font-size: 0.8rem; margin-top: 10px;"><strong>What Copilot can do:</strong> "Identify vendors with the highest average latency."</p>
+        </div>
+        
+        <div class="card">
+            <h3>Monthly Cash Inflow vs Outflow</h3>
+            <span class="source">Source: Synthetic OPL-aligned training dataset (OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv)</span>
+            <canvas id="chartCashflow"></canvas>
+            <p style="font-size: 0.8rem; margin-top: 10px;"><strong>What Copilot can do:</strong> "Highlight months where outflow exceeds inflow."</p>
+        </div>
+    </div>
+
+    <script>
+        // Chart 1: Approval Trend
+        const ctx1 = document.getElementById('chartApproval').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['Manufacturing', 'Retail', 'Services', 'Technology', 'Agriculture'],
+                datasets: [{
+                    label: 'Approved Applications',
+                    data: [45, 22, 60, 35, 15],
+                    backgroundColor: '#1A3C6D'
+                }, {
+                    label: 'Rejected Applications',
+                    data: [10, 15, 12, 5, 8],
+                    backgroundColor: '#F29F05'
+                }]
+            },
+            options: { responsive: true }
+        });
+
+        // Chart 2: API Latency
+        const ctx2 = document.getElementById('chartLatency').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['Vendor_A', 'Vendor_B', 'Vendor_C', 'Vendor_D'],
+                datasets: [{
+                    label: 'Avg Latency (ms)',
+                    data: [120, 850, 200, 150],
+                    borderColor: '#F29F05',
+                    fill: false,
+                    tension: 0.1
+                }]
+            },
+            options: { responsive: true }
+        });
+
+        // Chart 3: Cashflow
+        const ctx3 = document.getElementById('chartCashflow').getContext('2d');
+        new Chart(ctx3, {
+            type: 'doughnut',
+            data: {
+                labels: ['Business Revenue', 'Vendor Payment', 'GST', 'EMI'],
+                datasets: [{
+                    data: [300000, 150000, 45000, 30000],
+                    backgroundColor: ['#0B1D3A', '#1A3C6D', '#F29F05', '#C0C0C0']
+                }]
+            },
+            options: { responsive: true }
+        });
+    </script>
+</body>
+</html>

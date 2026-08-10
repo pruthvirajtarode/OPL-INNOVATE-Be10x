@@ -452,3 +452,15 @@ p {
 
 /* Helpers */
 .hidden { display: none !important; }
+
+/* OPL Specific Styles appended */
+.source-badge {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.source-badge.public { background: #10b981; color: #fff; }
+.source-badge.synthetic { background: #F29F05; color: #0B1D3A; }
+.source-badge.illustrative { background: #0078d4; color: #fff; }

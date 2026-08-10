@@ -1,0 +1,1001 @@
+Transaction_ID,Application_ID,Transaction_Date,Account_Type,Transaction_Type,Description,Amount,Debit_Credit,Category,Counterparty_Type,Balance,GST_Related,EMI_Related,Salary_or_Business_Income,Recurring,Anomaly_Flag,Round_Trip_Flag,Bounce_Flag
+TXN000001,APP00048,2024-02-01,Current,NEFT,Transfer,42905,Debit,Business Revenue,Vendor,107095,No,No,Yes,No,No,No,No
+TXN000002,APP00007,2024-02-01,Current,NEFT,Transfer,15628,Debit,Rent,Vendor,91467,No,No,No,No,No,No,No
+TXN000003,APP00028,2024-02-01,Current,NEFT,Transfer,36741,Debit,Salary,Vendor,54726,No,No,Yes,No,No,No,No
+TXN000004,APP00033,2024-02-01,Current,NEFT,Transfer,7140,Debit,Vendor Payment,Vendor,47586,No,No,No,No,No,No,No
+TXN000005,APP00042,2024-02-01,Current,NEFT,Transfer,37781,Debit,Rent,Vendor,9805,No,No,No,No,No,No,No
+TXN000006,APP00038,2024-02-01,Current,NEFT,Transfer,28493,Debit,EMI,Vendor,-18688,No,Yes,No,No,No,No,No
+TXN000007,APP00028,2024-02-01,Current,NEFT,Transfer,1425,Debit,Rent,Vendor,-20113,No,No,No,No,No,No,No
+TXN000008,APP00022,2024-02-01,Current,NEFT,Transfer,11189,Debit,Utilities,Vendor,-31302,No,No,No,No,No,No,No
+TXN000009,APP00023,2024-02-01,Current,NEFT,Transfer,25898,Debit,GST,Vendor,-57200,Yes,No,No,No,No,No,No
+TXN000010,APP00008,2024-02-01,Current,NEFT,Transfer,3847,Credit,Salary,Vendor,-53353,No,No,Yes,Yes,No,No,No
+TXN000011,APP00019,2024-02-01,Current,NEFT,Transfer,25807,Debit,Salary,Vendor,-79160,No,No,Yes,Yes,No,No,No
+TXN000012,APP00013,2024-02-01,Current,NEFT,Transfer,41535,Credit,Salary,Vendor,-37625,No,No,Yes,No,No,No,No
+TXN000013,APP00019,2024-02-01,Current,NEFT,Transfer,4003,Debit,Utilities,Vendor,-41628,No,No,No,Yes,No,No,No
+TXN000014,APP00018,2024-02-01,Current,NEFT,Transfer,16256,Debit,EMI,Vendor,-57884,No,Yes,No,No,No,No,No
+TXN000015,APP00023,2024-02-01,Current,NEFT,Transfer,24909,Debit,GST,Vendor,-82793,Yes,No,No,No,No,No,No
+TXN000016,APP00041,2024-02-01,Current,NEFT,Transfer,18496,Debit,Salary,Vendor,-101289,No,No,Yes,No,No,No,No
+TXN000017,APP00030,2024-02-01,Current,NEFT,Transfer,48784,Debit,Vendor Payment,Vendor,-150073,No,No,No,No,Yes,No,No
+TXN000018,APP00021,2024-02-01,Current,NEFT,Transfer,42943,Debit,Rent,Vendor,-193016,No,No,No,Yes,No,No,No
+TXN000019,APP00003,2024-02-01,Current,NEFT,Transfer,4665,Debit,Utilities,Vendor,-197681,No,No,No,Yes,No,No,No
+TXN000020,APP00014,2024-02-01,Current,NEFT,Transfer,27290,Credit,Business Revenue,Vendor,-170391,No,No,Yes,Yes,No,No,No
+TXN000021,APP00042,2024-02-01,Current,NEFT,Transfer,38170,Credit,Vendor Payment,Vendor,-132221,No,No,No,No,No,No,No
+TXN000022,APP00017,2024-02-01,Current,NEFT,Transfer,43129,Credit,Vendor Payment,Vendor,-89092,No,No,No,No,No,No,No
+TXN000023,APP00038,2024-02-01,Current,NEFT,Transfer,49823,Credit,Rent,Vendor,-39269,No,No,No,No,No,No,No
+TXN000024,APP00033,2024-02-01,Current,NEFT,Transfer,24723,Debit,Vendor Payment,Vendor,-63992,No,No,No,No,No,No,No
+TXN000025,APP00041,2024-02-01,Current,NEFT,Transfer,4087,Debit,Vendor Payment,Vendor,-68079,No,No,No,No,No,No,No
+TXN000026,APP00005,2024-02-01,Current,NEFT,Transfer,45596,Credit,Salary,Vendor,-22483,No,No,Yes,No,No,No,No
+TXN000027,APP00001,2024-02-01,Current,NEFT,Transfer,31674,Credit,Salary,Vendor,9191,No,No,Yes,No,No,No,No
+TXN000028,APP00042,2024-02-01,Current,NEFT,Transfer,8507,Credit,Utilities,Vendor,17698,No,No,No,No,No,No,No
+TXN000029,APP00030,2024-02-01,Current,NEFT,Transfer,20234,Credit,Vendor Payment,Vendor,37932,No,No,No,No,No,No,No
+TXN000030,APP00049,2024-02-01,Current,NEFT,Transfer,48323,Credit,Salary,Vendor,86255,No,No,Yes,No,Yes,No,No
+TXN000031,APP00041,2024-02-01,Current,NEFT,Transfer,41979,Credit,Utilities,Vendor,128234,No,No,No,No,No,No,No
+TXN000032,APP00049,2024-02-01,Current,NEFT,Transfer,14035,Debit,GST,Vendor,114199,Yes,No,No,No,No,No,No
+TXN000033,APP00021,2024-02-01,Current,NEFT,Transfer,35757,Debit,Salary,Vendor,78442,No,No,Yes,No,No,No,No
+TXN000034,APP00020,2024-02-01,Current,NEFT,Transfer,8331,Credit,Utilities,Vendor,86773,No,No,No,No,No,No,No
+TXN000035,APP00047,2024-02-01,Current,NEFT,Transfer,16785,Debit,Business Revenue,Vendor,69988,No,No,Yes,No,No,No,No
+TXN000036,APP00043,2024-02-01,Current,NEFT,Transfer,5535,Debit,Vendor Payment,Vendor,64453,No,No,No,No,No,No,No
+TXN000037,APP00034,2024-02-01,Current,NEFT,Transfer,37031,Debit,GST,Vendor,27422,Yes,No,No,Yes,No,No,No
+TXN000038,APP00049,2024-02-01,Current,NEFT,Transfer,28730,Debit,Salary,Vendor,-1308,No,No,Yes,No,No,No,No
+TXN000039,APP00043,2024-02-01,Current,NEFT,Transfer,14182,Credit,EMI,Vendor,12874,No,Yes,No,No,No,No,No
+TXN000040,APP00016,2024-02-01,Current,NEFT,Transfer,29711,Credit,Business Revenue,Vendor,42585,No,No,Yes,No,No,No,No
+TXN000041,APP00036,2024-02-01,Current,NEFT,Transfer,23156,Debit,Salary,Vendor,19429,No,No,Yes,No,No,No,No
+TXN000042,APP00046,2024-02-01,Current,NEFT,Transfer,15432,Debit,Business Revenue,Vendor,3997,No,No,Yes,No,No,No,No
+TXN000043,APP00022,2024-02-01,Current,NEFT,Transfer,16003,Debit,Business Revenue,Vendor,-12006,No,No,Yes,No,No,No,No
+TXN000044,APP00032,2024-02-01,Current,NEFT,Transfer,16597,Credit,Rent,Vendor,4591,No,No,No,No,No,No,No
+TXN000045,APP00031,2024-02-01,Current,NEFT,Transfer,9671,Credit,Vendor Payment,Vendor,14262,No,No,No,Yes,No,No,No
+TXN000046,APP00043,2024-02-01,Current,NEFT,Transfer,13478,Debit,Business Revenue,Vendor,784,No,No,Yes,No,No,No,No
+TXN000047,APP00047,2024-02-01,Current,NEFT,Transfer,28759,Credit,EMI,Vendor,29543,No,Yes,No,No,No,No,No
+TXN000048,APP00026,2024-02-01,Current,NEFT,Transfer,43824,Debit,Business Revenue,Vendor,-14281,No,No,Yes,No,No,No,No
+TXN000049,APP00013,2024-02-01,Current,NEFT,Transfer,8161,Debit,Vendor Payment,Vendor,-22442,No,No,No,No,No,No,No
+TXN000050,APP00018,2024-02-01,Current,NEFT,Transfer,10186,Credit,Vendor Payment,Vendor,-12256,No,No,No,No,No,No,No
+TXN000051,APP00036,2024-02-01,Current,NEFT,Transfer,5940,Credit,Utilities,Vendor,-6316,No,No,No,No,No,No,No
+TXN000052,APP00049,2024-02-01,Current,NEFT,Transfer,43738,Debit,Business Revenue,Vendor,-50054,No,No,Yes,Yes,No,No,No
+TXN000053,APP00031,2024-02-01,Current,NEFT,Transfer,11899,Credit,EMI,Vendor,-38155,No,Yes,No,No,No,No,No
+TXN000054,APP00025,2024-02-01,Current,NEFT,Transfer,27282,Debit,Vendor Payment,Vendor,-65437,No,No,No,No,No,No,No
+TXN000055,APP00030,2024-02-01,Current,NEFT,Transfer,26586,Credit,Utilities,Vendor,-38851,No,No,No,No,No,No,No
+TXN000056,APP00013,2024-02-01,Current,NEFT,Transfer,46651,Credit,Vendor Payment,Vendor,7800,No,No,No,No,Yes,No,No
+TXN000057,APP00021,2024-02-01,Current,NEFT,Transfer,38957,Debit,Rent,Vendor,-31157,No,No,No,No,No,No,No
+TXN000058,APP00034,2024-02-01,Current,NEFT,Transfer,39284,Credit,Salary,Vendor,8127,No,No,Yes,No,No,No,No
+TXN000059,APP00012,2024-02-01,Current,NEFT,Transfer,34281,Debit,Utilities,Vendor,-26154,No,No,No,No,No,No,No
+TXN000060,APP00008,2024-02-01,Current,NEFT,Transfer,5453,Debit,EMI,Vendor,-31607,No,Yes,No,Yes,No,No,No
+TXN000061,APP00039,2024-02-01,Current,NEFT,Transfer,38334,Debit,Salary,Vendor,-69941,No,No,Yes,No,No,No,No
+TXN000062,APP00038,2024-02-01,Current,NEFT,Transfer,6372,Credit,Rent,Vendor,-63569,No,No,No,No,No,No,No
+TXN000063,APP00043,2024-02-01,Current,NEFT,Transfer,21733,Credit,Vendor Payment,Vendor,-41836,No,No,No,No,No,No,No
+TXN000064,APP00009,2024-02-01,Current,NEFT,Transfer,16642,Credit,EMI,Vendor,-25194,No,Yes,No,No,No,No,No
+TXN000065,APP00049,2024-02-01,Current,NEFT,Transfer,20660,Credit,GST,Vendor,-4534,Yes,No,No,Yes,No,No,No
+TXN000066,APP00037,2024-02-01,Current,NEFT,Transfer,1610,Credit,Salary,Vendor,-2924,No,No,Yes,Yes,No,No,No
+TXN000067,APP00017,2024-02-01,Current,NEFT,Transfer,5801,Debit,Salary,Vendor,-8725,No,No,Yes,No,No,No,No
+TXN000068,APP00024,2024-02-01,Current,NEFT,Transfer,23872,Debit,Vendor Payment,Vendor,-32597,No,No,No,No,No,No,No
+TXN000069,APP00042,2024-02-01,Current,NEFT,Transfer,29716,Credit,Salary,Vendor,-2881,No,No,Yes,No,No,No,No
+TXN000070,APP00007,2024-02-01,Current,NEFT,Transfer,44769,Credit,Rent,Vendor,41888,No,No,No,Yes,No,No,No
+TXN000071,APP00007,2024-02-01,Current,NEFT,Transfer,9800,Credit,Business Revenue,Vendor,51688,No,No,Yes,No,No,No,No
+TXN000072,APP00039,2024-02-01,Current,NEFT,Transfer,11187,Credit,GST,Vendor,62875,Yes,No,No,No,No,No,No
+TXN000073,APP00041,2024-02-01,Current,NEFT,Transfer,23471,Debit,Rent,Vendor,39404,No,No,No,Yes,No,No,No
+TXN000074,APP00004,2024-02-01,Current,NEFT,Transfer,34122,Credit,GST,Vendor,73526,Yes,No,No,No,No,No,No
+TXN000075,APP00001,2024-02-01,Current,NEFT,Transfer,28759,Credit,Business Revenue,Vendor,102285,No,No,Yes,No,No,No,No
+TXN000076,APP00048,2024-02-01,Current,NEFT,Transfer,9573,Credit,Vendor Payment,Vendor,111858,No,No,No,No,No,No,No
+TXN000077,APP00001,2024-02-01,Current,NEFT,Transfer,47246,Credit,Salary,Vendor,159104,No,No,Yes,No,Yes,No,No
+TXN000078,APP00003,2024-02-01,Current,NEFT,Transfer,46286,Debit,Salary,Vendor,112818,No,No,Yes,Yes,No,No,No
+TXN000079,APP00003,2024-02-01,Current,NEFT,Transfer,10705,Credit,Vendor Payment,Vendor,123523,No,No,No,No,No,No,No
+TXN000080,APP00044,2024-02-01,Current,NEFT,Transfer,3614,Credit,Vendor Payment,Vendor,127137,No,No,No,No,No,No,No
+TXN000081,APP00036,2024-02-01,Current,NEFT,Transfer,7736,Credit,Utilities,Vendor,134873,No,No,No,Yes,No,No,No
+TXN000082,APP00011,2024-02-01,Current,NEFT,Transfer,27632,Debit,Vendor Payment,Vendor,107241,No,No,No,Yes,No,No,No
+TXN000083,APP00012,2024-02-01,Current,NEFT,Transfer,12603,Credit,Business Revenue,Vendor,119844,No,No,Yes,No,No,No,No
+TXN000084,APP00043,2024-02-01,Current,NEFT,Transfer,22770,Credit,Utilities,Vendor,142614,No,No,No,Yes,No,No,No
+TXN000085,APP00045,2024-02-01,Current,NEFT,Transfer,17263,Credit,Vendor Payment,Vendor,159877,No,No,No,No,No,No,No
+TXN000086,APP00013,2024-02-01,Current,NEFT,Transfer,3537,Credit,Vendor Payment,Vendor,163414,No,No,No,Yes,No,No,No
+TXN000087,APP00015,2024-02-01,Current,NEFT,Transfer,31166,Credit,GST,Vendor,194580,Yes,No,No,No,No,No,No
+TXN000088,APP00022,2024-02-01,Current,NEFT,Transfer,44255,Debit,EMI,Vendor,150325,No,Yes,No,No,No,No,No
+TXN000089,APP00042,2024-02-01,Current,NEFT,Transfer,5549,Credit,GST,Vendor,155874,Yes,No,No,No,No,No,No
+TXN000090,APP00008,2024-02-01,Current,NEFT,Transfer,45532,Credit,Business Revenue,Vendor,201406,No,No,Yes,Yes,No,No,No
+TXN000091,APP00007,2024-02-01,Current,NEFT,Transfer,39049,Credit,Business Revenue,Vendor,240455,No,No,Yes,No,No,No,No
+TXN000092,APP00039,2024-02-01,Current,NEFT,Transfer,23654,Credit,EMI,Vendor,264109,No,Yes,No,Yes,No,No,No
+TXN000093,APP00013,2024-02-01,Current,NEFT,Transfer,8578,Credit,Salary,Vendor,272687,No,No,Yes,No,No,No,No
+TXN000094,APP00034,2024-02-01,Current,NEFT,Transfer,47450,Credit,Business Revenue,Vendor,320137,No,No,Yes,Yes,No,No,No
+TXN000095,APP00028,2024-02-01,Current,NEFT,Transfer,48148,Debit,GST,Vendor,271989,Yes,No,No,No,No,No,No
+TXN000096,APP00008,2024-02-01,Current,NEFT,Transfer,22639,Credit,Rent,Vendor,294628,No,No,No,No,No,No,No
+TXN000097,APP00027,2024-02-01,Current,NEFT,Transfer,20681,Credit,Rent,Vendor,315309,No,No,No,No,No,No,No
+TXN000098,APP00009,2024-02-01,Current,NEFT,Transfer,46692,Credit,Salary,Vendor,362001,No,No,Yes,No,No,No,No
+TXN000099,APP00037,2024-02-01,Current,NEFT,Transfer,25847,Debit,Salary,Vendor,336154,No,No,Yes,No,No,No,No
+TXN000100,APP00019,2024-02-01,Current,NEFT,Transfer,36909,Debit,GST,Vendor,299245,Yes,No,No,No,No,No,No
+TXN000101,APP00029,2024-02-01,Current,NEFT,Transfer,39009,Credit,EMI,Vendor,338254,No,Yes,No,No,No,No,No
+TXN000102,APP00048,2024-02-01,Current,NEFT,Transfer,15005,Credit,Utilities,Vendor,353259,No,No,No,No,No,No,No
+TXN000103,APP00043,2024-02-01,Current,NEFT,Transfer,6557,Credit,Salary,Vendor,359816,No,No,Yes,No,No,No,No
+TXN000104,APP00049,2024-02-01,Current,NEFT,Transfer,22966,Debit,Utilities,Vendor,336850,No,No,No,No,No,No,No
+TXN000105,APP00013,2024-02-01,Current,NEFT,Transfer,21343,Debit,Utilities,Vendor,315507,No,No,No,No,No,No,No
+TXN000106,APP00040,2024-02-01,Current,NEFT,Transfer,4028,Debit,EMI,Vendor,311479,No,Yes,No,Yes,No,No,No
+TXN000107,APP00041,2024-02-01,Current,NEFT,Transfer,5772,Credit,EMI,Vendor,317251,No,Yes,No,No,No,No,No
+TXN000108,APP00026,2024-02-01,Current,NEFT,Transfer,48077,Credit,EMI,Vendor,365328,No,Yes,No,No,No,No,No
+TXN000109,APP00028,2024-02-01,Current,NEFT,Transfer,1363,Debit,Utilities,Vendor,363965,No,No,No,No,No,No,No
+TXN000110,APP00036,2024-02-01,Current,NEFT,Transfer,46607,Credit,Business Revenue,Vendor,410572,No,No,Yes,No,No,No,No
+TXN000111,APP00030,2024-02-01,Current,NEFT,Transfer,30914,Debit,Utilities,Vendor,379658,No,No,No,No,No,No,No
+TXN000112,APP00029,2024-02-01,Current,NEFT,Transfer,37629,Credit,Utilities,Vendor,417287,No,No,No,No,No,No,No
+TXN000113,APP00036,2024-02-01,Current,NEFT,Transfer,48138,Credit,Utilities,Vendor,465425,No,No,No,No,No,No,No
+TXN000114,APP00049,2024-02-01,Current,NEFT,Transfer,32108,Credit,GST,Vendor,497533,Yes,No,No,No,No,No,No
+TXN000115,APP00050,2024-02-01,Current,NEFT,Transfer,42789,Credit,Utilities,Vendor,540322,No,No,No,No,No,No,No
+TXN000116,APP00029,2024-02-01,Current,NEFT,Transfer,42074,Debit,GST,Vendor,498248,Yes,No,No,No,No,No,No
+TXN000117,APP00022,2024-02-01,Current,NEFT,Transfer,19725,Debit,GST,Vendor,478523,Yes,No,No,No,No,No,No
+TXN000118,APP00010,2024-02-01,Current,NEFT,Transfer,36399,Debit,Vendor Payment,Vendor,442124,No,No,No,No,No,No,No
+TXN000119,APP00014,2024-02-01,Current,NEFT,Transfer,46478,Debit,Rent,Vendor,395646,No,No,No,No,No,No,No
+TXN000120,APP00004,2024-02-01,Current,NEFT,Transfer,36560,Credit,EMI,Vendor,432206,No,Yes,No,No,No,No,No
+TXN000121,APP00038,2024-02-01,Current,NEFT,Transfer,28534,Credit,Utilities,Vendor,460740,No,No,No,Yes,No,No,No
+TXN000122,APP00001,2024-02-01,Current,NEFT,Transfer,2280,Credit,EMI,Vendor,463020,No,Yes,No,Yes,No,No,No
+TXN000123,APP00027,2024-02-01,Current,NEFT,Transfer,20569,Credit,Utilities,Vendor,483589,No,No,No,No,No,No,No
+TXN000124,APP00015,2024-02-01,Current,NEFT,Transfer,49144,Debit,EMI,Vendor,434445,No,Yes,No,No,No,No,No
+TXN000125,APP00044,2024-02-01,Current,NEFT,Transfer,26484,Credit,Rent,Vendor,460929,No,No,No,No,No,No,No
+TXN000126,APP00030,2024-02-01,Current,NEFT,Transfer,48459,Debit,Utilities,Vendor,412470,No,No,No,Yes,Yes,No,No
+TXN000127,APP00038,2024-02-01,Current,NEFT,Transfer,36004,Debit,EMI,Vendor,376466,No,Yes,No,No,No,No,No
+TXN000128,APP00028,2024-02-01,Current,NEFT,Transfer,2776,Debit,Rent,Vendor,373690,No,No,No,No,No,No,No
+TXN000129,APP00017,2024-02-01,Current,NEFT,Transfer,31257,Debit,Business Revenue,Vendor,342433,No,No,Yes,No,No,No,No
+TXN000130,APP00022,2024-02-01,Current,NEFT,Transfer,14871,Credit,GST,Vendor,357304,Yes,No,No,No,No,No,No
+TXN000131,APP00027,2024-02-01,Current,NEFT,Transfer,25846,Credit,Utilities,Vendor,383150,No,No,No,No,No,No,No
+TXN000132,APP00048,2024-02-01,Current,NEFT,Transfer,6367,Credit,Business Revenue,Vendor,389517,No,No,Yes,No,No,No,No
+TXN000133,APP00005,2024-02-01,Current,NEFT,Transfer,23935,Debit,Rent,Vendor,365582,No,No,No,No,No,No,No
+TXN000134,APP00002,2024-02-01,Current,NEFT,Transfer,43713,Debit,Utilities,Vendor,321869,No,No,No,Yes,No,No,No
+TXN000135,APP00010,2024-02-01,Current,NEFT,Transfer,14065,Debit,Salary,Vendor,307804,No,No,Yes,No,No,No,No
+TXN000136,APP00014,2024-02-01,Current,NEFT,Transfer,32035,Debit,Salary,Vendor,275769,No,No,Yes,No,No,No,No
+TXN000137,APP00039,2024-02-01,Current,NEFT,Transfer,17793,Credit,Vendor Payment,Vendor,293562,No,No,No,No,No,No,No
+TXN000138,APP00011,2024-02-01,Current,NEFT,Transfer,48078,Debit,Utilities,Vendor,245484,No,No,No,Yes,No,No,No
+TXN000139,APP00044,2024-02-01,Current,NEFT,Transfer,2682,Credit,Salary,Vendor,248166,No,No,Yes,Yes,No,No,No
+TXN000140,APP00013,2024-02-01,Current,NEFT,Transfer,25596,Credit,Rent,Vendor,273762,No,No,No,No,No,No,No
+TXN000141,APP00045,2024-02-01,Current,NEFT,Transfer,46260,Debit,Business Revenue,Vendor,227502,No,No,Yes,No,No,No,No
+TXN000142,APP00037,2024-02-01,Current,NEFT,Transfer,40348,Debit,Utilities,Vendor,187154,No,No,No,No,No,No,No
+TXN000143,APP00024,2024-02-01,Current,NEFT,Transfer,23754,Credit,Rent,Vendor,210908,No,No,No,No,No,No,No
+TXN000144,APP00027,2024-02-01,Current,NEFT,Transfer,43437,Credit,Business Revenue,Vendor,254345,No,No,Yes,Yes,No,No,No
+TXN000145,APP00041,2024-02-01,Current,NEFT,Transfer,7916,Credit,GST,Vendor,262261,Yes,No,No,Yes,No,No,No
+TXN000146,APP00012,2024-02-01,Current,NEFT,Transfer,31129,Debit,EMI,Vendor,231132,No,Yes,No,No,No,No,No
+TXN000147,APP00035,2024-02-01,Current,NEFT,Transfer,43628,Credit,Salary,Vendor,274760,No,No,Yes,No,No,No,No
+TXN000148,APP00047,2024-02-01,Current,NEFT,Transfer,31465,Credit,Utilities,Vendor,306225,No,No,No,No,No,No,No
+TXN000149,APP00006,2024-02-01,Current,NEFT,Transfer,22122,Debit,Utilities,Vendor,284103,No,No,No,No,No,No,No
+TXN000150,APP00030,2024-02-01,Current,NEFT,Transfer,30543,Debit,Utilities,Vendor,253560,No,No,No,No,No,No,No
+TXN000151,APP00002,2024-02-01,Current,NEFT,Transfer,44790,Credit,GST,Vendor,298350,Yes,No,No,No,No,No,No
+TXN000152,APP00014,2024-02-01,Current,NEFT,Transfer,22300,Debit,EMI,Vendor,276050,No,Yes,No,No,No,No,No
+TXN000153,APP00039,2024-02-01,Current,NEFT,Transfer,17931,Credit,GST,Vendor,293981,Yes,No,No,No,No,No,No
+TXN000154,APP00013,2024-02-01,Current,NEFT,Transfer,19105,Debit,Salary,Vendor,274876,No,No,Yes,No,No,No,No
+TXN000155,APP00036,2024-02-01,Current,NEFT,Transfer,48190,Credit,EMI,Vendor,323066,No,Yes,No,No,No,No,No
+TXN000156,APP00002,2024-02-01,Current,NEFT,Transfer,43329,Credit,EMI,Vendor,366395,No,Yes,No,No,No,No,No
+TXN000157,APP00016,2024-02-01,Current,NEFT,Transfer,15522,Credit,Rent,Vendor,381917,No,No,No,No,No,No,No
+TXN000158,APP00036,2024-02-01,Current,NEFT,Transfer,39112,Credit,EMI,Vendor,421029,No,Yes,No,No,No,No,No
+TXN000159,APP00045,2024-02-01,Current,NEFT,Transfer,28885,Credit,GST,Vendor,449914,Yes,No,No,No,No,No,No
+TXN000160,APP00008,2024-02-01,Current,NEFT,Transfer,21094,Credit,Vendor Payment,Vendor,471008,No,No,No,No,No,No,No
+TXN000161,APP00035,2024-02-01,Current,NEFT,Transfer,21679,Debit,Rent,Vendor,449329,No,No,No,Yes,No,No,No
+TXN000162,APP00014,2024-02-01,Current,NEFT,Transfer,46230,Debit,Vendor Payment,Vendor,403099,No,No,No,No,No,No,No
+TXN000163,APP00013,2024-02-01,Current,NEFT,Transfer,39639,Credit,Business Revenue,Vendor,442738,No,No,Yes,No,No,No,No
+TXN000164,APP00001,2024-02-01,Current,NEFT,Transfer,24650,Debit,GST,Vendor,418088,Yes,No,No,No,No,No,No
+TXN000165,APP00004,2024-02-01,Current,NEFT,Transfer,9295,Credit,Business Revenue,Vendor,427383,No,No,Yes,No,No,No,No
+TXN000166,APP00049,2024-02-01,Current,NEFT,Transfer,46705,Debit,Rent,Vendor,380678,No,No,No,No,No,No,No
+TXN000167,APP00031,2024-02-01,Current,NEFT,Transfer,38621,Credit,EMI,Vendor,419299,No,Yes,No,No,No,No,No
+TXN000168,APP00031,2024-02-01,Current,NEFT,Transfer,13082,Debit,GST,Vendor,406217,Yes,No,No,No,No,No,No
+TXN000169,APP00005,2024-02-01,Current,NEFT,Transfer,5282,Credit,EMI,Vendor,411499,No,Yes,No,No,No,No,No
+TXN000170,APP00010,2024-02-01,Current,NEFT,Transfer,45987,Debit,Vendor Payment,Vendor,365512,No,No,No,Yes,Yes,No,No
+TXN000171,APP00036,2024-02-01,Current,NEFT,Transfer,6582,Debit,Business Revenue,Vendor,358930,No,No,Yes,No,No,No,No
+TXN000172,APP00034,2024-02-01,Current,NEFT,Transfer,40735,Debit,Utilities,Vendor,318195,No,No,No,No,No,No,No
+TXN000173,APP00038,2024-02-01,Current,NEFT,Transfer,30014,Credit,Utilities,Vendor,348209,No,No,No,Yes,No,No,No
+TXN000174,APP00048,2024-02-01,Current,NEFT,Transfer,21013,Debit,Salary,Vendor,327196,No,No,Yes,No,No,No,No
+TXN000175,APP00043,2024-02-01,Current,NEFT,Transfer,14617,Debit,GST,Vendor,312579,Yes,No,No,No,No,No,No
+TXN000176,APP00005,2024-02-01,Current,NEFT,Transfer,16719,Debit,Salary,Vendor,295860,No,No,Yes,No,No,No,No
+TXN000177,APP00039,2024-02-01,Current,NEFT,Transfer,27772,Credit,Rent,Vendor,323632,No,No,No,No,No,No,No
+TXN000178,APP00046,2024-02-01,Current,NEFT,Transfer,3139,Debit,GST,Vendor,320493,Yes,No,No,No,No,No,No
+TXN000179,APP00015,2024-02-01,Current,NEFT,Transfer,30755,Debit,Rent,Vendor,289738,No,No,No,Yes,No,No,No
+TXN000180,APP00008,2024-02-01,Current,NEFT,Transfer,41963,Debit,EMI,Vendor,247775,No,Yes,No,No,No,No,No
+TXN000181,APP00010,2024-02-01,Current,NEFT,Transfer,43443,Debit,GST,Vendor,204332,Yes,No,No,No,No,No,No
+TXN000182,APP00048,2024-02-01,Current,NEFT,Transfer,11873,Credit,Salary,Vendor,216205,No,No,Yes,Yes,No,No,No
+TXN000183,APP00030,2024-02-01,Current,NEFT,Transfer,19914,Credit,Business Revenue,Vendor,236119,No,No,Yes,No,No,No,No
+TXN000184,APP00033,2024-02-01,Current,NEFT,Transfer,46857,Credit,GST,Vendor,282976,Yes,No,No,No,No,No,No
+TXN000185,APP00048,2024-02-01,Current,NEFT,Transfer,40192,Debit,EMI,Vendor,242784,No,Yes,No,No,No,No,No
+TXN000186,APP00015,2024-02-01,Current,NEFT,Transfer,17408,Debit,Business Revenue,Vendor,225376,No,No,Yes,Yes,No,No,No
+TXN000187,APP00044,2024-02-01,Current,NEFT,Transfer,38696,Debit,Utilities,Vendor,186680,No,No,No,Yes,No,No,No
+TXN000188,APP00049,2024-02-01,Current,NEFT,Transfer,38764,Debit,Utilities,Vendor,147916,No,No,No,No,No,No,No
+TXN000189,APP00012,2024-02-01,Current,NEFT,Transfer,35010,Credit,GST,Vendor,182926,Yes,No,No,Yes,No,No,No
+TXN000190,APP00031,2024-02-01,Current,NEFT,Transfer,29566,Credit,Business Revenue,Vendor,212492,No,No,Yes,No,No,No,No
+TXN000191,APP00007,2024-02-01,Current,NEFT,Transfer,22843,Credit,Rent,Vendor,235335,No,No,No,Yes,No,No,No
+TXN000192,APP00032,2024-02-01,Current,NEFT,Transfer,22614,Credit,Rent,Vendor,257949,No,No,No,No,No,No,No
+TXN000193,APP00006,2024-02-01,Current,NEFT,Transfer,27244,Debit,EMI,Vendor,230705,No,Yes,No,No,No,No,No
+TXN000194,APP00026,2024-02-01,Current,NEFT,Transfer,22186,Debit,Utilities,Vendor,208519,No,No,No,Yes,No,No,No
+TXN000195,APP00004,2024-02-01,Current,NEFT,Transfer,1075,Credit,EMI,Vendor,209594,No,Yes,No,No,No,No,No
+TXN000196,APP00029,2024-02-01,Current,NEFT,Transfer,24709,Credit,Rent,Vendor,234303,No,No,No,No,No,No,No
+TXN000197,APP00009,2024-02-01,Current,NEFT,Transfer,14340,Credit,Salary,Vendor,248643,No,No,Yes,Yes,No,No,No
+TXN000198,APP00002,2024-02-01,Current,NEFT,Transfer,29712,Credit,Business Revenue,Vendor,278355,No,No,Yes,Yes,No,No,No
+TXN000199,APP00011,2024-02-01,Current,NEFT,Transfer,40903,Debit,Rent,Vendor,237452,No,No,No,No,No,No,No
+TXN000200,APP00015,2024-02-01,Current,NEFT,Transfer,1896,Credit,Business Revenue,Vendor,239348,No,No,Yes,Yes,No,No,No
+TXN000201,APP00042,2024-02-01,Current,NEFT,Transfer,8435,Credit,Business Revenue,Vendor,247783,No,No,Yes,Yes,No,No,No
+TXN000202,APP00046,2024-02-01,Current,NEFT,Transfer,33661,Credit,Salary,Vendor,281444,No,No,Yes,No,No,No,No
+TXN000203,APP00030,2024-02-01,Current,NEFT,Transfer,32621,Credit,Vendor Payment,Vendor,314065,No,No,No,No,No,No,No
+TXN000204,APP00033,2024-02-01,Current,NEFT,Transfer,26138,Debit,Salary,Vendor,287927,No,No,Yes,No,No,No,No
+TXN000205,APP00050,2024-02-01,Current,NEFT,Transfer,9946,Debit,GST,Vendor,277981,Yes,No,No,No,No,No,No
+TXN000206,APP00033,2024-02-01,Current,NEFT,Transfer,28193,Credit,Utilities,Vendor,306174,No,No,No,No,No,No,No
+TXN000207,APP00020,2024-02-01,Current,NEFT,Transfer,1168,Credit,Rent,Vendor,307342,No,No,No,Yes,No,No,No
+TXN000208,APP00010,2024-02-01,Current,NEFT,Transfer,39005,Credit,Utilities,Vendor,346347,No,No,No,No,No,No,No
+TXN000209,APP00036,2024-02-01,Current,NEFT,Transfer,32741,Credit,GST,Vendor,379088,Yes,No,No,No,No,No,No
+TXN000210,APP00013,2024-02-01,Current,NEFT,Transfer,25720,Credit,GST,Vendor,404808,Yes,No,No,Yes,No,No,No
+TXN000211,APP00050,2024-02-01,Current,NEFT,Transfer,16650,Credit,Vendor Payment,Vendor,421458,No,No,No,No,No,No,No
+TXN000212,APP00025,2024-02-01,Current,NEFT,Transfer,21852,Credit,Rent,Vendor,443310,No,No,No,No,No,No,No
+TXN000213,APP00003,2024-02-01,Current,NEFT,Transfer,44495,Debit,EMI,Vendor,398815,No,Yes,No,No,No,No,No
+TXN000214,APP00007,2024-02-01,Current,NEFT,Transfer,39678,Credit,Utilities,Vendor,438493,No,No,No,Yes,No,No,No
+TXN000215,APP00030,2024-02-01,Current,NEFT,Transfer,29855,Debit,Salary,Vendor,408638,No,No,Yes,No,No,No,No
+TXN000216,APP00042,2024-02-01,Current,NEFT,Transfer,10447,Credit,Utilities,Vendor,419085,No,No,No,Yes,No,No,No
+TXN000217,APP00017,2024-02-01,Current,NEFT,Transfer,5903,Credit,Utilities,Vendor,424988,No,No,No,No,No,No,No
+TXN000218,APP00006,2024-02-01,Current,NEFT,Transfer,46397,Credit,Rent,Vendor,471385,No,No,No,Yes,No,No,No
+TXN000219,APP00041,2024-02-01,Current,NEFT,Transfer,35971,Credit,GST,Vendor,507356,Yes,No,No,No,No,No,No
+TXN000220,APP00005,2024-02-01,Current,NEFT,Transfer,32978,Debit,Salary,Vendor,474378,No,No,Yes,No,No,No,No
+TXN000221,APP00048,2024-02-01,Current,NEFT,Transfer,45852,Credit,Vendor Payment,Vendor,520230,No,No,No,No,Yes,No,No
+TXN000222,APP00011,2024-02-01,Current,NEFT,Transfer,42533,Debit,EMI,Vendor,477697,No,Yes,No,No,No,No,No
+TXN000223,APP00004,2024-02-01,Current,NEFT,Transfer,2897,Debit,GST,Vendor,474800,Yes,No,No,No,No,No,No
+TXN000224,APP00016,2024-02-01,Current,NEFT,Transfer,25565,Credit,Vendor Payment,Vendor,500365,No,No,No,No,No,No,No
+TXN000225,APP00012,2024-02-01,Current,NEFT,Transfer,38088,Debit,Vendor Payment,Vendor,462277,No,No,No,No,No,No,No
+TXN000226,APP00038,2024-02-01,Current,NEFT,Transfer,26070,Debit,EMI,Vendor,436207,No,Yes,No,No,No,No,No
+TXN000227,APP00017,2024-02-01,Current,NEFT,Transfer,31221,Credit,EMI,Vendor,467428,No,Yes,No,No,No,No,No
+TXN000228,APP00035,2024-02-01,Current,NEFT,Transfer,31490,Credit,Rent,Vendor,498918,No,No,No,No,No,No,No
+TXN000229,APP00020,2024-02-01,Current,NEFT,Transfer,29949,Credit,Salary,Vendor,528867,No,No,Yes,No,No,No,No
+TXN000230,APP00020,2024-02-01,Current,NEFT,Transfer,28807,Credit,EMI,Vendor,557674,No,Yes,No,No,No,No,No
+TXN000231,APP00016,2024-02-01,Current,NEFT,Transfer,26211,Credit,Business Revenue,Vendor,583885,No,No,Yes,No,No,No,No
+TXN000232,APP00019,2024-02-01,Current,NEFT,Transfer,24524,Credit,Rent,Vendor,608409,No,No,No,No,No,No,No
+TXN000233,APP00001,2024-02-01,Current,NEFT,Transfer,44137,Credit,GST,Vendor,652546,Yes,No,No,No,No,No,No
+TXN000234,APP00048,2024-02-01,Current,NEFT,Transfer,45944,Debit,Salary,Vendor,606602,No,No,Yes,No,Yes,No,No
+TXN000235,APP00023,2024-02-01,Current,NEFT,Transfer,19756,Debit,Salary,Vendor,586846,No,No,Yes,No,No,No,No
+TXN000236,APP00049,2024-02-01,Current,NEFT,Transfer,13460,Credit,Rent,Vendor,600306,No,No,No,No,No,No,No
+TXN000237,APP00007,2024-02-01,Current,NEFT,Transfer,44200,Debit,Rent,Vendor,556106,No,No,No,Yes,No,No,No
+TXN000238,APP00029,2024-02-01,Current,NEFT,Transfer,43358,Debit,GST,Vendor,512748,Yes,No,No,No,No,No,No
+TXN000239,APP00019,2024-02-01,Current,NEFT,Transfer,24911,Debit,Business Revenue,Vendor,487837,No,No,Yes,No,No,No,No
+TXN000240,APP00009,2024-02-01,Current,NEFT,Transfer,28230,Debit,Vendor Payment,Vendor,459607,No,No,No,No,No,No,No
+TXN000241,APP00011,2024-02-01,Current,NEFT,Transfer,24976,Credit,Utilities,Vendor,484583,No,No,No,No,No,No,No
+TXN000242,APP00022,2024-02-01,Current,NEFT,Transfer,32578,Credit,Rent,Vendor,517161,No,No,No,Yes,No,No,No
+TXN000243,APP00049,2024-02-01,Current,NEFT,Transfer,31692,Debit,Vendor Payment,Vendor,485469,No,No,No,Yes,No,No,No
+TXN000244,APP00036,2024-02-01,Current,NEFT,Transfer,45323,Credit,Utilities,Vendor,530792,No,No,No,No,No,No,No
+TXN000245,APP00008,2024-02-01,Current,NEFT,Transfer,1912,Credit,Salary,Vendor,532704,No,No,Yes,No,No,No,No
+TXN000246,APP00025,2024-02-01,Current,NEFT,Transfer,45094,Credit,Salary,Vendor,577798,No,No,Yes,Yes,Yes,No,No
+TXN000247,APP00002,2024-02-01,Current,NEFT,Transfer,8100,Debit,EMI,Vendor,569698,No,Yes,No,No,No,No,No
+TXN000248,APP00015,2024-02-01,Current,NEFT,Transfer,37792,Credit,Salary,Vendor,607490,No,No,Yes,No,No,No,No
+TXN000249,APP00020,2024-02-01,Current,NEFT,Transfer,42641,Credit,Rent,Vendor,650131,No,No,No,No,No,No,No
+TXN000250,APP00003,2024-02-01,Current,NEFT,Transfer,8646,Debit,Business Revenue,Vendor,641485,No,No,Yes,No,No,No,No
+TXN000251,APP00016,2024-02-01,Current,NEFT,Transfer,33284,Debit,Business Revenue,Vendor,608201,No,No,Yes,Yes,No,No,No
+TXN000252,APP00024,2024-02-01,Current,NEFT,Transfer,9890,Credit,EMI,Vendor,618091,No,Yes,No,No,No,No,No
+TXN000253,APP00048,2024-02-01,Current,NEFT,Transfer,49702,Credit,Salary,Vendor,667793,No,No,Yes,No,No,No,No
+TXN000254,APP00032,2024-02-01,Current,NEFT,Transfer,43920,Debit,Utilities,Vendor,623873,No,No,No,No,No,No,No
+TXN000255,APP00024,2024-02-01,Current,NEFT,Transfer,19333,Debit,Rent,Vendor,604540,No,No,No,No,No,No,No
+TXN000256,APP00024,2024-02-01,Current,NEFT,Transfer,30143,Debit,Utilities,Vendor,574397,No,No,No,No,No,No,No
+TXN000257,APP00042,2024-02-01,Current,NEFT,Transfer,45936,Credit,Salary,Vendor,620333,No,No,Yes,No,No,No,No
+TXN000258,APP00030,2024-02-01,Current,NEFT,Transfer,13439,Debit,Utilities,Vendor,606894,No,No,No,No,No,No,No
+TXN000259,APP00022,2024-02-01,Current,NEFT,Transfer,14900,Debit,Business Revenue,Vendor,591994,No,No,Yes,No,No,No,No
+TXN000260,APP00049,2024-02-01,Current,NEFT,Transfer,9252,Debit,Business Revenue,Vendor,582742,No,No,Yes,No,No,No,No
+TXN000261,APP00015,2024-02-01,Current,NEFT,Transfer,39429,Debit,Utilities,Vendor,543313,No,No,No,No,No,No,No
+TXN000262,APP00010,2024-02-01,Current,NEFT,Transfer,10670,Debit,GST,Vendor,532643,Yes,No,No,Yes,No,No,No
+TXN000263,APP00012,2024-02-01,Current,NEFT,Transfer,36403,Credit,Utilities,Vendor,569046,No,No,No,No,No,No,No
+TXN000264,APP00023,2024-02-01,Current,NEFT,Transfer,2689,Debit,Business Revenue,Vendor,566357,No,No,Yes,No,No,No,No
+TXN000265,APP00012,2024-02-01,Current,NEFT,Transfer,16593,Credit,Business Revenue,Vendor,582950,No,No,Yes,No,No,No,No
+TXN000266,APP00008,2024-02-01,Current,NEFT,Transfer,9307,Credit,Salary,Vendor,592257,No,No,Yes,No,No,No,No
+TXN000267,APP00024,2024-02-01,Current,NEFT,Transfer,32211,Credit,Utilities,Vendor,624468,No,No,No,No,No,No,No
+TXN000268,APP00015,2024-02-01,Current,NEFT,Transfer,8146,Credit,Salary,Vendor,632614,No,No,Yes,Yes,No,No,No
+TXN000269,APP00042,2024-02-01,Current,NEFT,Transfer,3841,Credit,EMI,Vendor,636455,No,Yes,No,Yes,No,No,No
+TXN000270,APP00026,2024-02-01,Current,NEFT,Transfer,4986,Credit,Utilities,Vendor,641441,No,No,No,No,No,No,No
+TXN000271,APP00029,2024-02-01,Current,NEFT,Transfer,8075,Credit,Rent,Vendor,649516,No,No,No,No,No,No,No
+TXN000272,APP00010,2024-02-01,Current,NEFT,Transfer,6294,Credit,Salary,Vendor,655810,No,No,Yes,No,No,No,No
+TXN000273,APP00039,2024-02-01,Current,NEFT,Transfer,19023,Credit,EMI,Vendor,674833,No,Yes,No,No,No,No,No
+TXN000274,APP00045,2024-02-01,Current,NEFT,Transfer,30734,Credit,Business Revenue,Vendor,705567,No,No,Yes,No,No,No,No
+TXN000275,APP00029,2024-02-01,Current,NEFT,Transfer,43907,Debit,EMI,Vendor,661660,No,Yes,No,Yes,No,No,No
+TXN000276,APP00030,2024-02-01,Current,NEFT,Transfer,28119,Credit,Utilities,Vendor,689779,No,No,No,No,No,No,No
+TXN000277,APP00028,2024-02-01,Current,NEFT,Transfer,48815,Debit,GST,Vendor,640964,Yes,No,No,No,No,No,No
+TXN000278,APP00006,2024-02-01,Current,NEFT,Transfer,11003,Credit,Business Revenue,Vendor,651967,No,No,Yes,Yes,No,No,No
+TXN000279,APP00048,2024-02-01,Current,NEFT,Transfer,7109,Credit,Business Revenue,Vendor,659076,No,No,Yes,No,No,No,No
+TXN000280,APP00036,2024-02-01,Current,NEFT,Transfer,9527,Debit,Salary,Vendor,649549,No,No,Yes,No,No,No,No
+TXN000281,APP00023,2024-02-01,Current,NEFT,Transfer,44909,Debit,EMI,Vendor,604640,No,Yes,No,Yes,No,No,No
+TXN000282,APP00039,2024-02-01,Current,NEFT,Transfer,28717,Debit,GST,Vendor,575923,Yes,No,No,No,No,No,No
+TXN000283,APP00043,2024-02-01,Current,NEFT,Transfer,7789,Debit,Vendor Payment,Vendor,568134,No,No,No,No,No,No,No
+TXN000284,APP00036,2024-02-01,Current,NEFT,Transfer,8092,Credit,Utilities,Vendor,576226,No,No,No,No,No,No,No
+TXN000285,APP00028,2024-02-01,Current,NEFT,Transfer,19256,Debit,Utilities,Vendor,556970,No,No,No,Yes,No,No,No
+TXN000286,APP00043,2024-02-01,Current,NEFT,Transfer,41745,Debit,Salary,Vendor,515225,No,No,Yes,Yes,No,No,No
+TXN000287,APP00018,2024-02-01,Current,NEFT,Transfer,18527,Debit,Vendor Payment,Vendor,496698,No,No,No,No,No,No,No
+TXN000288,APP00001,2024-02-01,Current,NEFT,Transfer,21249,Credit,GST,Vendor,517947,Yes,No,No,No,No,No,No
+TXN000289,APP00010,2024-02-01,Current,NEFT,Transfer,10388,Credit,Business Revenue,Vendor,528335,No,No,Yes,No,No,No,No
+TXN000290,APP00034,2024-02-01,Current,NEFT,Transfer,3009,Debit,Rent,Vendor,525326,No,No,No,No,No,No,No
+TXN000291,APP00011,2024-02-01,Current,NEFT,Transfer,28514,Credit,GST,Vendor,553840,Yes,No,No,No,No,No,No
+TXN000292,APP00037,2024-02-01,Current,NEFT,Transfer,48290,Credit,Utilities,Vendor,602130,No,No,No,No,No,No,No
+TXN000293,APP00040,2024-02-01,Current,NEFT,Transfer,11196,Debit,Utilities,Vendor,590934,No,No,No,No,No,No,No
+TXN000294,APP00043,2024-02-01,Current,NEFT,Transfer,6346,Credit,EMI,Vendor,597280,No,Yes,No,No,No,No,No
+TXN000295,APP00018,2024-02-01,Current,NEFT,Transfer,40785,Credit,EMI,Vendor,638065,No,Yes,No,No,No,No,No
+TXN000296,APP00028,2024-02-01,Current,NEFT,Transfer,34577,Debit,GST,Vendor,603488,Yes,No,No,No,No,No,No
+TXN000297,APP00043,2024-02-01,Current,NEFT,Transfer,45447,Credit,Salary,Vendor,648935,No,No,Yes,No,No,No,No
+TXN000298,APP00014,2024-02-01,Current,NEFT,Transfer,40277,Debit,Business Revenue,Vendor,608658,No,No,Yes,No,No,No,No
+TXN000299,APP00017,2024-02-01,Current,NEFT,Transfer,14843,Debit,Utilities,Vendor,593815,No,No,No,No,No,No,No
+TXN000300,APP00048,2024-02-01,Current,NEFT,Transfer,8863,Debit,EMI,Vendor,584952,No,Yes,No,No,No,No,No
+TXN000301,APP00046,2024-02-01,Current,NEFT,Transfer,9466,Credit,Salary,Vendor,594418,No,No,Yes,No,No,No,No
+TXN000302,APP00026,2024-02-01,Current,NEFT,Transfer,37616,Credit,Business Revenue,Vendor,632034,No,No,Yes,Yes,No,No,No
+TXN000303,APP00030,2024-02-01,Current,NEFT,Transfer,3772,Credit,Business Revenue,Vendor,635806,No,No,Yes,Yes,No,No,No
+TXN000304,APP00026,2024-02-01,Current,NEFT,Transfer,21516,Credit,Salary,Vendor,657322,No,No,Yes,No,No,No,No
+TXN000305,APP00026,2024-02-01,Current,NEFT,Transfer,28373,Credit,Business Revenue,Vendor,685695,No,No,Yes,No,No,No,No
+TXN000306,APP00040,2024-02-01,Current,NEFT,Transfer,22284,Debit,Utilities,Vendor,663411,No,No,No,No,No,No,No
+TXN000307,APP00028,2024-02-01,Current,NEFT,Transfer,46194,Credit,Business Revenue,Vendor,709605,No,No,Yes,Yes,No,No,No
+TXN000308,APP00006,2024-02-01,Current,NEFT,Transfer,39592,Credit,Salary,Vendor,749197,No,No,Yes,No,No,No,No
+TXN000309,APP00022,2024-02-01,Current,NEFT,Transfer,21334,Credit,Vendor Payment,Vendor,770531,No,No,No,No,No,No,No
+TXN000310,APP00033,2024-02-01,Current,NEFT,Transfer,6005,Debit,Salary,Vendor,764526,No,No,Yes,No,No,No,No
+TXN000311,APP00042,2024-02-01,Current,NEFT,Transfer,23896,Credit,Rent,Vendor,788422,No,No,No,Yes,No,No,No
+TXN000312,APP00017,2024-02-01,Current,NEFT,Transfer,16484,Debit,Vendor Payment,Vendor,771938,No,No,No,No,No,No,No
+TXN000313,APP00049,2024-02-01,Current,NEFT,Transfer,40478,Debit,Utilities,Vendor,731460,No,No,No,No,No,No,No
+TXN000314,APP00049,2024-02-01,Current,NEFT,Transfer,12609,Credit,EMI,Vendor,744069,No,Yes,No,No,No,No,No
+TXN000315,APP00037,2024-02-01,Current,NEFT,Transfer,38976,Credit,Rent,Vendor,783045,No,No,No,No,No,No,No
+TXN000316,APP00041,2024-02-01,Current,NEFT,Transfer,41928,Credit,Utilities,Vendor,824973,No,No,No,No,No,No,No
+TXN000317,APP00029,2024-02-01,Current,NEFT,Transfer,29820,Debit,EMI,Vendor,795153,No,Yes,No,No,No,No,No
+TXN000318,APP00033,2024-02-01,Current,NEFT,Transfer,19001,Debit,GST,Vendor,776152,Yes,No,No,No,No,No,No
+TXN000319,APP00004,2024-02-01,Current,NEFT,Transfer,31260,Credit,Business Revenue,Vendor,807412,No,No,Yes,No,No,No,No
+TXN000320,APP00006,2024-02-01,Current,NEFT,Transfer,19813,Debit,Rent,Vendor,787599,No,No,No,No,No,No,No
+TXN000321,APP00038,2024-02-01,Current,NEFT,Transfer,34231,Credit,EMI,Vendor,821830,No,Yes,No,No,No,No,No
+TXN000322,APP00037,2024-02-01,Current,NEFT,Transfer,49425,Debit,EMI,Vendor,772405,No,Yes,No,No,No,No,No
+TXN000323,APP00029,2024-02-01,Current,NEFT,Transfer,32170,Debit,Business Revenue,Vendor,740235,No,No,Yes,No,No,No,No
+TXN000324,APP00042,2024-02-01,Current,NEFT,Transfer,23507,Debit,Salary,Vendor,716728,No,No,Yes,No,No,No,No
+TXN000325,APP00034,2024-02-01,Current,NEFT,Transfer,17236,Credit,EMI,Vendor,733964,No,Yes,No,No,No,No,No
+TXN000326,APP00019,2024-02-01,Current,NEFT,Transfer,11403,Credit,GST,Vendor,745367,Yes,No,No,No,No,No,No
+TXN000327,APP00041,2024-02-01,Current,NEFT,Transfer,23175,Debit,Utilities,Vendor,722192,No,No,No,No,No,No,No
+TXN000328,APP00036,2024-02-01,Current,NEFT,Transfer,5319,Credit,Business Revenue,Vendor,727511,No,No,Yes,No,No,No,No
+TXN000329,APP00043,2024-02-01,Current,NEFT,Transfer,19621,Credit,Rent,Vendor,747132,No,No,No,Yes,No,No,No
+TXN000330,APP00006,2024-02-01,Current,NEFT,Transfer,40498,Debit,GST,Vendor,706634,Yes,No,No,No,No,No,No
+TXN000331,APP00042,2024-02-01,Current,NEFT,Transfer,10268,Credit,GST,Vendor,716902,Yes,No,No,No,No,No,No
+TXN000332,APP00046,2024-02-01,Current,NEFT,Transfer,26687,Debit,Salary,Vendor,690215,No,No,Yes,Yes,No,No,No
+TXN000333,APP00022,2024-02-01,Current,NEFT,Transfer,21288,Credit,Rent,Vendor,711503,No,No,No,Yes,No,No,No
+TXN000334,APP00043,2024-02-01,Current,NEFT,Transfer,44916,Debit,Rent,Vendor,666587,No,No,No,No,No,No,No
+TXN000335,APP00020,2024-02-01,Current,NEFT,Transfer,24712,Debit,GST,Vendor,641875,Yes,No,No,No,No,No,No
+TXN000336,APP00032,2024-02-01,Current,NEFT,Transfer,15037,Credit,Utilities,Vendor,656912,No,No,No,No,No,No,No
+TXN000337,APP00019,2024-02-01,Current,NEFT,Transfer,10015,Debit,Business Revenue,Vendor,646897,No,No,Yes,Yes,No,No,No
+TXN000338,APP00022,2024-02-01,Current,NEFT,Transfer,7628,Debit,Rent,Vendor,639269,No,No,No,Yes,No,No,No
+TXN000339,APP00025,2024-02-01,Current,NEFT,Transfer,41503,Debit,Salary,Vendor,597766,No,No,Yes,No,No,No,No
+TXN000340,APP00029,2024-02-01,Current,NEFT,Transfer,12851,Debit,Rent,Vendor,584915,No,No,No,No,No,No,No
+TXN000341,APP00040,2024-02-01,Current,NEFT,Transfer,24874,Debit,EMI,Vendor,560041,No,Yes,No,No,No,No,No
+TXN000342,APP00016,2024-02-01,Current,NEFT,Transfer,30420,Debit,Salary,Vendor,529621,No,No,Yes,No,No,No,No
+TXN000343,APP00044,2024-02-01,Current,NEFT,Transfer,31737,Debit,GST,Vendor,497884,Yes,No,No,Yes,No,No,No
+TXN000344,APP00019,2024-02-01,Current,NEFT,Transfer,29874,Credit,Utilities,Vendor,527758,No,No,No,No,No,No,No
+TXN000345,APP00013,2024-02-01,Current,NEFT,Transfer,33958,Credit,Vendor Payment,Vendor,561716,No,No,No,Yes,No,No,No
+TXN000346,APP00042,2024-02-01,Current,NEFT,Transfer,10070,Credit,Business Revenue,Vendor,571786,No,No,Yes,No,No,No,No
+TXN000347,APP00034,2024-02-01,Current,NEFT,Transfer,25327,Debit,Rent,Vendor,546459,No,No,No,Yes,No,No,No
+TXN000348,APP00011,2024-02-01,Current,NEFT,Transfer,19681,Debit,Utilities,Vendor,526778,No,No,No,No,No,No,No
+TXN000349,APP00028,2024-02-01,Current,NEFT,Transfer,34643,Debit,Utilities,Vendor,492135,No,No,No,No,No,No,No
+TXN000350,APP00002,2024-02-01,Current,NEFT,Transfer,15551,Credit,GST,Vendor,507686,Yes,No,No,No,No,No,No
+TXN000351,APP00025,2024-02-01,Current,NEFT,Transfer,26982,Credit,Vendor Payment,Vendor,534668,No,No,No,Yes,No,No,No
+TXN000352,APP00021,2024-02-01,Current,NEFT,Transfer,25570,Debit,Business Revenue,Vendor,509098,No,No,Yes,Yes,No,No,No
+TXN000353,APP00010,2024-02-01,Current,NEFT,Transfer,47838,Credit,Utilities,Vendor,556936,No,No,No,No,No,No,No
+TXN000354,APP00046,2024-02-01,Current,NEFT,Transfer,31962,Debit,Utilities,Vendor,524974,No,No,No,No,No,No,No
+TXN000355,APP00002,2024-02-01,Current,NEFT,Transfer,41327,Debit,Business Revenue,Vendor,483647,No,No,Yes,No,No,No,No
+TXN000356,APP00050,2024-02-01,Current,NEFT,Transfer,10798,Credit,Business Revenue,Vendor,494445,No,No,Yes,No,No,No,No
+TXN000357,APP00016,2024-02-01,Current,NEFT,Transfer,20736,Debit,Business Revenue,Vendor,473709,No,No,Yes,No,No,No,No
+TXN000358,APP00008,2024-02-01,Current,NEFT,Transfer,41816,Credit,Business Revenue,Vendor,515525,No,No,Yes,Yes,No,No,No
+TXN000359,APP00033,2024-02-01,Current,NEFT,Transfer,33756,Debit,Rent,Vendor,481769,No,No,No,No,No,No,No
+TXN000360,APP00028,2024-02-01,Current,NEFT,Transfer,48090,Debit,GST,Vendor,433679,Yes,No,No,No,No,No,No
+TXN000361,APP00043,2024-02-01,Current,NEFT,Transfer,38399,Credit,Vendor Payment,Vendor,472078,No,No,No,No,No,No,No
+TXN000362,APP00034,2024-02-01,Current,NEFT,Transfer,35307,Credit,Business Revenue,Vendor,507385,No,No,Yes,No,No,No,No
+TXN000363,APP00031,2024-02-01,Current,NEFT,Transfer,34267,Debit,EMI,Vendor,473118,No,Yes,No,No,No,No,No
+TXN000364,APP00048,2024-02-01,Current,NEFT,Transfer,26354,Credit,GST,Vendor,499472,Yes,No,No,No,No,No,No
+TXN000365,APP00047,2024-02-01,Current,NEFT,Transfer,5427,Credit,Vendor Payment,Vendor,504899,No,No,No,No,No,No,No
+TXN000366,APP00003,2024-02-01,Current,NEFT,Transfer,7793,Credit,Vendor Payment,Vendor,512692,No,No,No,No,No,No,No
+TXN000367,APP00050,2024-02-01,Current,NEFT,Transfer,23187,Debit,Utilities,Vendor,489505,No,No,No,No,No,No,No
+TXN000368,APP00012,2024-02-01,Current,NEFT,Transfer,46573,Credit,Rent,Vendor,536078,No,No,No,Yes,No,No,No
+TXN000369,APP00013,2024-02-01,Current,NEFT,Transfer,30994,Debit,GST,Vendor,505084,Yes,No,No,No,No,No,No
+TXN000370,APP00020,2024-02-01,Current,NEFT,Transfer,14072,Debit,GST,Vendor,491012,Yes,No,No,No,No,No,No
+TXN000371,APP00003,2024-02-01,Current,NEFT,Transfer,36588,Credit,GST,Vendor,527600,Yes,No,No,No,No,No,No
+TXN000372,APP00050,2024-02-01,Current,NEFT,Transfer,13524,Credit,GST,Vendor,541124,Yes,No,No,No,No,No,No
+TXN000373,APP00008,2024-02-01,Current,NEFT,Transfer,43974,Credit,GST,Vendor,585098,Yes,No,No,No,No,No,No
+TXN000374,APP00029,2024-02-01,Current,NEFT,Transfer,29636,Credit,Rent,Vendor,614734,No,No,No,Yes,No,No,No
+TXN000375,APP00032,2024-02-01,Current,NEFT,Transfer,26339,Credit,Vendor Payment,Vendor,641073,No,No,No,No,No,No,No
+TXN000376,APP00006,2024-02-01,Current,NEFT,Transfer,25074,Credit,Utilities,Vendor,666147,No,No,No,No,No,No,No
+TXN000377,APP00012,2024-02-01,Current,NEFT,Transfer,6172,Credit,Salary,Vendor,672319,No,No,Yes,No,No,No,No
+TXN000378,APP00021,2024-02-01,Current,NEFT,Transfer,22050,Debit,Business Revenue,Vendor,650269,No,No,Yes,No,No,No,No
+TXN000379,APP00046,2024-02-01,Current,NEFT,Transfer,21086,Credit,Salary,Vendor,671355,No,No,Yes,No,No,No,No
+TXN000380,APP00029,2024-02-01,Current,NEFT,Transfer,46204,Credit,GST,Vendor,717559,Yes,No,No,No,No,No,No
+TXN000381,APP00041,2024-02-01,Current,NEFT,Transfer,24105,Credit,GST,Vendor,741664,Yes,No,No,Yes,No,No,No
+TXN000382,APP00041,2024-02-01,Current,NEFT,Transfer,4759,Debit,Rent,Vendor,736905,No,No,No,No,No,No,No
+TXN000383,APP00010,2024-02-01,Current,NEFT,Transfer,34625,Debit,Business Revenue,Vendor,702280,No,No,Yes,Yes,No,No,No
+TXN000384,APP00009,2024-02-01,Current,NEFT,Transfer,45439,Credit,Business Revenue,Vendor,747719,No,No,Yes,No,No,No,No
+TXN000385,APP00037,2024-02-01,Current,NEFT,Transfer,25007,Credit,EMI,Vendor,772726,No,Yes,No,No,No,No,No
+TXN000386,APP00024,2024-02-01,Current,NEFT,Transfer,11055,Credit,GST,Vendor,783781,Yes,No,No,No,No,No,No
+TXN000387,APP00024,2024-02-01,Current,NEFT,Transfer,6038,Debit,Salary,Vendor,777743,No,No,Yes,No,No,No,No
+TXN000388,APP00008,2024-02-01,Current,NEFT,Transfer,43569,Credit,Vendor Payment,Vendor,821312,No,No,No,No,No,No,No
+TXN000389,APP00025,2024-02-01,Current,NEFT,Transfer,13192,Credit,Salary,Vendor,834504,No,No,Yes,Yes,No,No,No
+TXN000390,APP00017,2024-02-01,Current,NEFT,Transfer,8717,Credit,Utilities,Vendor,843221,No,No,No,No,No,No,No
+TXN000391,APP00032,2024-02-01,Current,NEFT,Transfer,15062,Credit,Rent,Vendor,858283,No,No,No,No,No,No,No
+TXN000392,APP00012,2024-02-01,Current,NEFT,Transfer,9895,Debit,EMI,Vendor,848388,No,Yes,No,Yes,No,No,No
+TXN000393,APP00044,2024-02-01,Current,NEFT,Transfer,30170,Debit,Utilities,Vendor,818218,No,No,No,Yes,No,No,No
+TXN000394,APP00005,2024-02-01,Current,NEFT,Transfer,21944,Credit,Rent,Vendor,840162,No,No,No,No,No,No,No
+TXN000395,APP00011,2024-02-01,Current,NEFT,Transfer,20029,Credit,Utilities,Vendor,860191,No,No,No,No,No,No,No
+TXN000396,APP00024,2024-02-01,Current,NEFT,Transfer,46889,Debit,Utilities,Vendor,813302,No,No,No,No,No,No,No
+TXN000397,APP00032,2024-02-01,Current,NEFT,Transfer,14171,Debit,Vendor Payment,Vendor,799131,No,No,No,No,No,No,No
+TXN000398,APP00036,2024-02-01,Current,NEFT,Transfer,37308,Credit,EMI,Vendor,836439,No,Yes,No,No,No,No,No
+TXN000399,APP00026,2024-02-01,Current,NEFT,Transfer,6650,Debit,GST,Vendor,829789,Yes,No,No,Yes,No,No,No
+TXN000400,APP00027,2024-02-01,Current,NEFT,Transfer,48111,Credit,Salary,Vendor,877900,No,No,Yes,No,No,No,No
+TXN000401,APP00042,2024-02-01,Current,NEFT,Transfer,5833,Debit,GST,Vendor,872067,Yes,No,No,No,No,No,No
+TXN000402,APP00050,2024-02-01,Current,NEFT,Transfer,31528,Credit,Vendor Payment,Vendor,903595,No,No,No,No,No,No,No
+TXN000403,APP00009,2024-02-01,Current,NEFT,Transfer,39521,Debit,Utilities,Vendor,864074,No,No,No,No,No,No,No
+TXN000404,APP00010,2024-02-01,Current,NEFT,Transfer,4631,Debit,Salary,Vendor,859443,No,No,Yes,No,No,No,No
+TXN000405,APP00015,2024-02-01,Current,NEFT,Transfer,11614,Credit,Rent,Vendor,871057,No,No,No,No,No,No,No
+TXN000406,APP00006,2024-02-01,Current,NEFT,Transfer,35006,Credit,Utilities,Vendor,906063,No,No,No,No,No,No,No
+TXN000407,APP00041,2024-02-01,Current,NEFT,Transfer,42619,Credit,Vendor Payment,Vendor,948682,No,No,No,No,No,No,No
+TXN000408,APP00042,2024-02-01,Current,NEFT,Transfer,35962,Debit,Salary,Vendor,912720,No,No,Yes,No,No,No,No
+TXN000409,APP00043,2024-02-01,Current,NEFT,Transfer,39053,Debit,Vendor Payment,Vendor,873667,No,No,No,No,No,No,No
+TXN000410,APP00037,2024-02-01,Current,NEFT,Transfer,40658,Credit,Utilities,Vendor,914325,No,No,No,No,No,No,No
+TXN000411,APP00042,2024-02-01,Current,NEFT,Transfer,2859,Debit,Business Revenue,Vendor,911466,No,No,Yes,No,No,No,No
+TXN000412,APP00037,2024-02-01,Current,NEFT,Transfer,18344,Debit,Utilities,Vendor,893122,No,No,No,No,No,No,No
+TXN000413,APP00041,2024-02-01,Current,NEFT,Transfer,42876,Debit,EMI,Vendor,850246,No,Yes,No,No,No,No,No
+TXN000414,APP00016,2024-02-01,Current,NEFT,Transfer,43068,Credit,EMI,Vendor,893314,No,Yes,No,Yes,No,No,No
+TXN000415,APP00030,2024-02-01,Current,NEFT,Transfer,45891,Credit,GST,Vendor,939205,Yes,No,No,No,No,No,No
+TXN000416,APP00030,2024-02-01,Current,NEFT,Transfer,29809,Credit,EMI,Vendor,969014,No,Yes,No,No,No,No,No
+TXN000417,APP00046,2024-02-01,Current,NEFT,Transfer,40758,Debit,GST,Vendor,928256,Yes,No,No,No,No,No,No
+TXN000418,APP00049,2024-02-01,Current,NEFT,Transfer,23634,Credit,Vendor Payment,Vendor,951890,No,No,No,No,No,No,No
+TXN000419,APP00016,2024-02-01,Current,NEFT,Transfer,37808,Debit,GST,Vendor,914082,Yes,No,No,No,No,No,No
+TXN000420,APP00010,2024-02-01,Current,NEFT,Transfer,18529,Credit,Vendor Payment,Vendor,932611,No,No,No,No,No,No,No
+TXN000421,APP00040,2024-02-01,Current,NEFT,Transfer,20019,Credit,Utilities,Vendor,952630,No,No,No,No,No,No,No
+TXN000422,APP00047,2024-02-01,Current,NEFT,Transfer,11466,Credit,Salary,Vendor,964096,No,No,Yes,No,No,No,No
+TXN000423,APP00030,2024-02-01,Current,NEFT,Transfer,11442,Credit,Salary,Vendor,975538,No,No,Yes,No,No,No,No
+TXN000424,APP00006,2024-02-01,Current,NEFT,Transfer,21220,Credit,Business Revenue,Vendor,996758,No,No,Yes,Yes,No,No,No
+TXN000425,APP00014,2024-02-01,Current,NEFT,Transfer,34124,Credit,Vendor Payment,Vendor,1030882,No,No,No,No,No,No,No
+TXN000426,APP00032,2024-02-01,Current,NEFT,Transfer,4188,Debit,GST,Vendor,1026694,Yes,No,No,No,No,No,No
+TXN000427,APP00035,2024-02-01,Current,NEFT,Transfer,43877,Credit,GST,Vendor,1070571,Yes,No,No,No,No,No,No
+TXN000428,APP00017,2024-02-01,Current,NEFT,Transfer,8044,Credit,Vendor Payment,Vendor,1078615,No,No,No,No,No,No,No
+TXN000429,APP00026,2024-02-01,Current,NEFT,Transfer,27427,Credit,Business Revenue,Vendor,1106042,No,No,Yes,No,No,No,No
+TXN000430,APP00036,2024-02-01,Current,NEFT,Transfer,37819,Debit,GST,Vendor,1068223,Yes,No,No,No,No,No,No
+TXN000431,APP00036,2024-02-01,Current,NEFT,Transfer,26319,Credit,Utilities,Vendor,1094542,No,No,No,No,No,No,No
+TXN000432,APP00007,2024-02-01,Current,NEFT,Transfer,41844,Debit,Vendor Payment,Vendor,1052698,No,No,No,No,No,No,No
+TXN000433,APP00010,2024-02-01,Current,NEFT,Transfer,23222,Credit,Utilities,Vendor,1075920,No,No,No,No,No,No,No
+TXN000434,APP00003,2024-02-01,Current,NEFT,Transfer,34365,Credit,Salary,Vendor,1110285,No,No,Yes,No,No,No,No
+TXN000435,APP00031,2024-02-01,Current,NEFT,Transfer,9980,Credit,Utilities,Vendor,1120265,No,No,No,No,No,No,No
+TXN000436,APP00040,2024-02-01,Current,NEFT,Transfer,10760,Debit,GST,Vendor,1109505,Yes,No,No,No,No,No,No
+TXN000437,APP00022,2024-02-01,Current,NEFT,Transfer,26752,Credit,Salary,Vendor,1136257,No,No,Yes,No,No,No,No
+TXN000438,APP00037,2024-02-01,Current,NEFT,Transfer,34404,Credit,Rent,Vendor,1170661,No,No,No,No,No,No,No
+TXN000439,APP00044,2024-02-01,Current,NEFT,Transfer,2090,Credit,GST,Vendor,1172751,Yes,No,No,No,No,No,No
+TXN000440,APP00047,2024-02-01,Current,NEFT,Transfer,28298,Credit,Utilities,Vendor,1201049,No,No,No,Yes,No,No,No
+TXN000441,APP00031,2024-02-01,Current,NEFT,Transfer,42239,Debit,Salary,Vendor,1158810,No,No,Yes,No,No,No,No
+TXN000442,APP00004,2024-02-01,Current,NEFT,Transfer,43964,Debit,Rent,Vendor,1114846,No,No,No,No,No,No,No
+TXN000443,APP00044,2024-02-01,Current,NEFT,Transfer,12174,Credit,Vendor Payment,Vendor,1127020,No,No,No,No,No,No,No
+TXN000444,APP00002,2024-02-01,Current,NEFT,Transfer,38523,Debit,Vendor Payment,Vendor,1088497,No,No,No,No,No,No,No
+TXN000445,APP00045,2024-02-01,Current,NEFT,Transfer,28445,Debit,EMI,Vendor,1060052,No,Yes,No,No,No,No,No
+TXN000446,APP00048,2024-02-01,Current,NEFT,Transfer,33887,Credit,Utilities,Vendor,1093939,No,No,No,No,No,No,No
+TXN000447,APP00014,2024-02-01,Current,NEFT,Transfer,47253,Debit,Salary,Vendor,1046686,No,No,Yes,No,Yes,No,No
+TXN000448,APP00012,2024-02-01,Current,NEFT,Transfer,32350,Credit,GST,Vendor,1079036,Yes,No,No,No,No,No,No
+TXN000449,APP00023,2024-02-01,Current,NEFT,Transfer,35939,Credit,Salary,Vendor,1114975,No,No,Yes,No,No,No,No
+TXN000450,APP00031,2024-02-01,Current,NEFT,Transfer,48246,Credit,Salary,Vendor,1163221,No,No,Yes,No,No,No,No
+TXN000451,APP00020,2024-02-01,Current,NEFT,Transfer,37574,Credit,Vendor Payment,Vendor,1200795,No,No,No,No,No,No,No
+TXN000452,APP00046,2024-02-01,Current,NEFT,Transfer,47196,Debit,Rent,Vendor,1153599,No,No,No,No,No,No,No
+TXN000453,APP00008,2024-02-01,Current,NEFT,Transfer,37732,Credit,GST,Vendor,1191331,Yes,No,No,No,No,No,No
+TXN000454,APP00023,2024-02-01,Current,NEFT,Transfer,36598,Credit,EMI,Vendor,1227929,No,Yes,No,Yes,No,No,No
+TXN000455,APP00019,2024-02-01,Current,NEFT,Transfer,10599,Credit,Business Revenue,Vendor,1238528,No,No,Yes,Yes,No,No,No
+TXN000456,APP00042,2024-02-01,Current,NEFT,Transfer,6179,Credit,EMI,Vendor,1244707,No,Yes,No,No,No,No,No
+TXN000457,APP00035,2024-02-01,Current,NEFT,Transfer,32396,Debit,Vendor Payment,Vendor,1212311,No,No,No,No,No,No,No
+TXN000458,APP00007,2024-02-01,Current,NEFT,Transfer,37832,Credit,Vendor Payment,Vendor,1250143,No,No,No,No,No,No,No
+TXN000459,APP00004,2024-02-01,Current,NEFT,Transfer,39458,Debit,Vendor Payment,Vendor,1210685,No,No,No,No,No,No,No
+TXN000460,APP00015,2024-02-01,Current,NEFT,Transfer,35802,Debit,Rent,Vendor,1174883,No,No,No,No,No,No,No
+TXN000461,APP00031,2024-02-01,Current,NEFT,Transfer,28086,Credit,Rent,Vendor,1202969,No,No,No,No,No,No,No
+TXN000462,APP00011,2024-02-01,Current,NEFT,Transfer,10009,Debit,Salary,Vendor,1192960,No,No,Yes,No,No,No,No
+TXN000463,APP00013,2024-02-01,Current,NEFT,Transfer,32175,Credit,Rent,Vendor,1225135,No,No,No,No,No,No,No
+TXN000464,APP00042,2024-02-01,Current,NEFT,Transfer,19824,Credit,GST,Vendor,1244959,Yes,No,No,No,No,No,No
+TXN000465,APP00048,2024-02-01,Current,NEFT,Transfer,6862,Debit,Salary,Vendor,1238097,No,No,Yes,No,No,No,No
+TXN000466,APP00012,2024-02-01,Current,NEFT,Transfer,3444,Debit,EMI,Vendor,1234653,No,Yes,No,Yes,No,No,No
+TXN000467,APP00032,2024-02-01,Current,NEFT,Transfer,3381,Credit,Utilities,Vendor,1238034,No,No,No,No,No,No,No
+TXN000468,APP00020,2024-02-01,Current,NEFT,Transfer,19970,Debit,Business Revenue,Vendor,1218064,No,No,Yes,No,No,No,No
+TXN000469,APP00030,2024-02-01,Current,NEFT,Transfer,8032,Credit,GST,Vendor,1226096,Yes,No,No,Yes,No,No,No
+TXN000470,APP00033,2024-02-01,Current,NEFT,Transfer,36605,Credit,Vendor Payment,Vendor,1262701,No,No,No,No,No,No,No
+TXN000471,APP00011,2024-02-01,Current,NEFT,Transfer,13636,Debit,GST,Vendor,1249065,Yes,No,No,No,No,No,No
+TXN000472,APP00012,2024-02-01,Current,NEFT,Transfer,43486,Credit,Rent,Vendor,1292551,No,No,No,No,No,No,No
+TXN000473,APP00044,2024-02-01,Current,NEFT,Transfer,23092,Credit,Salary,Vendor,1315643,No,No,Yes,No,No,No,No
+TXN000474,APP00028,2024-02-01,Current,NEFT,Transfer,12501,Credit,Utilities,Vendor,1328144,No,No,No,No,No,No,No
+TXN000475,APP00007,2024-02-01,Current,NEFT,Transfer,6684,Credit,Rent,Vendor,1334828,No,No,No,No,No,No,No
+TXN000476,APP00016,2024-02-01,Current,NEFT,Transfer,10215,Credit,GST,Vendor,1345043,Yes,No,No,No,No,No,No
+TXN000477,APP00049,2024-02-01,Current,NEFT,Transfer,26137,Debit,EMI,Vendor,1318906,No,Yes,No,No,No,No,No
+TXN000478,APP00047,2024-02-01,Current,NEFT,Transfer,22602,Credit,Salary,Vendor,1341508,No,No,Yes,No,No,No,No
+TXN000479,APP00016,2024-02-01,Current,NEFT,Transfer,18141,Credit,Rent,Vendor,1359649,No,No,No,No,No,No,No
+TXN000480,APP00011,2024-02-01,Current,NEFT,Transfer,8747,Credit,GST,Vendor,1368396,Yes,No,No,No,No,No,No
+TXN000481,APP00008,2024-02-01,Current,NEFT,Transfer,33933,Credit,Rent,Vendor,1402329,No,No,No,No,No,No,No
+TXN000482,APP00015,2024-02-01,Current,NEFT,Transfer,20335,Credit,Salary,Vendor,1422664,No,No,Yes,No,No,No,No
+TXN000483,APP00030,2024-02-01,Current,NEFT,Transfer,9753,Credit,Vendor Payment,Vendor,1432417,No,No,No,No,No,No,No
+TXN000484,APP00045,2024-02-01,Current,NEFT,Transfer,40697,Credit,EMI,Vendor,1473114,No,Yes,No,No,No,No,No
+TXN000485,APP00016,2024-02-01,Current,NEFT,Transfer,31856,Debit,Utilities,Vendor,1441258,No,No,No,No,No,No,No
+TXN000486,APP00029,2024-02-01,Current,NEFT,Transfer,40047,Debit,Salary,Vendor,1401211,No,No,Yes,No,No,No,No
+TXN000487,APP00008,2024-02-01,Current,NEFT,Transfer,24709,Debit,Salary,Vendor,1376502,No,No,Yes,No,No,No,No
+TXN000488,APP00035,2024-02-01,Current,NEFT,Transfer,36890,Debit,Salary,Vendor,1339612,No,No,Yes,No,No,No,No
+TXN000489,APP00044,2024-02-01,Current,NEFT,Transfer,22503,Credit,Business Revenue,Vendor,1362115,No,No,Yes,No,No,No,No
+TXN000490,APP00033,2024-02-01,Current,NEFT,Transfer,39217,Credit,Business Revenue,Vendor,1401332,No,No,Yes,No,No,No,No
+TXN000491,APP00033,2024-02-01,Current,NEFT,Transfer,4646,Credit,Vendor Payment,Vendor,1405978,No,No,No,No,No,No,No
+TXN000492,APP00030,2024-02-01,Current,NEFT,Transfer,37956,Debit,Salary,Vendor,1368022,No,No,Yes,No,No,No,No
+TXN000493,APP00017,2024-02-01,Current,NEFT,Transfer,21196,Debit,EMI,Vendor,1346826,No,Yes,No,Yes,No,No,No
+TXN000494,APP00005,2024-02-01,Current,NEFT,Transfer,49877,Debit,Salary,Vendor,1296949,No,No,Yes,No,No,No,No
+TXN000495,APP00031,2024-02-01,Current,NEFT,Transfer,5178,Debit,Business Revenue,Vendor,1291771,No,No,Yes,No,No,No,No
+TXN000496,APP00009,2024-02-01,Current,NEFT,Transfer,27795,Debit,Utilities,Vendor,1263976,No,No,No,No,No,No,No
+TXN000497,APP00025,2024-02-01,Current,NEFT,Transfer,48794,Credit,GST,Vendor,1312770,Yes,No,No,No,Yes,No,No
+TXN000498,APP00044,2024-02-01,Current,NEFT,Transfer,25739,Credit,Business Revenue,Vendor,1338509,No,No,Yes,Yes,No,No,No
+TXN000499,APP00023,2024-02-01,Current,NEFT,Transfer,36343,Debit,Rent,Vendor,1302166,No,No,No,No,No,No,No
+TXN000500,APP00009,2024-02-01,Current,NEFT,Transfer,36209,Credit,Salary,Vendor,1338375,No,No,Yes,No,No,No,No
+TXN000501,APP00002,2024-02-01,Current,NEFT,Transfer,15594,Debit,Utilities,Vendor,1322781,No,No,No,Yes,No,No,No
+TXN000502,APP00025,2024-02-01,Current,NEFT,Transfer,31343,Credit,Salary,Vendor,1354124,No,No,Yes,Yes,No,No,No
+TXN000503,APP00010,2024-02-01,Current,NEFT,Transfer,17220,Credit,GST,Vendor,1371344,Yes,No,No,No,No,No,No
+TXN000504,APP00043,2024-02-01,Current,NEFT,Transfer,48515,Debit,Business Revenue,Vendor,1322829,No,No,Yes,No,No,No,No
+TXN000505,APP00005,2024-02-01,Current,NEFT,Transfer,2025,Debit,Vendor Payment,Vendor,1320804,No,No,No,No,No,No,No
+TXN000506,APP00044,2024-02-01,Current,NEFT,Transfer,3200,Credit,Salary,Vendor,1324004,No,No,Yes,No,No,No,No
+TXN000507,APP00003,2024-02-01,Current,NEFT,Transfer,4190,Debit,Rent,Vendor,1319814,No,No,No,No,No,No,No
+TXN000508,APP00050,2024-02-01,Current,NEFT,Transfer,16357,Debit,Utilities,Vendor,1303457,No,No,No,No,No,No,No
+TXN000509,APP00047,2024-02-01,Current,NEFT,Transfer,34023,Credit,Vendor Payment,Vendor,1337480,No,No,No,No,No,No,No
+TXN000510,APP00020,2024-02-01,Current,NEFT,Transfer,38845,Credit,Vendor Payment,Vendor,1376325,No,No,No,Yes,No,No,No
+TXN000511,APP00020,2024-02-01,Current,NEFT,Transfer,44267,Debit,EMI,Vendor,1332058,No,Yes,No,No,No,No,No
+TXN000512,APP00044,2024-02-01,Current,NEFT,Transfer,37485,Debit,Rent,Vendor,1294573,No,No,No,No,No,No,No
+TXN000513,APP00042,2024-02-01,Current,NEFT,Transfer,33481,Debit,GST,Vendor,1261092,Yes,No,No,No,No,No,No
+TXN000514,APP00027,2024-02-01,Current,NEFT,Transfer,35371,Credit,Rent,Vendor,1296463,No,No,No,No,No,No,No
+TXN000515,APP00049,2024-02-01,Current,NEFT,Transfer,20653,Credit,Vendor Payment,Vendor,1317116,No,No,No,No,No,No,No
+TXN000516,APP00046,2024-02-01,Current,NEFT,Transfer,16792,Debit,GST,Vendor,1300324,Yes,No,No,No,No,No,No
+TXN000517,APP00027,2024-02-01,Current,NEFT,Transfer,31344,Debit,Salary,Vendor,1268980,No,No,Yes,Yes,No,No,No
+TXN000518,APP00016,2024-02-01,Current,NEFT,Transfer,37522,Debit,EMI,Vendor,1231458,No,Yes,No,No,No,No,No
+TXN000519,APP00024,2024-02-01,Current,NEFT,Transfer,22644,Debit,EMI,Vendor,1208814,No,Yes,No,No,No,No,No
+TXN000520,APP00018,2024-02-01,Current,NEFT,Transfer,48486,Debit,Business Revenue,Vendor,1160328,No,No,Yes,No,No,No,No
+TXN000521,APP00049,2024-02-01,Current,NEFT,Transfer,3591,Debit,Vendor Payment,Vendor,1156737,No,No,No,No,No,No,No
+TXN000522,APP00014,2024-02-01,Current,NEFT,Transfer,45004,Debit,EMI,Vendor,1111733,No,Yes,No,Yes,No,No,No
+TXN000523,APP00048,2024-02-01,Current,NEFT,Transfer,2004,Debit,Vendor Payment,Vendor,1109729,No,No,No,No,No,No,No
+TXN000524,APP00039,2024-02-01,Current,NEFT,Transfer,32386,Debit,Rent,Vendor,1077343,No,No,No,No,No,No,No
+TXN000525,APP00021,2024-02-01,Current,NEFT,Transfer,26993,Debit,Salary,Vendor,1050350,No,No,Yes,No,No,No,No
+TXN000526,APP00042,2024-02-01,Current,NEFT,Transfer,25947,Credit,Salary,Vendor,1076297,No,No,Yes,No,No,No,No
+TXN000527,APP00032,2024-02-01,Current,NEFT,Transfer,18141,Credit,Salary,Vendor,1094438,No,No,Yes,No,No,No,No
+TXN000528,APP00021,2024-02-01,Current,NEFT,Transfer,48344,Credit,Utilities,Vendor,1142782,No,No,No,Yes,No,No,No
+TXN000529,APP00015,2024-02-01,Current,NEFT,Transfer,28127,Debit,Salary,Vendor,1114655,No,No,Yes,No,No,No,No
+TXN000530,APP00038,2024-02-01,Current,NEFT,Transfer,2062,Credit,Salary,Vendor,1116717,No,No,Yes,No,No,No,No
+TXN000531,APP00013,2024-02-01,Current,NEFT,Transfer,28366,Credit,Vendor Payment,Vendor,1145083,No,No,No,No,No,No,No
+TXN000532,APP00036,2024-02-01,Current,NEFT,Transfer,25893,Debit,EMI,Vendor,1119190,No,Yes,No,No,No,No,No
+TXN000533,APP00049,2024-02-01,Current,NEFT,Transfer,45882,Credit,GST,Vendor,1165072,Yes,No,No,Yes,Yes,No,No
+TXN000534,APP00011,2024-02-01,Current,NEFT,Transfer,43054,Credit,EMI,Vendor,1208126,No,Yes,No,No,No,No,No
+TXN000535,APP00047,2024-02-01,Current,NEFT,Transfer,24080,Debit,Vendor Payment,Vendor,1184046,No,No,No,No,No,No,No
+TXN000536,APP00003,2024-02-01,Current,NEFT,Transfer,13061,Debit,Salary,Vendor,1170985,No,No,Yes,Yes,No,No,No
+TXN000537,APP00001,2024-02-01,Current,NEFT,Transfer,5871,Debit,Utilities,Vendor,1165114,No,No,No,No,No,No,No
+TXN000538,APP00046,2024-02-01,Current,NEFT,Transfer,42333,Debit,Business Revenue,Vendor,1122781,No,No,Yes,No,No,No,No
+TXN000539,APP00004,2024-02-01,Current,NEFT,Transfer,15334,Credit,GST,Vendor,1138115,Yes,No,No,No,No,No,No
+TXN000540,APP00032,2024-02-01,Current,NEFT,Transfer,44696,Credit,Rent,Vendor,1182811,No,No,No,No,No,No,No
+TXN000541,APP00002,2024-02-01,Current,NEFT,Transfer,35879,Credit,Business Revenue,Vendor,1218690,No,No,Yes,No,No,No,No
+TXN000542,APP00033,2024-02-01,Current,NEFT,Transfer,19005,Credit,Business Revenue,Vendor,1237695,No,No,Yes,Yes,No,No,No
+TXN000543,APP00012,2024-02-01,Current,NEFT,Transfer,45173,Credit,Utilities,Vendor,1282868,No,No,No,No,No,No,No
+TXN000544,APP00040,2024-02-01,Current,NEFT,Transfer,10758,Debit,Vendor Payment,Vendor,1272110,No,No,No,No,No,No,No
+TXN000545,APP00026,2024-02-01,Current,NEFT,Transfer,24228,Credit,Utilities,Vendor,1296338,No,No,No,No,No,No,No
+TXN000546,APP00016,2024-02-01,Current,NEFT,Transfer,27609,Credit,Salary,Vendor,1323947,No,No,Yes,Yes,No,No,No
+TXN000547,APP00006,2024-02-01,Current,NEFT,Transfer,15801,Credit,Rent,Vendor,1339748,No,No,No,No,No,No,No
+TXN000548,APP00026,2024-02-01,Current,NEFT,Transfer,43591,Debit,Business Revenue,Vendor,1296157,No,No,Yes,No,No,No,No
+TXN000549,APP00041,2024-02-01,Current,NEFT,Transfer,37221,Credit,Business Revenue,Vendor,1333378,No,No,Yes,No,No,No,No
+TXN000550,APP00028,2024-02-01,Current,NEFT,Transfer,12231,Debit,EMI,Vendor,1321147,No,Yes,No,No,No,No,No
+TXN000551,APP00003,2024-02-01,Current,NEFT,Transfer,22710,Debit,Salary,Vendor,1298437,No,No,Yes,No,No,No,No
+TXN000552,APP00003,2024-02-01,Current,NEFT,Transfer,46369,Credit,GST,Vendor,1344806,Yes,No,No,Yes,No,No,No
+TXN000553,APP00021,2024-02-01,Current,NEFT,Transfer,19374,Debit,Vendor Payment,Vendor,1325432,No,No,No,No,No,No,No
+TXN000554,APP00046,2024-02-01,Current,NEFT,Transfer,14576,Debit,Utilities,Vendor,1310856,No,No,No,Yes,No,No,No
+TXN000555,APP00037,2024-02-01,Current,NEFT,Transfer,6042,Credit,Vendor Payment,Vendor,1316898,No,No,No,No,No,No,No
+TXN000556,APP00049,2024-02-01,Current,NEFT,Transfer,26503,Credit,EMI,Vendor,1343401,No,Yes,No,No,No,No,No
+TXN000557,APP00048,2024-02-01,Current,NEFT,Transfer,46174,Debit,Salary,Vendor,1297227,No,No,Yes,Yes,No,No,No
+TXN000558,APP00005,2024-02-01,Current,NEFT,Transfer,29645,Debit,Utilities,Vendor,1267582,No,No,No,No,No,No,No
+TXN000559,APP00021,2024-02-01,Current,NEFT,Transfer,41230,Credit,Utilities,Vendor,1308812,No,No,No,No,No,No,No
+TXN000560,APP00015,2024-02-01,Current,NEFT,Transfer,18912,Credit,EMI,Vendor,1327724,No,Yes,No,No,No,No,No
+TXN000561,APP00044,2024-02-01,Current,NEFT,Transfer,25603,Credit,Vendor Payment,Vendor,1353327,No,No,No,No,No,No,No
+TXN000562,APP00040,2024-02-01,Current,NEFT,Transfer,25908,Debit,Utilities,Vendor,1327419,No,No,No,No,No,No,No
+TXN000563,APP00018,2024-02-01,Current,NEFT,Transfer,17151,Debit,Business Revenue,Vendor,1310268,No,No,Yes,No,No,No,No
+TXN000564,APP00025,2024-02-01,Current,NEFT,Transfer,47640,Debit,Rent,Vendor,1262628,No,No,No,No,No,No,No
+TXN000565,APP00024,2024-02-01,Current,NEFT,Transfer,1340,Credit,EMI,Vendor,1263968,No,Yes,No,No,No,No,No
+TXN000566,APP00012,2024-02-01,Current,NEFT,Transfer,7699,Debit,Business Revenue,Vendor,1256269,No,No,Yes,No,No,No,No
+TXN000567,APP00002,2024-02-01,Current,NEFT,Transfer,37502,Credit,Business Revenue,Vendor,1293771,No,No,Yes,No,No,No,No
+TXN000568,APP00039,2024-02-01,Current,NEFT,Transfer,37321,Debit,Salary,Vendor,1256450,No,No,Yes,No,No,No,No
+TXN000569,APP00027,2024-02-01,Current,NEFT,Transfer,26246,Debit,GST,Vendor,1230204,Yes,No,No,No,No,No,No
+TXN000570,APP00034,2024-02-01,Current,NEFT,Transfer,6550,Debit,Salary,Vendor,1223654,No,No,Yes,No,No,No,No
+TXN000571,APP00018,2024-02-01,Current,NEFT,Transfer,25951,Debit,Vendor Payment,Vendor,1197703,No,No,No,No,No,No,No
+TXN000572,APP00011,2024-02-01,Current,NEFT,Transfer,33317,Debit,Business Revenue,Vendor,1164386,No,No,Yes,No,No,No,No
+TXN000573,APP00005,2024-02-01,Current,NEFT,Transfer,28597,Credit,EMI,Vendor,1192983,No,Yes,No,No,No,No,No
+TXN000574,APP00040,2024-02-01,Current,NEFT,Transfer,17160,Credit,Salary,Vendor,1210143,No,No,Yes,No,No,No,No
+TXN000575,APP00001,2024-02-01,Current,NEFT,Transfer,8010,Debit,GST,Vendor,1202133,Yes,No,No,Yes,No,No,No
+TXN000576,APP00022,2024-02-01,Current,NEFT,Transfer,22772,Credit,Utilities,Vendor,1224905,No,No,No,No,No,No,No
+TXN000577,APP00021,2024-02-01,Current,NEFT,Transfer,29220,Debit,GST,Vendor,1195685,Yes,No,No,No,No,No,No
+TXN000578,APP00021,2024-02-01,Current,NEFT,Transfer,46566,Debit,EMI,Vendor,1149119,No,Yes,No,No,No,No,No
+TXN000579,APP00045,2024-02-01,Current,NEFT,Transfer,21915,Credit,Rent,Vendor,1171034,No,No,No,No,No,No,No
+TXN000580,APP00025,2024-02-01,Current,NEFT,Transfer,38740,Debit,GST,Vendor,1132294,Yes,No,No,No,No,No,No
+TXN000581,APP00037,2024-02-01,Current,NEFT,Transfer,26751,Credit,Business Revenue,Vendor,1159045,No,No,Yes,No,No,No,No
+TXN000582,APP00050,2024-02-01,Current,NEFT,Transfer,36758,Debit,Rent,Vendor,1122287,No,No,No,No,No,No,No
+TXN000583,APP00014,2024-02-01,Current,NEFT,Transfer,48658,Credit,Rent,Vendor,1170945,No,No,No,No,No,No,No
+TXN000584,APP00027,2024-02-01,Current,NEFT,Transfer,46405,Debit,Utilities,Vendor,1124540,No,No,No,No,No,No,No
+TXN000585,APP00043,2024-02-01,Current,NEFT,Transfer,20846,Debit,GST,Vendor,1103694,Yes,No,No,No,No,No,No
+TXN000586,APP00029,2024-02-01,Current,NEFT,Transfer,28730,Credit,Business Revenue,Vendor,1132424,No,No,Yes,Yes,No,No,No
+TXN000587,APP00033,2024-02-01,Current,NEFT,Transfer,32407,Credit,Salary,Vendor,1164831,No,No,Yes,Yes,No,No,No
+TXN000588,APP00003,2024-02-01,Current,NEFT,Transfer,46331,Credit,Salary,Vendor,1211162,No,No,Yes,No,No,No,No
+TXN000589,APP00050,2024-02-01,Current,NEFT,Transfer,36186,Debit,Business Revenue,Vendor,1174976,No,No,Yes,No,No,No,No
+TXN000590,APP00042,2024-02-01,Current,NEFT,Transfer,44561,Credit,Vendor Payment,Vendor,1219537,No,No,No,No,No,No,No
+TXN000591,APP00022,2024-02-01,Current,NEFT,Transfer,37911,Credit,Utilities,Vendor,1257448,No,No,No,Yes,No,No,No
+TXN000592,APP00007,2024-02-01,Current,NEFT,Transfer,29210,Debit,Business Revenue,Vendor,1228238,No,No,Yes,No,No,No,No
+TXN000593,APP00024,2024-02-01,Current,NEFT,Transfer,34467,Debit,EMI,Vendor,1193771,No,Yes,No,No,No,No,No
+TXN000594,APP00002,2024-02-01,Current,NEFT,Transfer,45535,Debit,GST,Vendor,1148236,Yes,No,No,No,No,No,No
+TXN000595,APP00047,2024-02-01,Current,NEFT,Transfer,6626,Debit,Utilities,Vendor,1141610,No,No,No,No,No,No,No
+TXN000596,APP00014,2024-02-01,Current,NEFT,Transfer,21440,Credit,EMI,Vendor,1163050,No,Yes,No,No,No,No,No
+TXN000597,APP00029,2024-02-01,Current,NEFT,Transfer,23826,Credit,Business Revenue,Vendor,1186876,No,No,Yes,No,No,No,No
+TXN000598,APP00020,2024-02-01,Current,NEFT,Transfer,30651,Credit,Business Revenue,Vendor,1217527,No,No,Yes,No,No,No,No
+TXN000599,APP00022,2024-02-01,Current,NEFT,Transfer,47581,Debit,Business Revenue,Vendor,1169946,No,No,Yes,No,No,No,No
+TXN000600,APP00012,2024-02-01,Current,NEFT,Transfer,11771,Debit,Salary,Vendor,1158175,No,No,Yes,No,No,No,No
+TXN000601,APP00015,2024-02-01,Current,NEFT,Transfer,22691,Credit,EMI,Vendor,1180866,No,Yes,No,No,No,No,No
+TXN000602,APP00041,2024-02-01,Current,NEFT,Transfer,42271,Debit,Vendor Payment,Vendor,1138595,No,No,No,No,No,No,No
+TXN000603,APP00040,2024-02-01,Current,NEFT,Transfer,26924,Debit,Rent,Vendor,1111671,No,No,No,Yes,No,No,No
+TXN000604,APP00001,2024-02-01,Current,NEFT,Transfer,30463,Credit,EMI,Vendor,1142134,No,Yes,No,No,No,No,No
+TXN000605,APP00046,2024-02-01,Current,NEFT,Transfer,14486,Credit,Utilities,Vendor,1156620,No,No,No,Yes,No,No,No
+TXN000606,APP00035,2024-02-01,Current,NEFT,Transfer,5100,Debit,Utilities,Vendor,1151520,No,No,No,No,No,No,No
+TXN000607,APP00008,2024-02-01,Current,NEFT,Transfer,22363,Debit,EMI,Vendor,1129157,No,Yes,No,No,No,No,No
+TXN000608,APP00025,2024-02-01,Current,NEFT,Transfer,33078,Credit,Salary,Vendor,1162235,No,No,Yes,No,No,No,No
+TXN000609,APP00023,2024-02-01,Current,NEFT,Transfer,39469,Debit,GST,Vendor,1122766,Yes,No,No,Yes,No,No,No
+TXN000610,APP00044,2024-02-01,Current,NEFT,Transfer,41459,Debit,Utilities,Vendor,1081307,No,No,No,No,No,No,No
+TXN000611,APP00009,2024-02-01,Current,NEFT,Transfer,20493,Debit,Rent,Vendor,1060814,No,No,No,No,No,No,No
+TXN000612,APP00012,2024-02-01,Current,NEFT,Transfer,16635,Credit,Business Revenue,Vendor,1077449,No,No,Yes,No,No,No,No
+TXN000613,APP00039,2024-02-01,Current,NEFT,Transfer,10264,Credit,EMI,Vendor,1087713,No,Yes,No,No,No,No,No
+TXN000614,APP00032,2024-02-01,Current,NEFT,Transfer,26146,Credit,Vendor Payment,Vendor,1113859,No,No,No,No,No,No,No
+TXN000615,APP00011,2024-02-01,Current,NEFT,Transfer,46444,Debit,Salary,Vendor,1067415,No,No,Yes,No,No,No,No
+TXN000616,APP00004,2024-02-01,Current,NEFT,Transfer,21616,Credit,Salary,Vendor,1089031,No,No,Yes,Yes,No,No,No
+TXN000617,APP00013,2024-02-01,Current,NEFT,Transfer,1628,Credit,Vendor Payment,Vendor,1090659,No,No,No,Yes,No,No,No
+TXN000618,APP00044,2024-02-01,Current,NEFT,Transfer,37803,Credit,EMI,Vendor,1128462,No,Yes,No,No,No,No,No
+TXN000619,APP00011,2024-02-01,Current,NEFT,Transfer,47539,Credit,EMI,Vendor,1176001,No,Yes,No,No,No,No,No
+TXN000620,APP00018,2024-02-01,Current,NEFT,Transfer,15452,Credit,Business Revenue,Vendor,1191453,No,No,Yes,No,No,No,No
+TXN000621,APP00030,2024-02-01,Current,NEFT,Transfer,19918,Debit,Utilities,Vendor,1171535,No,No,No,No,No,No,No
+TXN000622,APP00008,2024-02-01,Current,NEFT,Transfer,33460,Debit,Salary,Vendor,1138075,No,No,Yes,No,No,No,No
+TXN000623,APP00049,2024-02-01,Current,NEFT,Transfer,36593,Credit,Salary,Vendor,1174668,No,No,Yes,No,No,No,No
+TXN000624,APP00014,2024-02-01,Current,NEFT,Transfer,48119,Credit,Salary,Vendor,1222787,No,No,Yes,Yes,No,No,No
+TXN000625,APP00003,2024-02-01,Current,NEFT,Transfer,43839,Debit,GST,Vendor,1178948,Yes,No,No,No,No,No,No
+TXN000626,APP00008,2024-02-01,Current,NEFT,Transfer,23844,Debit,EMI,Vendor,1155104,No,Yes,No,No,No,No,No
+TXN000627,APP00048,2024-02-01,Current,NEFT,Transfer,16528,Debit,Utilities,Vendor,1138576,No,No,No,No,No,No,No
+TXN000628,APP00040,2024-02-01,Current,NEFT,Transfer,23978,Credit,Vendor Payment,Vendor,1162554,No,No,No,No,No,No,No
+TXN000629,APP00004,2024-02-01,Current,NEFT,Transfer,14541,Debit,Utilities,Vendor,1148013,No,No,No,No,No,No,No
+TXN000630,APP00035,2024-02-01,Current,NEFT,Transfer,35883,Credit,Salary,Vendor,1183896,No,No,Yes,No,No,No,No
+TXN000631,APP00037,2024-02-01,Current,NEFT,Transfer,47140,Credit,GST,Vendor,1231036,Yes,No,No,No,No,No,No
+TXN000632,APP00049,2024-02-01,Current,NEFT,Transfer,45518,Debit,Vendor Payment,Vendor,1185518,No,No,No,No,Yes,No,No
+TXN000633,APP00009,2024-02-01,Current,NEFT,Transfer,19174,Debit,Rent,Vendor,1166344,No,No,No,No,No,No,No
+TXN000634,APP00016,2024-02-01,Current,NEFT,Transfer,47621,Credit,Utilities,Vendor,1213965,No,No,No,No,No,No,No
+TXN000635,APP00041,2024-02-01,Current,NEFT,Transfer,33077,Debit,Salary,Vendor,1180888,No,No,Yes,No,No,No,No
+TXN000636,APP00005,2024-02-01,Current,NEFT,Transfer,28146,Credit,EMI,Vendor,1209034,No,Yes,No,No,No,No,No
+TXN000637,APP00048,2024-02-01,Current,NEFT,Transfer,7101,Credit,Salary,Vendor,1216135,No,No,Yes,No,No,No,No
+TXN000638,APP00021,2024-02-01,Current,NEFT,Transfer,25187,Credit,EMI,Vendor,1241322,No,Yes,No,No,No,No,No
+TXN000639,APP00030,2024-02-01,Current,NEFT,Transfer,49019,Debit,Rent,Vendor,1192303,No,No,No,No,No,No,No
+TXN000640,APP00028,2024-02-01,Current,NEFT,Transfer,5150,Credit,Vendor Payment,Vendor,1197453,No,No,No,Yes,No,No,No
+TXN000641,APP00019,2024-02-01,Current,NEFT,Transfer,33421,Credit,GST,Vendor,1230874,Yes,No,No,No,No,No,No
+TXN000642,APP00032,2024-02-01,Current,NEFT,Transfer,38875,Debit,Salary,Vendor,1191999,No,No,Yes,No,No,No,No
+TXN000643,APP00007,2024-02-01,Current,NEFT,Transfer,45731,Debit,Business Revenue,Vendor,1146268,No,No,Yes,No,No,No,No
+TXN000644,APP00011,2024-02-01,Current,NEFT,Transfer,2067,Debit,Utilities,Vendor,1144201,No,No,No,No,No,No,No
+TXN000645,APP00045,2024-02-01,Current,NEFT,Transfer,1044,Credit,Vendor Payment,Vendor,1145245,No,No,No,Yes,No,No,No
+TXN000646,APP00018,2024-02-01,Current,NEFT,Transfer,43598,Credit,Vendor Payment,Vendor,1188843,No,No,No,No,No,No,No
+TXN000647,APP00024,2024-02-01,Current,NEFT,Transfer,24621,Credit,Business Revenue,Vendor,1213464,No,No,Yes,No,No,No,No
+TXN000648,APP00026,2024-02-01,Current,NEFT,Transfer,43527,Debit,Business Revenue,Vendor,1169937,No,No,Yes,No,No,No,No
+TXN000649,APP00042,2024-02-01,Current,NEFT,Transfer,48578,Debit,EMI,Vendor,1121359,No,Yes,No,No,No,No,No
+TXN000650,APP00009,2024-02-01,Current,NEFT,Transfer,14986,Credit,Business Revenue,Vendor,1136345,No,No,Yes,No,No,No,No
+TXN000651,APP00001,2024-02-01,Current,NEFT,Transfer,35042,Credit,Business Revenue,Vendor,1171387,No,No,Yes,No,No,No,No
+TXN000652,APP00009,2024-02-01,Current,NEFT,Transfer,8903,Credit,Rent,Vendor,1180290,No,No,No,No,No,No,No
+TXN000653,APP00047,2024-02-01,Current,NEFT,Transfer,16004,Credit,Business Revenue,Vendor,1196294,No,No,Yes,Yes,No,No,No
+TXN000654,APP00020,2024-02-01,Current,NEFT,Transfer,7763,Credit,GST,Vendor,1204057,Yes,No,No,No,No,No,No
+TXN000655,APP00034,2024-02-01,Current,NEFT,Transfer,9725,Debit,Business Revenue,Vendor,1194332,No,No,Yes,No,No,No,No
+TXN000656,APP00023,2024-02-01,Current,NEFT,Transfer,40997,Debit,EMI,Vendor,1153335,No,Yes,No,No,No,No,No
+TXN000657,APP00040,2024-02-01,Current,NEFT,Transfer,42161,Debit,EMI,Vendor,1111174,No,Yes,No,No,No,No,No
+TXN000658,APP00009,2024-02-01,Current,NEFT,Transfer,15237,Debit,Business Revenue,Vendor,1095937,No,No,Yes,No,No,No,No
+TXN000659,APP00028,2024-02-01,Current,NEFT,Transfer,39638,Credit,GST,Vendor,1135575,Yes,No,No,No,No,No,No
+TXN000660,APP00042,2024-02-01,Current,NEFT,Transfer,10163,Debit,GST,Vendor,1125412,Yes,No,No,No,No,No,No
+TXN000661,APP00045,2024-02-01,Current,NEFT,Transfer,37267,Credit,Utilities,Vendor,1162679,No,No,No,No,No,No,No
+TXN000662,APP00034,2024-02-01,Current,NEFT,Transfer,44149,Credit,Vendor Payment,Vendor,1206828,No,No,No,No,No,No,No
+TXN000663,APP00042,2024-02-01,Current,NEFT,Transfer,13363,Credit,GST,Vendor,1220191,Yes,No,No,No,No,No,No
+TXN000664,APP00008,2024-02-01,Current,NEFT,Transfer,16685,Credit,EMI,Vendor,1236876,No,Yes,No,No,No,No,No
+TXN000665,APP00001,2024-02-01,Current,NEFT,Transfer,42817,Debit,Salary,Vendor,1194059,No,No,Yes,Yes,No,No,No
+TXN000666,APP00037,2024-02-01,Current,NEFT,Transfer,21740,Debit,EMI,Vendor,1172319,No,Yes,No,No,No,No,No
+TXN000667,APP00031,2024-02-01,Current,NEFT,Transfer,36806,Debit,Utilities,Vendor,1135513,No,No,No,Yes,No,No,No
+TXN000668,APP00005,2024-02-01,Current,NEFT,Transfer,5783,Debit,Salary,Vendor,1129730,No,No,Yes,No,No,No,No
+TXN000669,APP00026,2024-02-01,Current,NEFT,Transfer,15138,Debit,Business Revenue,Vendor,1114592,No,No,Yes,No,No,No,No
+TXN000670,APP00045,2024-02-01,Current,NEFT,Transfer,42194,Credit,EMI,Vendor,1156786,No,Yes,No,No,No,No,No
+TXN000671,APP00006,2024-02-01,Current,NEFT,Transfer,42978,Debit,GST,Vendor,1113808,Yes,No,No,No,No,No,No
+TXN000672,APP00010,2024-02-01,Current,NEFT,Transfer,34508,Debit,Utilities,Vendor,1079300,No,No,No,No,No,No,No
+TXN000673,APP00045,2024-02-01,Current,NEFT,Transfer,26606,Debit,GST,Vendor,1052694,Yes,No,No,No,No,No,No
+TXN000674,APP00006,2024-02-01,Current,NEFT,Transfer,16639,Debit,Vendor Payment,Vendor,1036055,No,No,No,Yes,No,No,No
+TXN000675,APP00039,2024-02-01,Current,NEFT,Transfer,8601,Credit,Salary,Vendor,1044656,No,No,Yes,No,No,No,No
+TXN000676,APP00001,2024-02-01,Current,NEFT,Transfer,44652,Debit,Business Revenue,Vendor,1000004,No,No,Yes,No,No,No,No
+TXN000677,APP00032,2024-02-01,Current,NEFT,Transfer,46973,Debit,Vendor Payment,Vendor,953031,No,No,No,Yes,No,No,No
+TXN000678,APP00024,2024-02-01,Current,NEFT,Transfer,48236,Credit,Vendor Payment,Vendor,1001267,No,No,No,No,No,No,No
+TXN000679,APP00002,2024-02-01,Current,NEFT,Transfer,18613,Debit,Utilities,Vendor,982654,No,No,No,No,No,No,No
+TXN000680,APP00005,2024-02-01,Current,NEFT,Transfer,29136,Credit,Salary,Vendor,1011790,No,No,Yes,No,No,No,No
+TXN000681,APP00030,2024-02-01,Current,NEFT,Transfer,38791,Debit,EMI,Vendor,972999,No,Yes,No,No,No,No,No
+TXN000682,APP00037,2024-02-01,Current,NEFT,Transfer,4633,Credit,Utilities,Vendor,977632,No,No,No,No,No,No,No
+TXN000683,APP00007,2024-02-01,Current,NEFT,Transfer,11309,Credit,Utilities,Vendor,988941,No,No,No,Yes,No,No,No
+TXN000684,APP00048,2024-02-01,Current,NEFT,Transfer,45179,Debit,Vendor Payment,Vendor,943762,No,No,No,No,No,No,No
+TXN000685,APP00031,2024-02-01,Current,NEFT,Transfer,1805,Debit,Business Revenue,Vendor,941957,No,No,Yes,No,No,No,No
+TXN000686,APP00003,2024-02-01,Current,NEFT,Transfer,10835,Debit,Utilities,Vendor,931122,No,No,No,No,No,No,No
+TXN000687,APP00021,2024-02-01,Current,NEFT,Transfer,47794,Credit,Vendor Payment,Vendor,978916,No,No,No,No,Yes,No,No
+TXN000688,APP00005,2024-02-01,Current,NEFT,Transfer,21967,Credit,Utilities,Vendor,1000883,No,No,No,No,No,No,No
+TXN000689,APP00015,2024-02-01,Current,NEFT,Transfer,8825,Debit,Vendor Payment,Vendor,992058,No,No,No,Yes,No,No,No
+TXN000690,APP00030,2024-02-01,Current,NEFT,Transfer,4009,Credit,Business Revenue,Vendor,996067,No,No,Yes,Yes,No,No,No
+TXN000691,APP00036,2024-02-01,Current,NEFT,Transfer,21361,Credit,Business Revenue,Vendor,1017428,No,No,Yes,No,No,No,No
+TXN000692,APP00037,2024-02-01,Current,NEFT,Transfer,25177,Debit,GST,Vendor,992251,Yes,No,No,No,No,No,No
+TXN000693,APP00024,2024-02-01,Current,NEFT,Transfer,49468,Debit,EMI,Vendor,942783,No,Yes,No,No,No,No,No
+TXN000694,APP00001,2024-02-01,Current,NEFT,Transfer,13807,Debit,Vendor Payment,Vendor,928976,No,No,No,Yes,No,No,No
+TXN000695,APP00023,2024-02-01,Current,NEFT,Transfer,2566,Debit,Salary,Vendor,926410,No,No,Yes,No,No,No,No
+TXN000696,APP00001,2024-02-01,Current,NEFT,Transfer,46446,Debit,GST,Vendor,879964,Yes,No,No,No,No,No,No
+TXN000697,APP00014,2024-02-01,Current,NEFT,Transfer,49370,Credit,Business Revenue,Vendor,929334,No,No,Yes,No,No,No,No
+TXN000698,APP00046,2024-02-01,Current,NEFT,Transfer,33245,Debit,Vendor Payment,Vendor,896089,No,No,No,No,No,No,No
+TXN000699,APP00034,2024-02-01,Current,NEFT,Transfer,3877,Debit,Utilities,Vendor,892212,No,No,No,No,No,No,No
+TXN000700,APP00006,2024-02-01,Current,NEFT,Transfer,25411,Credit,Rent,Vendor,917623,No,No,No,No,No,No,No
+TXN000701,APP00026,2024-02-01,Current,NEFT,Transfer,34123,Debit,Rent,Vendor,883500,No,No,No,No,No,No,No
+TXN000702,APP00043,2024-02-01,Current,NEFT,Transfer,38212,Debit,EMI,Vendor,845288,No,Yes,No,Yes,No,No,No
+TXN000703,APP00021,2024-02-01,Current,NEFT,Transfer,16517,Credit,GST,Vendor,861805,Yes,No,No,Yes,No,No,No
+TXN000704,APP00029,2024-02-01,Current,NEFT,Transfer,26752,Credit,GST,Vendor,888557,Yes,No,No,No,No,No,No
+TXN000705,APP00050,2024-02-01,Current,NEFT,Transfer,5894,Debit,Vendor Payment,Vendor,882663,No,No,No,No,No,No,No
+TXN000706,APP00011,2024-02-01,Current,NEFT,Transfer,8141,Debit,Business Revenue,Vendor,874522,No,No,Yes,No,No,No,No
+TXN000707,APP00035,2024-02-01,Current,NEFT,Transfer,21580,Credit,Business Revenue,Vendor,896102,No,No,Yes,No,No,No,No
+TXN000708,APP00030,2024-02-01,Current,NEFT,Transfer,14607,Credit,GST,Vendor,910709,Yes,No,No,No,No,No,No
+TXN000709,APP00044,2024-02-01,Current,NEFT,Transfer,8858,Debit,Vendor Payment,Vendor,901851,No,No,No,No,No,No,No
+TXN000710,APP00021,2024-02-01,Current,NEFT,Transfer,47183,Debit,Vendor Payment,Vendor,854668,No,No,No,No,No,No,No
+TXN000711,APP00004,2024-02-01,Current,NEFT,Transfer,24313,Credit,Salary,Vendor,878981,No,No,Yes,No,No,No,No
+TXN000712,APP00026,2024-02-01,Current,NEFT,Transfer,18050,Debit,Business Revenue,Vendor,860931,No,No,Yes,Yes,No,No,No
+TXN000713,APP00030,2024-02-01,Current,NEFT,Transfer,37434,Debit,Business Revenue,Vendor,823497,No,No,Yes,No,No,No,No
+TXN000714,APP00004,2024-02-01,Current,NEFT,Transfer,10161,Debit,Business Revenue,Vendor,813336,No,No,Yes,Yes,No,No,No
+TXN000715,APP00026,2024-02-01,Current,NEFT,Transfer,15567,Debit,Vendor Payment,Vendor,797769,No,No,No,No,No,No,No
+TXN000716,APP00038,2024-02-01,Current,NEFT,Transfer,42307,Debit,Salary,Vendor,755462,No,No,Yes,No,No,No,No
+TXN000717,APP00013,2024-02-01,Current,NEFT,Transfer,5914,Debit,Business Revenue,Vendor,749548,No,No,Yes,Yes,No,No,No
+TXN000718,APP00022,2024-02-01,Current,NEFT,Transfer,30060,Debit,Business Revenue,Vendor,719488,No,No,Yes,No,No,No,No
+TXN000719,APP00037,2024-02-01,Current,NEFT,Transfer,31211,Debit,Vendor Payment,Vendor,688277,No,No,No,No,No,No,No
+TXN000720,APP00002,2024-02-01,Current,NEFT,Transfer,48476,Credit,EMI,Vendor,736753,No,Yes,No,No,No,No,No
+TXN000721,APP00018,2024-02-01,Current,NEFT,Transfer,24196,Debit,Vendor Payment,Vendor,712557,No,No,No,No,No,No,No
+TXN000722,APP00040,2024-02-01,Current,NEFT,Transfer,10740,Debit,Salary,Vendor,701817,No,No,Yes,No,No,No,No
+TXN000723,APP00027,2024-02-01,Current,NEFT,Transfer,43420,Credit,EMI,Vendor,745237,No,Yes,No,Yes,No,No,No
+TXN000724,APP00018,2024-02-01,Current,NEFT,Transfer,32393,Debit,Business Revenue,Vendor,712844,No,No,Yes,No,No,No,No
+TXN000725,APP00034,2024-02-01,Current,NEFT,Transfer,28474,Debit,Rent,Vendor,684370,No,No,No,No,No,No,No
+TXN000726,APP00046,2024-02-01,Current,NEFT,Transfer,36629,Debit,EMI,Vendor,647741,No,Yes,No,No,No,No,No
+TXN000727,APP00037,2024-02-01,Current,NEFT,Transfer,36685,Credit,GST,Vendor,684426,Yes,No,No,No,No,No,No
+TXN000728,APP00002,2024-02-01,Current,NEFT,Transfer,26452,Credit,Vendor Payment,Vendor,710878,No,No,No,No,No,No,No
+TXN000729,APP00050,2024-02-01,Current,NEFT,Transfer,15353,Debit,Utilities,Vendor,695525,No,No,No,No,No,No,No
+TXN000730,APP00038,2024-02-01,Current,NEFT,Transfer,31912,Credit,Utilities,Vendor,727437,No,No,No,Yes,No,No,No
+TXN000731,APP00043,2024-02-01,Current,NEFT,Transfer,11461,Debit,Vendor Payment,Vendor,715976,No,No,No,No,No,No,No
+TXN000732,APP00015,2024-02-01,Current,NEFT,Transfer,35975,Debit,Utilities,Vendor,680001,No,No,No,No,No,No,No
+TXN000733,APP00012,2024-02-01,Current,NEFT,Transfer,26455,Credit,Utilities,Vendor,706456,No,No,No,No,No,No,No
+TXN000734,APP00048,2024-02-01,Current,NEFT,Transfer,39831,Credit,Utilities,Vendor,746287,No,No,No,No,No,No,No
+TXN000735,APP00045,2024-02-01,Current,NEFT,Transfer,39768,Debit,Rent,Vendor,706519,No,No,No,No,No,No,No
+TXN000736,APP00013,2024-02-01,Current,NEFT,Transfer,38201,Debit,Salary,Vendor,668318,No,No,Yes,Yes,No,No,No
+TXN000737,APP00032,2024-02-01,Current,NEFT,Transfer,33258,Credit,Vendor Payment,Vendor,701576,No,No,No,No,No,No,No
+TXN000738,APP00015,2024-02-01,Current,NEFT,Transfer,4681,Debit,Salary,Vendor,696895,No,No,Yes,No,No,No,No
+TXN000739,APP00040,2024-02-01,Current,NEFT,Transfer,32325,Debit,GST,Vendor,664570,Yes,No,No,No,No,No,No
+TXN000740,APP00012,2024-02-01,Current,NEFT,Transfer,9551,Credit,Rent,Vendor,674121,No,No,No,Yes,No,No,No
+TXN000741,APP00010,2024-02-01,Current,NEFT,Transfer,22206,Debit,Business Revenue,Vendor,651915,No,No,Yes,No,No,No,No
+TXN000742,APP00034,2024-02-01,Current,NEFT,Transfer,10283,Debit,Utilities,Vendor,641632,No,No,No,Yes,No,No,No
+TXN000743,APP00043,2024-02-01,Current,NEFT,Transfer,5753,Credit,Rent,Vendor,647385,No,No,No,No,No,No,No
+TXN000744,APP00021,2024-02-01,Current,NEFT,Transfer,7621,Credit,GST,Vendor,655006,Yes,No,No,No,No,No,No
+TXN000745,APP00041,2024-02-01,Current,NEFT,Transfer,11322,Credit,Utilities,Vendor,666328,No,No,No,Yes,No,No,No
+TXN000746,APP00046,2024-02-01,Current,NEFT,Transfer,43544,Credit,Vendor Payment,Vendor,709872,No,No,No,Yes,No,No,No
+TXN000747,APP00043,2024-02-01,Current,NEFT,Transfer,46453,Credit,Vendor Payment,Vendor,756325,No,No,No,No,No,No,No
+TXN000748,APP00012,2024-02-01,Current,NEFT,Transfer,21107,Credit,Vendor Payment,Vendor,777432,No,No,No,No,No,No,No
+TXN000749,APP00050,2024-02-01,Current,NEFT,Transfer,47006,Credit,Utilities,Vendor,824438,No,No,No,Yes,No,No,No
+TXN000750,APP00040,2024-02-01,Current,NEFT,Transfer,40478,Credit,Utilities,Vendor,864916,No,No,No,No,No,No,No
+TXN000751,APP00010,2024-02-01,Current,NEFT,Transfer,38063,Debit,EMI,Vendor,826853,No,Yes,No,No,No,No,No
+TXN000752,APP00021,2024-02-01,Current,NEFT,Transfer,6099,Debit,GST,Vendor,820754,Yes,No,No,No,No,No,No
+TXN000753,APP00001,2024-02-01,Current,NEFT,Transfer,6814,Credit,EMI,Vendor,827568,No,Yes,No,No,No,No,No
+TXN000754,APP00017,2024-02-01,Current,NEFT,Transfer,17353,Debit,GST,Vendor,810215,Yes,No,No,No,No,No,No
+TXN000755,APP00025,2024-02-01,Current,NEFT,Transfer,48213,Debit,Business Revenue,Vendor,762002,No,No,Yes,No,No,No,No
+TXN000756,APP00025,2024-02-01,Current,NEFT,Transfer,11901,Credit,EMI,Vendor,773903,No,Yes,No,No,No,No,No
+TXN000757,APP00031,2024-02-01,Current,NEFT,Transfer,25598,Debit,Utilities,Vendor,748305,No,No,No,No,No,No,No
+TXN000758,APP00029,2024-02-01,Current,NEFT,Transfer,38883,Debit,Vendor Payment,Vendor,709422,No,No,No,No,No,No,No
+TXN000759,APP00021,2024-02-01,Current,NEFT,Transfer,3189,Credit,Business Revenue,Vendor,712611,No,No,Yes,No,No,No,No
+TXN000760,APP00011,2024-02-01,Current,NEFT,Transfer,7863,Debit,GST,Vendor,704748,Yes,No,No,Yes,No,No,No
+TXN000761,APP00006,2024-02-01,Current,NEFT,Transfer,11545,Debit,Salary,Vendor,693203,No,No,Yes,No,No,No,No
+TXN000762,APP00002,2024-02-01,Current,NEFT,Transfer,41215,Credit,Rent,Vendor,734418,No,No,No,No,No,No,No
+TXN000763,APP00028,2024-02-01,Current,NEFT,Transfer,43836,Debit,Salary,Vendor,690582,No,No,Yes,No,No,No,No
+TXN000764,APP00013,2024-02-01,Current,NEFT,Transfer,7636,Credit,Vendor Payment,Vendor,698218,No,No,No,No,No,No,No
+TXN000765,APP00019,2024-02-01,Current,NEFT,Transfer,37314,Credit,Rent,Vendor,735532,No,No,No,No,No,No,No
+TXN000766,APP00037,2024-02-01,Current,NEFT,Transfer,7285,Debit,EMI,Vendor,728247,No,Yes,No,No,No,No,No
+TXN000767,APP00024,2024-02-01,Current,NEFT,Transfer,33174,Debit,Business Revenue,Vendor,695073,No,No,Yes,No,No,No,No
+TXN000768,APP00043,2024-02-01,Current,NEFT,Transfer,6742,Credit,Utilities,Vendor,701815,No,No,No,No,No,No,No
+TXN000769,APP00002,2024-02-01,Current,NEFT,Transfer,32478,Debit,Business Revenue,Vendor,669337,No,No,Yes,No,No,No,No
+TXN000770,APP00031,2024-02-01,Current,NEFT,Transfer,42824,Credit,Business Revenue,Vendor,712161,No,No,Yes,Yes,No,No,No
+TXN000771,APP00032,2024-02-01,Current,NEFT,Transfer,21208,Credit,EMI,Vendor,733369,No,Yes,No,Yes,No,No,No
+TXN000772,APP00035,2024-02-01,Current,NEFT,Transfer,18367,Debit,Rent,Vendor,715002,No,No,No,No,No,No,No
+TXN000773,APP00012,2024-02-01,Current,NEFT,Transfer,25315,Credit,GST,Vendor,740317,Yes,No,No,No,No,No,No
+TXN000774,APP00017,2024-02-01,Current,NEFT,Transfer,18255,Credit,EMI,Vendor,758572,No,Yes,No,No,No,No,No
+TXN000775,APP00049,2024-02-01,Current,NEFT,Transfer,18600,Debit,Vendor Payment,Vendor,739972,No,No,No,No,No,No,No
+TXN000776,APP00023,2024-02-01,Current,NEFT,Transfer,7337,Debit,Rent,Vendor,732635,No,No,No,Yes,No,No,No
+TXN000777,APP00004,2024-02-01,Current,NEFT,Transfer,28131,Debit,Salary,Vendor,704504,No,No,Yes,Yes,No,No,No
+TXN000778,APP00044,2024-02-01,Current,NEFT,Transfer,35247,Credit,Salary,Vendor,739751,No,No,Yes,Yes,No,No,No
+TXN000779,APP00020,2024-02-01,Current,NEFT,Transfer,32118,Debit,EMI,Vendor,707633,No,Yes,No,No,No,No,No
+TXN000780,APP00037,2024-02-01,Current,NEFT,Transfer,47812,Debit,Salary,Vendor,659821,No,No,Yes,Yes,No,No,No
+TXN000781,APP00049,2024-02-01,Current,NEFT,Transfer,45402,Debit,Business Revenue,Vendor,614419,No,No,Yes,No,Yes,No,No
+TXN000782,APP00013,2024-02-01,Current,NEFT,Transfer,11955,Debit,Utilities,Vendor,602464,No,No,No,No,No,No,No
+TXN000783,APP00028,2024-02-01,Current,NEFT,Transfer,28746,Debit,Rent,Vendor,573718,No,No,No,No,No,No,No
+TXN000784,APP00039,2024-02-01,Current,NEFT,Transfer,42105,Debit,Utilities,Vendor,531613,No,No,No,No,No,No,No
+TXN000785,APP00025,2024-02-01,Current,NEFT,Transfer,48651,Debit,Business Revenue,Vendor,482962,No,No,Yes,No,No,No,No
+TXN000786,APP00001,2024-02-01,Current,NEFT,Transfer,19101,Credit,Utilities,Vendor,502063,No,No,No,No,No,No,No
+TXN000787,APP00027,2024-02-01,Current,NEFT,Transfer,41832,Credit,Business Revenue,Vendor,543895,No,No,Yes,No,No,No,No
+TXN000788,APP00037,2024-02-01,Current,NEFT,Transfer,38132,Debit,Business Revenue,Vendor,505763,No,No,Yes,No,No,No,No
+TXN000789,APP00017,2024-02-01,Current,NEFT,Transfer,19749,Credit,EMI,Vendor,525512,No,Yes,No,No,No,No,No
+TXN000790,APP00012,2024-02-01,Current,NEFT,Transfer,32823,Credit,Business Revenue,Vendor,558335,No,No,Yes,No,No,No,No
+TXN000791,APP00026,2024-02-01,Current,NEFT,Transfer,10427,Credit,Business Revenue,Vendor,568762,No,No,Yes,Yes,No,No,No
+TXN000792,APP00048,2024-02-01,Current,NEFT,Transfer,22724,Debit,Business Revenue,Vendor,546038,No,No,Yes,No,No,No,No
+TXN000793,APP00022,2024-02-01,Current,NEFT,Transfer,18601,Credit,Business Revenue,Vendor,564639,No,No,Yes,Yes,No,No,No
+TXN000794,APP00032,2024-02-01,Current,NEFT,Transfer,20861,Credit,GST,Vendor,585500,Yes,No,No,Yes,No,No,No
+TXN000795,APP00015,2024-02-01,Current,NEFT,Transfer,45882,Debit,Utilities,Vendor,539618,No,No,No,No,Yes,No,No
+TXN000796,APP00047,2024-02-01,Current,NEFT,Transfer,30039,Credit,GST,Vendor,569657,Yes,No,No,No,No,No,No
+TXN000797,APP00029,2024-02-01,Current,NEFT,Transfer,43307,Debit,Vendor Payment,Vendor,526350,No,No,No,No,No,No,No
+TXN000798,APP00034,2024-02-01,Current,NEFT,Transfer,27684,Credit,Utilities,Vendor,554034,No,No,No,Yes,No,No,No
+TXN000799,APP00020,2024-02-01,Current,NEFT,Transfer,4683,Debit,Business Revenue,Vendor,549351,No,No,Yes,No,No,No,No
+TXN000800,APP00034,2024-02-01,Current,NEFT,Transfer,27436,Debit,Utilities,Vendor,521915,No,No,No,Yes,No,No,No
+TXN000801,APP00013,2024-02-01,Current,NEFT,Transfer,2897,Debit,Vendor Payment,Vendor,519018,No,No,No,Yes,No,No,No
+TXN000802,APP00004,2024-02-01,Current,NEFT,Transfer,17350,Debit,EMI,Vendor,501668,No,Yes,No,Yes,No,No,No
+TXN000803,APP00024,2024-02-01,Current,NEFT,Transfer,47178,Debit,GST,Vendor,454490,Yes,No,No,Yes,No,No,No
+TXN000804,APP00002,2024-02-01,Current,NEFT,Transfer,42642,Debit,Rent,Vendor,411848,No,No,No,No,No,No,No
+TXN000805,APP00031,2024-02-01,Current,NEFT,Transfer,33033,Credit,Vendor Payment,Vendor,444881,No,No,No,No,No,No,No
+TXN000806,APP00017,2024-02-01,Current,NEFT,Transfer,23921,Credit,Vendor Payment,Vendor,468802,No,No,No,No,No,No,No
+TXN000807,APP00002,2024-02-01,Current,NEFT,Transfer,46144,Debit,GST,Vendor,422658,Yes,No,No,No,No,No,No
+TXN000808,APP00015,2024-02-01,Current,NEFT,Transfer,38503,Debit,Utilities,Vendor,384155,No,No,No,No,No,No,No
+TXN000809,APP00042,2024-02-01,Current,NEFT,Transfer,45413,Debit,GST,Vendor,338742,Yes,No,No,No,No,No,No
+TXN000810,APP00009,2024-02-01,Current,NEFT,Transfer,45708,Debit,EMI,Vendor,293034,No,Yes,No,No,No,No,No
+TXN000811,APP00039,2024-02-01,Current,NEFT,Transfer,1554,Debit,GST,Vendor,291480,Yes,No,No,Yes,No,No,No
+TXN000812,APP00025,2024-02-01,Current,NEFT,Transfer,21018,Credit,EMI,Vendor,312498,No,Yes,No,Yes,No,No,No
+TXN000813,APP00030,2024-02-01,Current,NEFT,Transfer,31080,Credit,Vendor Payment,Vendor,343578,No,No,No,No,No,No,No
+TXN000814,APP00007,2024-02-01,Current,NEFT,Transfer,35120,Credit,Salary,Vendor,378698,No,No,Yes,No,No,No,No
+TXN000815,APP00042,2024-02-01,Current,NEFT,Transfer,44408,Credit,Salary,Vendor,423106,No,No,Yes,No,No,No,No
+TXN000816,APP00007,2024-02-01,Current,NEFT,Transfer,19525,Credit,Rent,Vendor,442631,No,No,No,No,No,No,No
+TXN000817,APP00021,2024-02-01,Current,NEFT,Transfer,23038,Credit,Rent,Vendor,465669,No,No,No,Yes,No,No,No
+TXN000818,APP00010,2024-02-01,Current,NEFT,Transfer,18114,Credit,Vendor Payment,Vendor,483783,No,No,No,No,No,No,No
+TXN000819,APP00039,2024-02-01,Current,NEFT,Transfer,16748,Debit,Utilities,Vendor,467035,No,No,No,No,No,No,No
+TXN000820,APP00002,2024-02-01,Current,NEFT,Transfer,21944,Debit,Rent,Vendor,445091,No,No,No,No,No,No,No
+TXN000821,APP00026,2024-02-01,Current,NEFT,Transfer,20372,Credit,EMI,Vendor,465463,No,Yes,No,No,No,No,No
+TXN000822,APP00047,2024-02-01,Current,NEFT,Transfer,3314,Debit,GST,Vendor,462149,Yes,No,No,No,No,No,No
+TXN000823,APP00023,2024-02-01,Current,NEFT,Transfer,45978,Credit,Rent,Vendor,508127,No,No,No,No,No,No,No
+TXN000824,APP00007,2024-02-01,Current,NEFT,Transfer,44097,Debit,GST,Vendor,464030,Yes,No,No,No,No,No,No
+TXN000825,APP00036,2024-02-01,Current,NEFT,Transfer,49556,Credit,Rent,Vendor,513586,No,No,No,No,No,No,No
+TXN000826,APP00006,2024-02-01,Current,NEFT,Transfer,45545,Credit,Rent,Vendor,559131,No,No,No,No,No,No,No
+TXN000827,APP00022,2024-02-01,Current,NEFT,Transfer,21125,Credit,Utilities,Vendor,580256,No,No,No,No,No,No,No
+TXN000828,APP00008,2024-02-01,Current,NEFT,Transfer,39375,Credit,EMI,Vendor,619631,No,Yes,No,No,No,No,No
+TXN000829,APP00013,2024-02-01,Current,NEFT,Transfer,42575,Debit,EMI,Vendor,577056,No,Yes,No,No,No,No,No
+TXN000830,APP00020,2024-02-01,Current,NEFT,Transfer,45610,Credit,Salary,Vendor,622666,No,No,Yes,No,No,No,No
+TXN000831,APP00022,2024-02-01,Current,NEFT,Transfer,10881,Debit,Vendor Payment,Vendor,611785,No,No,No,No,No,No,No
+TXN000832,APP00021,2024-02-01,Current,NEFT,Transfer,38316,Credit,Vendor Payment,Vendor,650101,No,No,No,Yes,No,No,No
+TXN000833,APP00022,2024-02-01,Current,NEFT,Transfer,12819,Debit,EMI,Vendor,637282,No,Yes,No,No,No,No,No
+TXN000834,APP00004,2024-02-01,Current,NEFT,Transfer,12588,Credit,Rent,Vendor,649870,No,No,No,No,No,No,No
+TXN000835,APP00050,2024-02-01,Current,NEFT,Transfer,18925,Debit,Utilities,Vendor,630945,No,No,No,No,No,No,No
+TXN000836,APP00049,2024-02-01,Current,NEFT,Transfer,11383,Credit,Utilities,Vendor,642328,No,No,No,No,No,No,No
+TXN000837,APP00028,2024-02-01,Current,NEFT,Transfer,9480,Credit,Rent,Vendor,651808,No,No,No,No,No,No,No
+TXN000838,APP00003,2024-02-01,Current,NEFT,Transfer,32286,Credit,Business Revenue,Vendor,684094,No,No,Yes,No,No,No,No
+TXN000839,APP00021,2024-02-01,Current,NEFT,Transfer,48884,Credit,Business Revenue,Vendor,732978,No,No,Yes,No,No,No,No
+TXN000840,APP00047,2024-02-01,Current,NEFT,Transfer,2174,Debit,Rent,Vendor,730804,No,No,No,No,No,No,No
+TXN000841,APP00009,2024-02-01,Current,NEFT,Transfer,46450,Credit,GST,Vendor,777254,Yes,No,No,No,No,No,No
+TXN000842,APP00003,2024-02-01,Current,NEFT,Transfer,21061,Debit,Business Revenue,Vendor,756193,No,No,Yes,No,No,No,No
+TXN000843,APP00034,2024-02-01,Current,NEFT,Transfer,20059,Credit,Rent,Vendor,776252,No,No,No,No,No,No,No
+TXN000844,APP00009,2024-02-01,Current,NEFT,Transfer,23140,Credit,Rent,Vendor,799392,No,No,No,No,No,No,No
+TXN000845,APP00013,2024-02-01,Current,NEFT,Transfer,33124,Credit,Utilities,Vendor,832516,No,No,No,No,No,No,No
+TXN000846,APP00015,2024-02-01,Current,NEFT,Transfer,27436,Debit,Vendor Payment,Vendor,805080,No,No,No,No,No,No,No
+TXN000847,APP00002,2024-02-01,Current,NEFT,Transfer,9598,Debit,Rent,Vendor,795482,No,No,No,No,No,No,No
+TXN000848,APP00046,2024-02-01,Current,NEFT,Transfer,12074,Debit,GST,Vendor,783408,Yes,No,No,No,No,No,No
+TXN000849,APP00017,2024-02-01,Current,NEFT,Transfer,3448,Credit,Rent,Vendor,786856,No,No,No,No,No,No,No
+TXN000850,APP00004,2024-02-01,Current,NEFT,Transfer,41837,Debit,Salary,Vendor,745019,No,No,Yes,No,No,No,No
+TXN000851,APP00045,2024-02-01,Current,NEFT,Transfer,43832,Debit,Business Revenue,Vendor,701187,No,No,Yes,No,No,No,No
+TXN000852,APP00036,2024-02-01,Current,NEFT,Transfer,30118,Credit,Business Revenue,Vendor,731305,No,No,Yes,No,No,No,No
+TXN000853,APP00045,2024-02-01,Current,NEFT,Transfer,46997,Debit,Vendor Payment,Vendor,684308,No,No,No,No,No,No,No
+TXN000854,APP00034,2024-02-01,Current,NEFT,Transfer,28582,Debit,Rent,Vendor,655726,No,No,No,No,No,No,No
+TXN000855,APP00007,2024-02-01,Current,NEFT,Transfer,40690,Debit,EMI,Vendor,615036,No,Yes,No,No,No,No,No
+TXN000856,APP00008,2024-02-01,Current,NEFT,Transfer,41481,Debit,GST,Vendor,573555,Yes,No,No,No,No,No,No
+TXN000857,APP00013,2024-02-01,Current,NEFT,Transfer,33619,Debit,Salary,Vendor,539936,No,No,Yes,No,No,No,No
+TXN000858,APP00046,2024-02-01,Current,NEFT,Transfer,35284,Debit,GST,Vendor,504652,Yes,No,No,No,No,No,No
+TXN000859,APP00032,2024-02-01,Current,NEFT,Transfer,11510,Debit,Salary,Vendor,493142,No,No,Yes,Yes,No,No,No
+TXN000860,APP00016,2024-02-01,Current,NEFT,Transfer,46102,Credit,GST,Vendor,539244,Yes,No,No,No,No,No,No
+TXN000861,APP00006,2024-02-01,Current,NEFT,Transfer,8237,Credit,Vendor Payment,Vendor,547481,No,No,No,No,No,No,No
+TXN000862,APP00042,2024-02-01,Current,NEFT,Transfer,5918,Debit,GST,Vendor,541563,Yes,No,No,No,No,No,No
+TXN000863,APP00004,2024-02-01,Current,NEFT,Transfer,20400,Credit,EMI,Vendor,561963,No,Yes,No,No,No,No,No
+TXN000864,APP00019,2024-02-01,Current,NEFT,Transfer,12449,Debit,Utilities,Vendor,549514,No,No,No,No,No,No,No
+TXN000865,APP00048,2024-02-01,Current,NEFT,Transfer,45352,Credit,EMI,Vendor,594866,No,Yes,No,No,No,No,No
+TXN000866,APP00009,2024-02-01,Current,NEFT,Transfer,4007,Debit,Utilities,Vendor,590859,No,No,No,No,No,No,No
+TXN000867,APP00029,2024-02-01,Current,NEFT,Transfer,12174,Credit,GST,Vendor,603033,Yes,No,No,Yes,No,No,No
+TXN000868,APP00022,2024-02-01,Current,NEFT,Transfer,18583,Debit,GST,Vendor,584450,Yes,No,No,No,No,No,No
+TXN000869,APP00018,2024-02-01,Current,NEFT,Transfer,27265,Credit,EMI,Vendor,611715,No,Yes,No,Yes,No,No,No
+TXN000870,APP00027,2024-02-01,Current,NEFT,Transfer,46213,Credit,Utilities,Vendor,657928,No,No,No,No,No,No,No
+TXN000871,APP00047,2024-02-01,Current,NEFT,Transfer,8409,Debit,Rent,Vendor,649519,No,No,No,No,No,No,No
+TXN000872,APP00038,2024-02-01,Current,NEFT,Transfer,11446,Debit,EMI,Vendor,638073,No,Yes,No,No,No,No,No
+TXN000873,APP00040,2024-02-01,Current,NEFT,Transfer,38286,Credit,Vendor Payment,Vendor,676359,No,No,No,No,No,No,No
+TXN000874,APP00044,2024-02-01,Current,NEFT,Transfer,24501,Debit,Utilities,Vendor,651858,No,No,No,Yes,No,No,No
+TXN000875,APP00032,2024-02-01,Current,NEFT,Transfer,48662,Debit,EMI,Vendor,603196,No,Yes,No,No,No,No,No
+TXN000876,APP00042,2024-02-01,Current,NEFT,Transfer,4012,Debit,GST,Vendor,599184,Yes,No,No,No,No,No,No
+TXN000877,APP00022,2024-02-01,Current,NEFT,Transfer,47174,Debit,Rent,Vendor,552010,No,No,No,No,No,No,No
+TXN000878,APP00043,2024-02-01,Current,NEFT,Transfer,41516,Debit,EMI,Vendor,510494,No,Yes,No,No,No,No,No
+TXN000879,APP00044,2024-02-01,Current,NEFT,Transfer,32583,Credit,Rent,Vendor,543077,No,No,No,No,No,No,No
+TXN000880,APP00042,2024-02-01,Current,NEFT,Transfer,10742,Debit,Business Revenue,Vendor,532335,No,No,Yes,Yes,No,No,No
+TXN000881,APP00032,2024-02-01,Current,NEFT,Transfer,34132,Credit,Utilities,Vendor,566467,No,No,No,Yes,No,No,No
+TXN000882,APP00016,2024-02-01,Current,NEFT,Transfer,5906,Credit,GST,Vendor,572373,Yes,No,No,No,No,No,No
+TXN000883,APP00015,2024-02-01,Current,NEFT,Transfer,19229,Debit,Salary,Vendor,553144,No,No,Yes,No,No,No,No
+TXN000884,APP00016,2024-02-01,Current,NEFT,Transfer,25814,Credit,Utilities,Vendor,578958,No,No,No,No,No,No,No
+TXN000885,APP00032,2024-02-01,Current,NEFT,Transfer,30110,Credit,Business Revenue,Vendor,609068,No,No,Yes,No,No,No,No
+TXN000886,APP00042,2024-02-01,Current,NEFT,Transfer,8779,Credit,Rent,Vendor,617847,No,No,No,No,No,No,No
+TXN000887,APP00036,2024-02-01,Current,NEFT,Transfer,27439,Credit,Business Revenue,Vendor,645286,No,No,Yes,No,No,No,No
+TXN000888,APP00036,2024-02-01,Current,NEFT,Transfer,6956,Credit,Salary,Vendor,652242,No,No,Yes,No,No,No,No
+TXN000889,APP00024,2024-02-01,Current,NEFT,Transfer,45005,Credit,GST,Vendor,697247,Yes,No,No,Yes,No,No,No
+TXN000890,APP00050,2024-02-01,Current,NEFT,Transfer,30783,Credit,Salary,Vendor,728030,No,No,Yes,No,No,No,No
+TXN000891,APP00029,2024-02-01,Current,NEFT,Transfer,32007,Credit,Rent,Vendor,760037,No,No,No,No,No,No,No
+TXN000892,APP00022,2024-02-01,Current,NEFT,Transfer,44182,Debit,Business Revenue,Vendor,715855,No,No,Yes,No,No,No,No
+TXN000893,APP00034,2024-02-01,Current,NEFT,Transfer,42527,Credit,Salary,Vendor,758382,No,No,Yes,No,No,No,No
+TXN000894,APP00032,2024-02-01,Current,NEFT,Transfer,7967,Debit,Vendor Payment,Vendor,750415,No,No,No,No,No,No,No
+TXN000895,APP00017,2024-02-01,Current,NEFT,Transfer,47979,Credit,Business Revenue,Vendor,798394,No,No,Yes,No,No,No,No
+TXN000896,APP00013,2024-02-01,Current,NEFT,Transfer,26748,Debit,EMI,Vendor,771646,No,Yes,No,No,No,No,No
+TXN000897,APP00041,2024-02-01,Current,NEFT,Transfer,8062,Credit,Business Revenue,Vendor,779708,No,No,Yes,Yes,No,No,No
+TXN000898,APP00029,2024-02-01,Current,NEFT,Transfer,39588,Debit,Utilities,Vendor,740120,No,No,No,No,No,No,No
+TXN000899,APP00001,2024-02-01,Current,NEFT,Transfer,39621,Debit,EMI,Vendor,700499,No,Yes,No,No,No,No,No
+TXN000900,APP00038,2024-02-01,Current,NEFT,Transfer,4183,Credit,Utilities,Vendor,704682,No,No,No,No,No,No,No
+TXN000901,APP00038,2024-02-01,Current,NEFT,Transfer,34314,Debit,Rent,Vendor,670368,No,No,No,No,No,No,No
+TXN000902,APP00043,2024-02-01,Current,NEFT,Transfer,9413,Debit,EMI,Vendor,660955,No,Yes,No,No,No,No,No
+TXN000903,APP00039,2024-02-01,Current,NEFT,Transfer,22092,Credit,EMI,Vendor,683047,No,Yes,No,Yes,No,No,No
+TXN000904,APP00022,2024-02-01,Current,NEFT,Transfer,17268,Credit,EMI,Vendor,700315,No,Yes,No,Yes,No,No,No
+TXN000905,APP00027,2024-02-01,Current,NEFT,Transfer,30677,Debit,Vendor Payment,Vendor,669638,No,No,No,No,No,No,No
+TXN000906,APP00045,2024-02-01,Current,NEFT,Transfer,34573,Credit,Utilities,Vendor,704211,No,No,No,No,No,No,No
+TXN000907,APP00014,2024-02-01,Current,NEFT,Transfer,21572,Debit,Vendor Payment,Vendor,682639,No,No,No,No,No,No,No
+TXN000908,APP00009,2024-02-01,Current,NEFT,Transfer,20043,Credit,Rent,Vendor,702682,No,No,No,Yes,No,No,No
+TXN000909,APP00035,2024-02-01,Current,NEFT,Transfer,43604,Debit,Salary,Vendor,659078,No,No,Yes,No,No,No,No
+TXN000910,APP00023,2024-02-01,Current,NEFT,Transfer,22127,Debit,Utilities,Vendor,636951,No,No,No,No,No,No,No
+TXN000911,APP00048,2024-02-01,Current,NEFT,Transfer,39194,Credit,Rent,Vendor,676145,No,No,No,Yes,No,No,No
+TXN000912,APP00028,2024-02-01,Current,NEFT,Transfer,35989,Credit,Utilities,Vendor,712134,No,No,No,Yes,No,No,No
+TXN000913,APP00025,2024-02-01,Current,NEFT,Transfer,35257,Debit,Business Revenue,Vendor,676877,No,No,Yes,No,No,No,No
+TXN000914,APP00018,2024-02-01,Current,NEFT,Transfer,44925,Debit,Vendor Payment,Vendor,631952,No,No,No,No,No,No,No
+TXN000915,APP00017,2024-02-01,Current,NEFT,Transfer,11547,Credit,Rent,Vendor,643499,No,No,No,No,No,No,No
+TXN000916,APP00049,2024-02-01,Current,NEFT,Transfer,5065,Credit,Vendor Payment,Vendor,648564,No,No,No,No,No,No,No
+TXN000917,APP00040,2024-02-01,Current,NEFT,Transfer,24506,Credit,Business Revenue,Vendor,673070,No,No,Yes,Yes,No,No,No
+TXN000918,APP00042,2024-02-01,Current,NEFT,Transfer,49463,Debit,Rent,Vendor,623607,No,No,No,No,No,No,No
+TXN000919,APP00043,2024-02-01,Current,NEFT,Transfer,46621,Credit,Rent,Vendor,670228,No,No,No,No,No,No,No
+TXN000920,APP00004,2024-02-01,Current,NEFT,Transfer,28300,Credit,Salary,Vendor,698528,No,No,Yes,No,No,No,No
+TXN000921,APP00050,2024-02-01,Current,NEFT,Transfer,17471,Debit,Salary,Vendor,681057,No,No,Yes,Yes,No,No,No
+TXN000922,APP00046,2024-02-01,Current,NEFT,Transfer,30036,Debit,Rent,Vendor,651021,No,No,No,No,No,No,No
+TXN000923,APP00047,2024-02-01,Current,NEFT,Transfer,25100,Debit,Utilities,Vendor,625921,No,No,No,Yes,No,No,No
+TXN000924,APP00044,2024-02-01,Current,NEFT,Transfer,20279,Credit,Vendor Payment,Vendor,646200,No,No,No,No,No,No,No
+TXN000925,APP00003,2024-02-01,Current,NEFT,Transfer,12389,Debit,EMI,Vendor,633811,No,Yes,No,No,No,No,No
+TXN000926,APP00011,2024-02-01,Current,NEFT,Transfer,37477,Credit,Vendor Payment,Vendor,671288,No,No,No,No,No,No,No
+TXN000927,APP00030,2024-02-01,Current,NEFT,Transfer,17712,Debit,GST,Vendor,653576,Yes,No,No,No,No,No,No
+TXN000928,APP00021,2024-02-01,Current,NEFT,Transfer,11145,Debit,Vendor Payment,Vendor,642431,No,No,No,No,No,No,No
+TXN000929,APP00037,2024-02-01,Current,NEFT,Transfer,41984,Credit,EMI,Vendor,684415,No,Yes,No,No,No,No,No
+TXN000930,APP00015,2024-02-01,Current,NEFT,Transfer,5776,Credit,Salary,Vendor,690191,No,No,Yes,Yes,No,No,No
+TXN000931,APP00033,2024-02-01,Current,NEFT,Transfer,35118,Debit,Utilities,Vendor,655073,No,No,No,No,No,No,No
+TXN000932,APP00023,2024-02-01,Current,NEFT,Transfer,36591,Credit,Business Revenue,Vendor,691664,No,No,Yes,No,No,No,No
+TXN000933,APP00024,2024-02-01,Current,NEFT,Transfer,14982,Credit,GST,Vendor,706646,Yes,No,No,No,No,No,No
+TXN000934,APP00049,2024-02-01,Current,NEFT,Transfer,41519,Credit,Salary,Vendor,748165,No,No,Yes,Yes,No,No,No
+TXN000935,APP00023,2024-02-01,Current,NEFT,Transfer,1576,Debit,Rent,Vendor,746589,No,No,No,No,No,No,No
+TXN000936,APP00044,2024-02-01,Current,NEFT,Transfer,43091,Debit,Business Revenue,Vendor,703498,No,No,Yes,Yes,No,No,No
+TXN000937,APP00017,2024-02-01,Current,NEFT,Transfer,25993,Debit,EMI,Vendor,677505,No,Yes,No,No,No,No,No
+TXN000938,APP00050,2024-02-01,Current,NEFT,Transfer,19535,Debit,Salary,Vendor,657970,No,No,Yes,No,No,No,No
+TXN000939,APP00003,2024-02-01,Current,NEFT,Transfer,34340,Credit,EMI,Vendor,692310,No,Yes,No,No,No,No,No
+TXN000940,APP00033,2024-02-01,Current,NEFT,Transfer,43698,Debit,GST,Vendor,648612,Yes,No,No,No,No,No,No
+TXN000941,APP00035,2024-02-01,Current,NEFT,Transfer,7288,Debit,Utilities,Vendor,641324,No,No,No,No,No,No,No
+TXN000942,APP00043,2024-02-01,Current,NEFT,Transfer,42086,Debit,Vendor Payment,Vendor,599238,No,No,No,No,No,No,No
+TXN000943,APP00007,2024-02-01,Current,NEFT,Transfer,14970,Credit,Utilities,Vendor,614208,No,No,No,No,No,No,No
+TXN000944,APP00005,2024-02-01,Current,NEFT,Transfer,47054,Credit,Rent,Vendor,661262,No,No,No,No,No,No,No
+TXN000945,APP00006,2024-02-01,Current,NEFT,Transfer,31095,Credit,Business Revenue,Vendor,692357,No,No,Yes,No,No,No,No
+TXN000946,APP00005,2024-02-01,Current,NEFT,Transfer,12664,Credit,Salary,Vendor,705021,No,No,Yes,No,No,No,No
+TXN000947,APP00025,2024-02-01,Current,NEFT,Transfer,15918,Credit,EMI,Vendor,720939,No,Yes,No,No,No,No,No
+TXN000948,APP00002,2024-02-01,Current,NEFT,Transfer,27505,Credit,GST,Vendor,748444,Yes,No,No,No,No,No,No
+TXN000949,APP00047,2024-02-01,Current,NEFT,Transfer,8753,Debit,Rent,Vendor,739691,No,No,No,No,No,No,No
+TXN000950,APP00005,2024-02-01,Current,NEFT,Transfer,49886,Debit,Rent,Vendor,689805,No,No,No,No,No,No,No
+TXN000951,APP00006,2024-02-01,Current,NEFT,Transfer,19994,Credit,Salary,Vendor,709799,No,No,Yes,No,No,No,No
+TXN000952,APP00043,2024-02-01,Current,NEFT,Transfer,29683,Credit,EMI,Vendor,739482,No,Yes,No,No,No,No,No
+TXN000953,APP00048,2024-02-01,Current,NEFT,Transfer,11244,Debit,Vendor Payment,Vendor,728238,No,No,No,No,No,No,No
+TXN000954,APP00010,2024-02-01,Current,NEFT,Transfer,36764,Credit,Rent,Vendor,765002,No,No,No,No,No,No,No
+TXN000955,APP00036,2024-02-01,Current,NEFT,Transfer,48797,Credit,Business Revenue,Vendor,813799,No,No,Yes,Yes,No,No,No
+TXN000956,APP00039,2024-02-01,Current,NEFT,Transfer,3737,Debit,Salary,Vendor,810062,No,No,Yes,No,No,No,No
+TXN000957,APP00014,2024-02-01,Current,NEFT,Transfer,36882,Debit,GST,Vendor,773180,Yes,No,No,No,No,No,No
+TXN000958,APP00027,2024-02-01,Current,NEFT,Transfer,48575,Credit,Vendor Payment,Vendor,821755,No,No,No,Yes,No,No,No
+TXN000959,APP00015,2024-02-01,Current,NEFT,Transfer,10335,Debit,Vendor Payment,Vendor,811420,No,No,No,No,No,No,No
+TXN000960,APP00012,2024-02-01,Current,NEFT,Transfer,17563,Debit,Business Revenue,Vendor,793857,No,No,Yes,No,No,No,No
+TXN000961,APP00049,2024-02-01,Current,NEFT,Transfer,38178,Debit,Utilities,Vendor,755679,No,No,No,Yes,No,No,No
+TXN000962,APP00036,2024-02-01,Current,NEFT,Transfer,36969,Credit,Rent,Vendor,792648,No,No,No,No,No,No,No
+TXN000963,APP00007,2024-02-01,Current,NEFT,Transfer,45019,Debit,GST,Vendor,747629,Yes,No,No,No,No,No,No
+TXN000964,APP00043,2024-02-01,Current,NEFT,Transfer,22682,Credit,Vendor Payment,Vendor,770311,No,No,No,No,No,No,No
+TXN000965,APP00005,2024-02-01,Current,NEFT,Transfer,7556,Credit,Salary,Vendor,777867,No,No,Yes,Yes,No,No,No
+TXN000966,APP00022,2024-02-01,Current,NEFT,Transfer,21826,Credit,EMI,Vendor,799693,No,Yes,No,No,No,No,No
+TXN000967,APP00037,2024-02-01,Current,NEFT,Transfer,21032,Debit,Salary,Vendor,778661,No,No,Yes,No,No,No,No
+TXN000968,APP00001,2024-02-01,Current,NEFT,Transfer,21731,Credit,Vendor Payment,Vendor,800392,No,No,No,No,No,No,No
+TXN000969,APP00024,2024-02-01,Current,NEFT,Transfer,15517,Credit,GST,Vendor,815909,Yes,No,No,No,No,No,No
+TXN000970,APP00030,2024-02-01,Current,NEFT,Transfer,49036,Credit,EMI,Vendor,864945,No,Yes,No,No,No,No,No
+TXN000971,APP00042,2024-02-01,Current,NEFT,Transfer,32914,Debit,Vendor Payment,Vendor,832031,No,No,No,No,No,No,No
+TXN000972,APP00013,2024-02-01,Current,NEFT,Transfer,19390,Debit,Salary,Vendor,812641,No,No,Yes,No,No,No,No
+TXN000973,APP00005,2024-02-01,Current,NEFT,Transfer,42066,Debit,Rent,Vendor,770575,No,No,No,Yes,No,No,No
+TXN000974,APP00038,2024-02-01,Current,NEFT,Transfer,34238,Debit,Utilities,Vendor,736337,No,No,No,No,No,No,No
+TXN000975,APP00036,2024-02-01,Current,NEFT,Transfer,39668,Debit,Business Revenue,Vendor,696669,No,No,Yes,No,No,No,No
+TXN000976,APP00050,2024-02-01,Current,NEFT,Transfer,36368,Credit,Rent,Vendor,733037,No,No,No,No,No,No,No
+TXN000977,APP00038,2024-02-01,Current,NEFT,Transfer,26722,Debit,Utilities,Vendor,706315,No,No,No,No,No,No,No
+TXN000978,APP00033,2024-02-01,Current,NEFT,Transfer,20070,Debit,EMI,Vendor,686245,No,Yes,No,No,No,No,No
+TXN000979,APP00001,2024-02-01,Current,NEFT,Transfer,27003,Credit,Salary,Vendor,713248,No,No,Yes,No,No,No,No
+TXN000980,APP00033,2024-02-01,Current,NEFT,Transfer,41241,Debit,Utilities,Vendor,672007,No,No,No,No,No,No,No
+TXN000981,APP00037,2024-02-01,Current,NEFT,Transfer,11434,Debit,Salary,Vendor,660573,No,No,Yes,No,No,No,No
+TXN000982,APP00003,2024-02-01,Current,NEFT,Transfer,10581,Credit,GST,Vendor,671154,Yes,No,No,No,No,No,No
+TXN000983,APP00017,2024-02-01,Current,NEFT,Transfer,32958,Debit,Business Revenue,Vendor,638196,No,No,Yes,No,No,No,No
+TXN000984,APP00024,2024-02-01,Current,NEFT,Transfer,3805,Debit,Salary,Vendor,634391,No,No,Yes,No,No,No,No
+TXN000985,APP00042,2024-02-01,Current,NEFT,Transfer,30795,Debit,Business Revenue,Vendor,603596,No,No,Yes,No,No,No,No
+TXN000986,APP00048,2024-02-01,Current,NEFT,Transfer,47120,Credit,Utilities,Vendor,650716,No,No,No,No,No,No,No
+TXN000987,APP00025,2024-02-01,Current,NEFT,Transfer,12393,Credit,Rent,Vendor,663109,No,No,No,No,No,No,No
+TXN000988,APP00017,2024-02-01,Current,NEFT,Transfer,43817,Debit,Salary,Vendor,619292,No,No,Yes,No,No,No,No
+TXN000989,APP00023,2024-02-01,Current,NEFT,Transfer,15607,Credit,GST,Vendor,634899,Yes,No,No,No,No,No,No
+TXN000990,APP00009,2024-02-01,Current,NEFT,Transfer,32595,Debit,Salary,Vendor,602304,No,No,Yes,No,No,No,No
+TXN000991,APP00042,2024-02-01,Current,NEFT,Transfer,16072,Debit,Salary,Vendor,586232,No,No,Yes,No,No,No,No
+TXN000992,APP00024,2024-02-01,Current,NEFT,Transfer,10846,Debit,Vendor Payment,Vendor,575386,No,No,No,No,No,No,No
+TXN000993,APP00022,2024-02-01,Current,NEFT,Transfer,8754,Debit,EMI,Vendor,566632,No,Yes,No,No,No,No,No
+TXN000994,APP00014,2024-02-01,Current,NEFT,Transfer,32556,Credit,EMI,Vendor,599188,No,Yes,No,No,No,No,No
+TXN000995,APP00016,2024-02-01,Current,NEFT,Transfer,43418,Credit,Business Revenue,Vendor,642606,No,No,Yes,No,No,No,No
+TXN000996,APP00041,2024-02-01,Current,NEFT,Transfer,38584,Debit,Vendor Payment,Vendor,604022,No,No,No,No,No,No,No
+TXN000997,APP00011,2024-02-01,Current,NEFT,Transfer,38504,Debit,Business Revenue,Vendor,565518,No,No,Yes,No,No,No,No
+TXN000998,APP00037,2024-02-01,Current,NEFT,Transfer,12798,Credit,Salary,Vendor,578316,No,No,Yes,No,No,No,No
+TXN000999,APP00014,2024-02-01,Current,NEFT,Transfer,48156,Credit,Business Revenue,Vendor,626472,No,No,Yes,No,Yes,No,No
+TXN001000,APP00027,2024-02-01,Current,NEFT,Transfer,32566,Debit,Vendor Payment,Vendor,593906,No,No,No,No,No,No,No

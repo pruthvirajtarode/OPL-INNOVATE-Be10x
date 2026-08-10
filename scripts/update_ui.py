@@ -1,4 +1,42 @@
-<!DOCTYPE html>
+import os
+import shutil
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def update_landing():
+    path = os.path.join(BASE_DIR, 'index.html')
+    with open(path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Update buttons
+    if 'Trainer Dashboard' not in content:
+        content = content.replace(
+            '<a href="deck/index.html?trainer=true" class="card" onclick="alert(\'Trainer mode is active. You can also toggle this anytime in the deck using Shift+T.\');">',
+            '<a href="trainer/index.html" class="card">'
+        )
+        content = content.replace(
+            '<p>Launch deck with facilitator notes enabled</p>',
+            '<p>Open trainer dashboard and fact checker</p>'
+        )
+        
+        # Add data lab button
+        data_lab = """
+            <a href="charts/index.html" class="card" target="_blank">
+                <h3>DATA LAB</h3>
+                <p>View OPL synthetic training data charts</p>
+            </a>
+        """
+        content = content.replace('</div>\n\n        <footer>', data_lab + '\n        </div>\n\n        <footer>')
+    
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+
+def update_deck():
+    path = os.path.join(BASE_DIR, 'deck', 'index.html')
+    # Let's write a completely structured presentation that meets all OPL requirements
+    
+    deck_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -244,3 +282,30 @@
     <script src="js/trainer.js"></script>
 </body>
 </html>
+"""
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(deck_html)
+
+
+def update_css():
+    path = os.path.join(BASE_DIR, 'deck', 'css', 'main.css')
+    with open(path, 'a', encoding='utf-8') as f:
+        f.write("""
+/* OPL Specific Styles appended */
+.source-badge {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.source-badge.public { background: #10b981; color: #fff; }
+.source-badge.synthetic { background: #F29F05; color: #0B1D3A; }
+.source-badge.illustrative { background: #0078d4; color: #fff; }
+""")
+
+if __name__ == '__main__':
+    update_landing()
+    update_deck()
+    update_css()
+    print("UI update complete.")
