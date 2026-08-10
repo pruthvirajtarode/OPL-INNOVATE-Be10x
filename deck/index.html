@@ -363,15 +363,16 @@ Flag anything that requires human verification before presenting to leadership."
 
 <!-- ─── OUTLOOK ─── -->
 <section class="slide" id="slide-12" data-module="Outlook"
-  data-trainer-say="Outlook scenario. Read the email thread from the data pack. Ask Copilot to summarise, identify decisions, extract actions and draft a reply."
+  data-trainer-objective="Teach participants to summarise, extract actions, and draft replies in Outlook Copilot — using ONLY what is stated in the thread."
+  data-trainer-say="Say: Open Outlook Copilot. Paste the thread. Use each prompt on the right one at a time. Watch what Copilot invents vs what is stated. That gap IS the lesson."
   data-trainer-time="10 min"
-  data-trainer-watch="If Copilot invents an owner or date not present in the thread — stop. Flag it as hallucination. Use [CONFIRM OWNER] and [CONFIRM DATE] placeholders.">
+  data-trainer-watch="CRITICAL: Copilot may invent owners/dates not in the thread. When it does — stop the class. Say: this is a hallucination. This is why we use [CONFIRM OWNER].">
   <div class="app-slide">
     <div class="app-header-row">
       <div class="app-chip outlook-chip">OUTLOOK</div>
       <h2>Q3 MSME Portfolio Review — Email Thread Exercise</h2>
     </div>
-    <div class="split-slide" style="margin-top:2rem;">
+    <div class="split-slide" style="margin-top:1.5rem;">
       <div class="split-left">
         <div class="email-mock">
           <div class="em-header">
@@ -385,21 +386,41 @@ Flag anything that requires human verification before presenting to leadership."
             <div class="em-msg em-unresolved"><span class="em-from">Operations Lead:</span> "I will coordinate but need clarity on timeline."</div>
           </div>
         </div>
-        <div class="badge-synthetic" style="margin-top:1rem;">SYNTHETIC OPL-ALIGNED TRAINING DATA</div>
-      </div>
-      <div class="split-right">
-        <h3>Participant Tasks</h3>
-        <div class="task-list">
-          <div class="task-item">1. Summarise the thread in 5 bullets</div>
-          <div class="task-item">2. Identify all decisions made</div>
-          <div class="task-item">3. Extract action items with owners + dates</div>
-          <div class="task-item">4. List unresolved questions</div>
-          <div class="task-item task-critical">5. Draft a reply to the Product Manager</div>
+        <div class="badge-synthetic" style="margin-top:0.8rem;">SYNTHETIC OPL-ALIGNED TRAINING DATA</div>
+        <div class="warning-box" style="margin-top:1rem;">
+          ⚠️ If owner or date is NOT in the thread: use <code>[CONFIRM OWNER]</code> / <code>[CONFIRM DATE]</code><br><strong>DO NOT INVENT.</strong>
         </div>
-        <div class="warning-box">
-          ⚠️ If owner or date is not explicitly stated in the thread:<br>
-          Use <code>[CONFIRM OWNER]</code> and <code>[CONFIRM DATE]</code><br>
-          <strong>DO NOT INVENT.</strong>
+      </div>
+      <div class="split-right" style="overflow-y:auto; max-height:860px;">
+        <h3 style="margin-bottom:1rem;">Exact Copilot Prompts — Use These Live</h3>
+
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+
+          <div style="background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--ms-outlook);border-radius:8px;padding:1.2rem;">
+            <div style="font-size:1.1rem;font-weight:700;color:#60A5FA;letter-spacing:0.08em;margin-bottom:0.5rem;">STEP 1 — SUMMARISE</div>
+            <div class="prompt-box-sm" style="font-size:1.25rem;">&quot;Summarise this email thread in exactly 5 bullet points. Include: the core problem, who is involved, what has been raised, what is unclear, and what needs a decision.&quot;</div>
+          </div>
+
+          <div style="background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--ms-outlook);border-radius:8px;padding:1.2rem;">
+            <div style="font-size:1.1rem;font-weight:700;color:#60A5FA;letter-spacing:0.08em;margin-bottom:0.5rem;">STEP 2 — DECISIONS</div>
+            <div class="prompt-box-sm" style="font-size:1.25rem;">&quot;From this thread, list only the decisions that have been formally agreed. Do not include opinions or suggestions.&quot;</div>
+          </div>
+
+          <div style="background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--ms-outlook);border-radius:8px;padding:1.2rem;">
+            <div style="font-size:1.1rem;font-weight:700;color:var(--amber);letter-spacing:0.08em;margin-bottom:0.5rem;">STEP 3 — ACTION ITEMS ⚑ KEY</div>
+            <div class="prompt-box-sm" style="font-size:1.25rem;">&quot;Extract all action items. For each: state the action, the owner, and the due date. If the owner is not explicitly named in the thread, write [CONFIRM OWNER]. If the date is not stated, write [CONFIRM DATE]. DO NOT INVENT.&quot;</div>
+          </div>
+
+          <div style="background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--ms-outlook);border-radius:8px;padding:1.2rem;">
+            <div style="font-size:1.1rem;font-weight:700;color:#60A5FA;letter-spacing:0.08em;margin-bottom:0.5rem;">STEP 4 — OPEN QUESTIONS</div>
+            <div class="prompt-box-sm" style="font-size:1.25rem;">&quot;List all unresolved questions or issues from this thread that need a clear answer before the team can proceed.&quot;</div>
+          </div>
+
+          <div style="background:var(--surface-2);border:1px solid rgba(245,158,11,0.5);border-left:3px solid var(--amber);border-radius:8px;padding:1.2rem;">
+            <div style="font-size:1.1rem;font-weight:700;color:var(--amber);letter-spacing:0.08em;margin-bottom:0.5rem;">STEP 5 — DRAFT REPLY ⚑ VERIFY BEFORE SENDING</div>
+            <div class="prompt-box-sm" style="font-size:1.25rem;">&quot;Draft a professional reply to the Product Manager acknowledging the open items, confirming what I will do, and flagging what needs to be decided before Friday. Tone: collaborative, senior. I will review before sending.&quot;</div>
+          </div>
+
         </div>
       </div>
     </div>
