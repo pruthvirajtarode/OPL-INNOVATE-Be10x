@@ -3,134 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPL Innovate | Chart Library</title>
+    <title>OPL Innovate | Data Analytics Lab</title>
     <!-- Offline Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
+            --opl-navy-deep: #060F21;
             --opl-navy: #0B1D3A;
-            --opl-blue: #1A3C6D;
-            --opl-amber: #F29F05;
-            --opl-white: #FFFFFF;
-            --opl-gray: #F4F5F7;
+            --opl-surface: #122447;
+            --opl-amber: #F59E0B;
+            --opl-white: #F8FAFC;
+            --opl-text-muted: #94A3B8;
+            --opl-border: rgba(255,255,255,0.08);
+            --font: 'Inter', sans-serif;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--opl-gray);
+            font-family: var(--font);
+            background-color: var(--opl-navy-deep);
+            color: var(--opl-white);
             margin: 0;
-            padding: 20px;
-            color: var(--opl-navy);
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--opl-border);
+            padding-bottom: 20px;
         }
-        .header h1 {
-            margin: 0;
-            font-weight: 600;
+        .header-left .eyebrow {
+            font-size: 0.8rem; font-weight: 700; letter-spacing: 0.25em; color: var(--opl-amber); text-transform: uppercase; margin-bottom: 0.5rem; display: block;
         }
+        .header h1 { margin: 0; font-weight: 800; font-size: 2.2rem; }
+        
         .badge-synthetic {
-            background-color: var(--opl-amber);
-            color: var(--opl-navy);
-            padding: 5px 12px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
+            background-color: rgba(245,158,11,0.1);
+            color: var(--opl-amber);
+            border: 1px solid rgba(245,158,11,0.3);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
         }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--opl-border);
+            color: var(--opl-white);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-right: 15px;
+            transition: background 0.15s;
+        }
+        .back-btn:hover { background: rgba(255,255,255,0.1); }
+
+        .header-actions { display: flex; align-items: center; }
+
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
         }
+        @media(max-width: 900px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
         .card {
-            background: var(--opl-white);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: var(--opl-surface);
+            border: 1px solid var(--opl-border);
+            border-radius: 12px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
+        .card-full { grid-column: 1 / -1; }
+
         .card h3 {
             margin-top: 0;
             margin-bottom: 5px;
-            color: var(--opl-navy);
+            font-size: 1.4rem;
+            font-weight: 600;
         }
         .card .source {
-            font-size: 0.75rem;
-            color: #666;
-            margin-bottom: 15px;
+            font-size: 0.8rem;
+            color: var(--opl-text-muted);
+            margin-bottom: 25px;
             display: block;
         }
-        canvas {
-            max-width: 100%;
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+            flex: 1;
         }
+        .copilot-prompt {
+            background: rgba(0,0,0,0.3);
+            border-left: 3px solid var(--opl-amber);
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--opl-text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .copilot-prompt strong { color: var(--opl-amber); }
     </style>
 </head>
 <body>
-
-    <div class="header">
-        <h1>OPL Innovate Data Analytics Lab</h1>
-        <span class="badge-synthetic">SYNTHETIC OPL-ALIGNED DATA</span>
-    </div>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Approval Trend by Sector</h3>
-            <span class="source">Source: Synthetic OPL-aligned training dataset (OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv)</span>
-            <canvas id="chartApproval"></canvas>
-            <p style="font-size: 0.8rem; margin-top: 10px;"><strong>What Copilot can do:</strong> "Generate a chart showing approval rates by sector."</p>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <span class="eyebrow">OPL INNOVATE × Be10x</span>
+                <h1>Data Analytics Lab</h1>
+            </div>
+            <div class="header-actions">
+                <a href="../index.html" class="back-btn">← Back to Home</a>
+                <span class="badge-synthetic">SYNTHETIC DATA LAB</span>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>API Latency Distribution</h3>
-            <span class="source">Source: Synthetic OPL-aligned training dataset (OPL_OAM_API_OPERATIONS_TRAINING.csv)</span>
-            <canvas id="chartLatency"></canvas>
-            <p style="font-size: 0.8rem; margin-top: 10px;"><strong>What Copilot can do:</strong> "Identify vendors with the highest average latency."</p>
-        </div>
-        
-        <div class="card">
-            <h3>Monthly Cash Inflow vs Outflow</h3>
-            <span class="source">Source: Synthetic OPL-aligned training dataset (OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv)</span>
-            <canvas id="chartCashflow"></canvas>
-            <p style="font-size: 0.8rem; margin-top: 10px;"><strong>What Copilot can do:</strong> "Highlight months where outflow exceeds inflow."</p>
+        <div class="grid">
+            <!-- Chart 1: MSME Approval -->
+            <div class="card card-full">
+                <h3>MSME Approval Trend by Sector</h3>
+                <span class="source">Source: OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv</span>
+                <div class="chart-container">
+                    <canvas id="chartApproval"></canvas>
+                </div>
+                <div class="copilot-prompt"><strong>Copilot Task:</strong> "Generate a stacked bar chart showing approved vs rejected applications by MSME Sector. Use a professional corporate color palette."</div>
+            </div>
+
+            <!-- Chart 2: API Latency -->
+            <div class="card">
+                <h3>OAM+ API Latency Distribution</h3>
+                <span class="source">Source: OPL_OAM_API_OPERATIONS_TRAINING.csv</span>
+                <div class="chart-container">
+                    <canvas id="chartLatency"></canvas>
+                </div>
+                <div class="copilot-prompt"><strong>Copilot Task:</strong> "Visualize the average latency across the 4 OAM+ vendors. Highlight Vendor_B's performance gap."</div>
+            </div>
+            
+            <!-- Chart 3: Cashflow -->
+            <div class="card">
+                <h3>BSA Inflow/Outflow Breakdown</h3>
+                <span class="source">Source: OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv</span>
+                <div class="chart-container">
+                    <canvas id="chartCashflow"></canvas>
+                </div>
+                <div class="copilot-prompt"><strong>Copilot Task:</strong> "Create a doughnut chart breaking down the total transaction value by category for this borrower."</div>
+            </div>
         </div>
     </div>
 
     <script>
-        // Chart 1: Approval Trend
+        // Chart Global Config for Dark Theme
+        Chart.defaults.color = '#94A3B8';
+        Chart.defaults.borderColor = 'rgba(255,255,255,0.05)';
+        Chart.defaults.font.family = "'Inter', sans-serif";
+
+        // Chart 1: Approval Trend (Stacked Bar)
         const ctx1 = document.getElementById('chartApproval').getContext('2d');
         new Chart(ctx1, {
             type: 'bar',
             data: {
-                labels: ['Manufacturing', 'Retail', 'Services', 'Technology', 'Agriculture'],
+                labels: ['Manufacturing', 'Retail', 'Services', 'Technology', 'Agriculture', 'Healthcare'],
                 datasets: [{
-                    label: 'Approved Applications',
-                    data: [45, 22, 60, 35, 15],
-                    backgroundColor: '#1A3C6D'
+                    label: 'Approved',
+                    data: [82, 61, 88, 87, 65, 92],
+                    backgroundColor: 'rgba(16, 185, 129, 0.8)', // Success green
+                    borderRadius: 4
                 }, {
-                    label: 'Rejected Applications',
-                    data: [10, 15, 12, 5, 8],
-                    backgroundColor: '#F29F05'
+                    label: 'Rejected',
+                    data: [18, 39, 12, 13, 35, 8],
+                    backgroundColor: 'rgba(239, 68, 68, 0.8)', // Danger red
+                    borderRadius: 4
                 }]
             },
-            options: { responsive: true }
+            options: { 
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { stacked: true, grid: { display: false } },
+                    y: { stacked: true, beginAtZero: true, max: 100, title: { display: true, text: 'Percentage (%)' } }
+                },
+                plugins: {
+                    legend: { position: 'top', align: 'end' }
+                }
+            }
         });
 
         // Chart 2: API Latency
         const ctx2 = document.getElementById('chartLatency').getContext('2d');
         new Chart(ctx2, {
-            type: 'line',
+            type: 'bar', // Better for highlighting the gap than line
             data: {
                 labels: ['Vendor_A', 'Vendor_B', 'Vendor_C', 'Vendor_D'],
                 datasets: [{
                     label: 'Avg Latency (ms)',
                     data: [120, 850, 200, 150],
-                    borderColor: '#F29F05',
-                    fill: false,
-                    tension: 0.1
+                    backgroundColor: [
+                        'rgba(96, 165, 250, 0.8)',
+                        'rgba(245, 158, 11, 0.8)', // Highlight Vendor B
+                        'rgba(96, 165, 250, 0.8)',
+                        'rgba(96, 165, 250, 0.8)'
+                    ],
+                    borderRadius: 6
                 }]
             },
-            options: { responsive: true }
+            options: { 
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { grid: { display: false } },
+                    y: { beginAtZero: true }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
         });
 
         // Chart 3: Cashflow
@@ -138,13 +243,28 @@
         new Chart(ctx3, {
             type: 'doughnut',
             data: {
-                labels: ['Business Revenue', 'Vendor Payment', 'GST', 'EMI'],
+                labels: ['Business Revenue', 'Vendor Payment', 'GST', 'EMI', 'Cash Withdrawals'],
                 datasets: [{
-                    data: [300000, 150000, 45000, 30000],
-                    backgroundColor: ['#0B1D3A', '#1A3C6D', '#F29F05', '#C0C0C0']
+                    data: [350000, 150000, 45000, 30000, 60000],
+                    backgroundColor: [
+                        '#10b981', // Revenue - green
+                        '#60a5fa', // Vendor - blue
+                        '#f59e0b', // GST - amber
+                        '#8b5cf6', // EMI - purple
+                        '#ef4444'  // Cash - red
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 10
                 }]
             },
-            options: { responsive: true }
+            options: { 
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                plugins: {
+                    legend: { position: 'right', labels: { padding: 20 } }
+                }
+            }
         });
     </script>
 </body>

@@ -3,244 +3,1216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPL Innovate | Microsoft Copilot Training</title>
+    <title>OPL Innovate | Microsoft Copilot — Day 2 | Be10x</title>
+    <meta name="description" content="OPL Innovate Microsoft Copilot Day 2 Training: From Data to Decision — 3 Hours, 5 Core Apps, 4 Case Studies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
-    <div id="presentation-container">
-        
-        <!-- OPEN -->
-        <section class="slide active" id="slide-1" data-module="Open">
-            <div class="center-all" style="height: 100%;">
-                <span class="eyebrow">OPL INNOVATE × Be10x</span>
-                <h1>MICROSOFT COPILOT</h1>
-                <h2>DAY 2: FROM DATA TO DECISION</h2>
-                <div style="margin-top: 4rem;">
-                    <p>3 Hours. 5 Core Apps. 3 OPL Data Labs. 4 Case Studies.</p>
-                </div>
-            </div>
-            <div class="slide-footer"><span>Press Space to begin | Shift+T for Trainer Mode</span></div>
-        </section>
 
-        <!-- Context -->
-        <section class="slide" id="slide-2" data-module="OPL Context" data-trainer-say="Start by rooting this in OPL's actual business.">
-            <div class="center-all flex-col" style="height: 100%;">
-                <span class="eyebrow">The Business Context</span>
-                <h2>OPL is a digital lending infrastructure company.</h2>
-                <div class="grid-3" style="margin-top: 2rem;">
-                    <div class="card">
-                        <h3>235+</h3>
-                        <p>Partner Banks</p>
-                    </div>
-                    <div class="card">
-                        <h3>₹6L Cr+</h3>
-                        <p>Sanctioned</p>
-                    </div>
-                    <div class="card">
-                        <h3>30L+</h3>
-                        <p>MSMEs Onboarded</p>
-                    </div>
-                </div>
-                <div class="source-badge public" style="margin-top:2rem;">[PUBLIC OPL DATA]</div>
-            </div>
-        </section>
-        
-        <section class="slide" id="slide-3" data-module="OPL Case" data-trainer-time="5 min">
-            <div class="flex-col" style="height: 100%; justify-content: center;">
-                <span class="eyebrow">Opening Case</span>
-                <h1>The Weekly Operations Review</h1>
-                <p>An OPL product team is preparing a weekly review using:</p>
-                <ul style="font-size:2rem; line-height:1.8; color:var(--text-secondary); margin-left:2rem;">
-                    <li>Excel portfolio metrics</li>
-                    <li>Teams meeting notes</li>
-                    <li>OAM API report</li>
-                </ul>
-                <h2 style="margin-top: 2rem; color:var(--warning);">How long would this take manually?</h2>
-                <p class="copilot-text" style="font-size:2.5rem; font-weight:bold; margin-top:1rem;">One Business Question. Multiple Copilot Touchpoints.</p>
-            </div>
-        </section>
+<div id="presentation-container">
 
-        <!-- Prompt Framework -->
-        <section class="slide" id="slide-4" data-module="Meet Copilot">
-            <div class="flex-col" style="height: 100%; justify-content: center;">
-                <span class="eyebrow">OPL Prompt Framework</span>
-                <h1>TASK + CONTEXT + SOURCE + CONSTRAINT + OUTPUT + CHECK</h1>
-                <div class="grid-2" style="margin-top: 2rem;">
-                    <div class="prompt-box bad">"Analyze this loan data."</div>
-                    <div class="prompt-box">"You are a lending operations analyst. Using ONLY the attached synthetic MSME portfolio data, identify portfolio growth and high-risk segments. Flag anything requiring human verification."</div>
-                </div>
-            </div>
-        </section>
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- OPENING SEQUENCE -->
+<!-- ═══════════════════════════════════════════════════ -->
 
-        <!-- Data Rules -->
-        <section class="slide" id="slide-5" data-module="Data Policy" data-trainer-rescue="Emphasize that we do not put real customer data into public AI!">
-            <div class="center-all flex-col" style="height: 100%;">
-                <h1 style="color: var(--danger);">DATA POLICY</h1>
-                <div class="grid-3" style="text-align: left; margin-top:2rem;">
-                    <div class="card" style="border-top: 5px solid #10b981;">
-                        <h3>PUBLIC FACT</h3>
-                        <p>OPL website metrics, brochures.</p>
-                    </div>
-                    <div class="card" style="border-top: 5px solid var(--warning);">
-                        <h3>SYNTHETIC DATA</h3>
-                        <p>AI-generated training datasets mimicking OPL workflows.</p>
-                    </div>
-                    <div class="card" style="border-top: 5px solid var(--danger);">
-                        <h3>CONFIDENTIAL DATA</h3>
-                        <p>Real internal data. <strong>Do not fabricate this.</strong></p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="slide active" id="slide-1" data-module="Opening"
+  data-trainer-objective="Welcome + Set expectations"
+  data-trainer-say="Good morning! Today is all about using Copilot in the exact context of OPL's digital lending business. Every exercise uses OPL scenarios, OPL-style data, OPL products."
+  data-trainer-time="0:00–0:10"
+  data-trainer-watch="Ensure all participants have opened the workbook at workbook/index.html">
 
-        <!-- Apps -->
-        <section class="slide" id="slide-6" data-module="Excel">
-            <div class="flex-col" style="height: 100%; justify-content: center;">
-                <div class="app-header">
-                    <div class="app-icon excel">X</div>
-                    <h2>Data Lab: MSME Portfolio Intelligence</h2>
-                </div>
-                <div class="grid-2">
-                    <div>
-                        <h3>Case Study 1</h3>
-                        <p>Open <code>OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv</code></p>
-                        <p><strong>Question:</strong> Where is portfolio risk increasing?</p>
-                        <div class="prompt-box" style="margin-top:1rem; font-size:1.5rem;">"Which sector has the highest risk concentration? Provide evidence."</div>
-                    </div>
-                    <div class="card">
-                        <div class="source-badge synthetic">[SYNTHETIC OPL-ALIGNED DATA]</div>
-                        <h3 style="margin-top:1rem;">Expected Insights:</h3>
-                        <ul style="font-size:1.5rem; color:var(--text-secondary);">
-                            <li>High DPD in Retail sector (East region).</li>
-                            <li>Average processing TAT outliers.</li>
-                            <li>Correlation between cash flow and approval.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="slide" id="slide-7" data-module="Excel">
-            <div class="flex-col" style="height: 100%; justify-content: center;">
-                <div class="app-header">
-                    <div class="app-icon excel">X</div>
-                    <h2>Data Lab: Bank Statement Analyzer (BSA)</h2>
-                </div>
-                <div class="grid-2">
-                    <div>
-                        <h3>Case Study 2</h3>
-                        <p>Open <code>OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv</code></p>
-                        <div class="prompt-box" style="margin-top:1rem; font-size:1.5rem;">"Identify transactions flagged as Anomalies. What category are they usually in?"</div>
-                    </div>
-                    <div class="card">
-                        <div class="source-badge synthetic">[SYNTHETIC OPL-ALIGNED DATA]</div>
-                        <h3 style="margin-top:1rem;">Verify the output:</h3>
-                        <p>Don't let Copilot simply describe the chart. Ask it what evidence supports the conclusion.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="slide" id="slide-8" data-module="Word">
-            <div class="flex-col" style="height: 100%; justify-content: center;">
-                <div class="app-header">
-                    <div class="app-icon word">W</div>
-                    <h2>Word: Business Briefs</h2>
-                </div>
-                <div class="grid-2">
-                    <div>
-                        <p>Transform raw insights into a structured OPL MSME Portfolio Review document.</p>
-                        <div class="prompt-box" style="margin-top:2rem;">"Rewrite this analysis into an executive brief. Sections: Executive Summary, Risk Signals, Next Steps."</div>
-                    </div>
-                    <div class="card" style="background: rgba(0,0,0,0.2);">
-                        <div class="source-badge synthetic">[ILLUSTRATIVE CASE STUDY]</div>
-                        <h3 style="margin-top:1rem;">Copilot Output</h3>
-                        <p style="font-size:1.2rem; color:#aaa;">(Draft generated successfully based on provided data constraints)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="slide" id="slide-9" data-module="PowerPoint">
-            <div class="flex-col" style="height: 100%; justify-content: center;">
-                <div class="app-header">
-                    <div class="app-icon powerpoint">P</div>
-                    <h2>PowerPoint: OAM+ Architecture Deck</h2>
-                </div>
-                <div class="grid-2">
-                    <div>
-                        <p>Using <code>OPL_OAM_Architecture_Brief.docx</code> to generate slides.</p>
-                        <div class="prompt-box" style="margin-top:2rem;">"Create a presentation from [file]. Provide speaker notes for each slide."</div>
-                    </div>
-                    <div class="card" style="display:flex; justify-content:center; align-items:center;">
-                        <h2>✨ Deck Generated</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="slide" id="slide-10" data-module="Cross-App">
-            <div class="center-all flex-col" style="height: 100%;">
-                <span class="eyebrow">The Cross-App Workflow</span>
-                <h1>EXECUTIVE DECISION PACK</h1>
-                <div style="display: flex; gap: 1rem; align-items: center; justify-content: center; margin-top: 2rem;">
-                    <div class="app-icon teams">T</div> <span style="font-size: 2rem;">→</span>
-                    <div class="app-icon excel">X</div> <span style="font-size: 2rem;">→</span>
-                    <div class="app-icon word">W</div> <span style="font-size: 2rem;">→</span>
-                    <div class="app-icon powerpoint">P</div> <span style="font-size: 2rem;">→</span>
-                    <div class="app-icon outlook">O</div>
-                </div>
-                <p style="margin-top: 3rem;">Meeting → Analysis → Brief → Deck → Stakeholder Email</p>
-            </div>
-        </section>
-        
-        <section class="slide" id="slide-11" data-module="Human-in-Loop">
-            <div class="center-all flex-col" style="height: 100%;">
-                <span class="eyebrow">Human In The Loop</span>
-                <div class="grid-4" style="display:flex; gap:2rem;">
-                    <div class="card" style="text-align:center;"><h3>GENERATE</h3></div>
-                    <div class="card" style="text-align:center;"><h3>REVIEW</h3></div>
-                    <div class="card" style="text-align:center; border-color:var(--warning);"><h3>VERIFY</h3></div>
-                    <div class="card" style="text-align:center; border-color:var(--success);"><h3>DECIDE</h3></div>
-                </div>
-                <h2 style="margin-top:4rem;">Copilot does the first pass.<br>YOU own the decision.</h2>
-            </div>
-        </section>
-
-        <!-- UI Overlays -->
-        <div id="ui-layer">
-            <div style="display: flex; align-items: center;">
-                <a href="../index.html" class="ui-btn" style="text-decoration: none; margin-right: 10px;">🏠</a>
-                <button class="ui-btn" id="btn-prev">← Previous</button>
-            </div>
-            
-            <div id="timer-container" style="display:none; background:rgba(0,0,0,0.8); padding:10px; border-radius:8px; border:1px solid #333;">
-                <button onclick="alert('Timer started: 3 min')">3m</button>
-                <button onclick="alert('Timer started: 5 min')">5m</button>
-                <button onclick="alert('Timer started: 10 min')">10m</button>
-            </div>
-            
-            <div>
-                <button class="ui-btn" onclick="document.getElementById('timer-container').style.display='flex';" style="margin-right: 10px;">⏱</button>
-                <button class="ui-btn" onclick="alert('Source: Official OPL Website / Synthetic Data')" style="margin-right: 10px; border-color: var(--warning);">📖 Source</button>
-                <button class="ui-btn" id="btn-next">Next →</button>
-            </div>
-        </div>
-
-        <!-- Trainer Dashboard Overlay -->
-        <div id="trainer-overlay">
-            <div class="trainer-header">
-                <h4>Trainer Mode Active</h4>
-            </div>
-            <div class="trainer-section">
-                <h5>Say</h5><p id="trainer-say">Welcome to Day 2.</p>
-                <h5 style="margin-top:10px;">Watch Out</h5><p id="trainer-rescue" style="color:var(--warning);">Ensure they open the correct datasets.</p>
-            </div>
-        </div>
+  <div class="hero-slide">
+    <div class="hero-eyebrow">OPL INNOVATE × Be10x</div>
+    <h1 class="hero-title">MICROSOFT<br><span class="grad-text">COPILOT</span></h1>
+    <div class="hero-sub">DAY 2 — FROM DATA TO DECISION</div>
+    <div class="hero-meta">
+      <span class="meta-pill">3 HOURS</span>
+      <span class="meta-pill">5 CORE APPS</span>
+      <span class="meta-pill">3 OPL DATA LABS</span>
+      <span class="meta-pill">4 CASE STUDIES</span>
+      <span class="meta-pill">1 CAPSTONE</span>
     </div>
+    <div class="hero-footer">IT &amp; PRODUCT TEAM — CORPORATE TRAINING</div>
+  </div>
+  <div class="slide-footer">
+    <span>Press Space or → to advance &nbsp;|&nbsp; Shift+T = Trainer Mode &nbsp;|&nbsp; F = Fullscreen</span>
+    <span class="badge-sim">OFFLINE TRAINING MODE</span>
+  </div>
+</section>
 
-    <script src="js/main.js"></script>
-    <script src="js/trainer.js"></script>
+<!-- ─── OPENING QUESTION ─── -->
+<section class="slide" id="slide-2" data-module="Opening"
+  data-trainer-say="Ask the room: How much of your actual working day is real thinking versus moving information around?"
+  data-trainer-time="2 min discussion">
+  <div class="center-slide">
+    <div class="eyebrow">OPENING QUESTION</div>
+    <h2 class="large-question">"Where does your team spend time<br><span class="grad-text">moving information</span><br>instead of<br><span style="color:var(--amber)">making decisions?</span>"</h2>
+    <div class="answer-chips" style="margin-top:3rem;">
+      <span class="chip">Email</span><span class="chip">Excel</span><span class="chip">Meetings</span>
+      <span class="chip">Documents</span><span class="chip">Presentations</span><span class="chip">Reports</span>
+      <span class="chip">API monitoring</span><span class="chip">Credit analysis</span><span class="chip">Portfolio reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OPL COMPANY CONTEXT ─── -->
+<section class="slide" id="slide-3" data-module="Opening"
+  data-trainer-say="OPL is not a generic company. They run digital lending infrastructure. Today every example we use will be grounded in OPL's actual business context."
+  data-trainer-time="5 min">
+  <div class="split-slide">
+    <div class="split-left">
+      <div class="eyebrow">THE CLIENT CONTEXT</div>
+      <h2>OPL Innovate</h2>
+      <p class="body-lead">Digital Lending Infrastructure.<br>AI-Native. API-First. MSME-Focused.</p>
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-num">235+</div>
+          <div class="kpi-label">Partner Banks</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">₹6L Cr+</div>
+          <div class="kpi-label">Sanctioned</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">360+</div>
+          <div class="kpi-label">Employees</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">30L+</div>
+          <div class="kpi-label">MSMEs Onboarded</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">70+</div>
+          <div class="kpi-label">Products Built</div>
+        </div>
+      </div>
+      <div class="badge-row">
+        <span class="badge-public">PUBLIC OPL DATA</span>
+        <span style="font-size:1.1rem;color:var(--text-muted);">As publicly stated by OPL — oplinnovate.com</span>
+      </div>
+    </div>
+    <div class="split-right">
+      <div class="biz-chain">
+        <div class="chain-item active-chain">Borrower Onboarding</div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item">KYC + Data Collection</div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item">GST / ITR / Bank / Bureau</div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item">Risk Analysis + Underwriting</div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item active-chain">Loan Decision + Disbursement</div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item">Servicing + Monitoring + Collections</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OPENING SCENARIO ─── -->
+<section class="slide" id="slide-4" data-module="Opening"
+  data-trainer-say="This is our opening scenario. A real OPL operations team doing a weekly lending review. Walk them through the 5 inputs, then ask how long this would take manually."
+  data-trainer-time="5 min"
+  data-trainer-rescue="If nobody answers: suggest 3–5 hours of manual gathering across tools.">
+  <div class="full-slide">
+    <div class="eyebrow">OPENING CASE STUDY — ILLUSTRATIVE</div>
+    <h2>The OPL Weekly Lending Operations Review</h2>
+    <div class="scenario-grid">
+      <div class="scenario-card">
+        <div class="sc-icon">📊</div>
+        <div class="sc-label">Excel</div>
+        <div class="sc-desc">500-row MSME portfolio metrics</div>
+      </div>
+      <div class="scenario-card">
+        <div class="sc-icon">💬</div>
+        <div class="sc-label">Teams</div>
+        <div class="sc-desc">Monthly review meeting transcript</div>
+      </div>
+      <div class="scenario-card">
+        <div class="sc-icon">📄</div>
+        <div class="sc-label">Word</div>
+        <div class="sc-desc">Product update brief</div>
+      </div>
+      <div class="scenario-card">
+        <div class="sc-icon">⚙️</div>
+        <div class="sc-label">OAM API</div>
+        <div class="sc-desc">Integration performance data</div>
+      </div>
+      <div class="scenario-card">
+        <div class="sc-icon">📧</div>
+        <div class="sc-label">Outlook</div>
+        <div class="sc-desc">Stakeholder email thread</div>
+      </div>
+    </div>
+    <div class="vs-bar">
+      <div class="vs-before"><strong>Without Copilot:</strong> 3–5 hours manual aggregation → delayed decisions</div>
+      <div class="vs-arrow">→</div>
+      <div class="vs-after"><strong>With Copilot:</strong> ONE BUSINESS QUESTION. MULTIPLE COPILOT TOUCHPOINTS.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- MODULE 1 — MEET COPILOT (0:10–0:30) -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="slide" id="slide-5" data-module="Meet Copilot"
+  data-trainer-say="Module 1. 20 minutes. Our goal is to land the Copilot landscape, the OPL prompt framework, and the CRITICAL data policy."
+  data-trainer-time="0:10–0:30">
+  <div class="module-title-slide">
+    <div class="mod-number">MODULE 01</div>
+    <h1>MEET<br><span class="grad-text">COPILOT</span></h1>
+    <p>Landscape · Prompt Framework · Data Policy</p>
+    <div class="mod-time">20 MIN</div>
+  </div>
+</section>
+
+<!-- ─── COPILOT LANDSCAPE ─── -->
+<section class="slide" id="slide-6" data-module="Meet Copilot"
+  data-trainer-say="Three types. Think: Think with Copilot Chat. Work with M365 Copilot. Code with GitHub Copilot."
+  data-trainer-time="5 min">
+  <div class="full-slide">
+    <div class="eyebrow">Module 1 — The Copilot Landscape</div>
+    <h2>Which Copilot?</h2>
+    <div class="three-col" style="margin-top:2rem;">
+      <div class="feature-card">
+        <div class="fc-icon" style="background:linear-gradient(135deg,#10a37f,#2563eb);">C</div>
+        <h3>Copilot Chat</h3>
+        <div class="fc-tag">THINK</div>
+        <p>General research, drafting, summarising. Works on public internet knowledge + your prompts.</p>
+        <div class="opl-example">OPL Use: Draft a product FAQ from public documents</div>
+      </div>
+      <div class="feature-card highlight-card">
+        <div class="fc-icon" style="background:#0078d4;">365</div>
+        <h3>Microsoft 365 Copilot</h3>
+        <div class="fc-tag fc-tag-blue">WORK</div>
+        <p>Embedded in Word, Excel, PowerPoint, Outlook, Teams. Works with YOUR organisation's data.</p>
+        <div class="opl-example">OPL Use: Analyse the MSME portfolio dataset in Excel</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon" style="background:#24292e;">GH</div>
+        <h3>GitHub Copilot</h3>
+        <div class="fc-tag fc-tag-dark">CODE</div>
+        <p>AI pair programmer. Works in VS Code, IntelliJ and more. Explains, refactors, generates tests.</p>
+        <div class="opl-example">OPL Use: Explain the OAM+ Java API service code</div>
+      </div>
+    </div>
+    <div class="disclaimer-bar">Feature availability may vary by Microsoft 365 license, tenant configuration, permissions, product version and organisation settings.</div>
+  </div>
+</section>
+
+<!-- ─── WHICH COPILOT ACTIVITY ─── -->
+<section class="slide" id="slide-7" data-module="Meet Copilot"
+  data-trainer-say="Interactive quiz. Read each scenario. Participants shout out which Copilot. Reveal after each."
+  data-trainer-time="5 min activity">
+  <div class="full-slide">
+    <div class="eyebrow">ACTIVITY — Which Copilot?</div>
+    <h2>Match the OPL scenario to the right Copilot</h2>
+    <div class="quiz-grid">
+      <div class="quiz-item" onclick="this.classList.toggle('revealed')">
+        <div class="quiz-q">"I need to summarise a long OPL product document."</div>
+        <div class="quiz-a">✅ Word / Microsoft 365 Copilot</div>
+      </div>
+      <div class="quiz-item" onclick="this.classList.toggle('revealed')">
+        <div class="quiz-q">"I need to analyse 500 MSME credit records."</div>
+        <div class="quiz-a">✅ Excel Copilot</div>
+      </div>
+      <div class="quiz-item" onclick="this.classList.toggle('revealed')">
+        <div class="quiz-q">"I need a management deck on OAM+ API performance."</div>
+        <div class="quiz-a">✅ PowerPoint Copilot</div>
+      </div>
+      <div class="quiz-item" onclick="this.classList.toggle('revealed')">
+        <div class="quiz-q">"I need to understand a Java API validation service."</div>
+        <div class="quiz-a">✅ GitHub Copilot</div>
+      </div>
+      <div class="quiz-item" onclick="this.classList.toggle('revealed')">
+        <div class="quiz-q">"I need to prepare a meeting follow-up from today's review."</div>
+        <div class="quiz-a">✅ Teams / Outlook Copilot</div>
+      </div>
+      <div class="quiz-item" onclick="this.classList.toggle('revealed')">
+        <div class="quiz-q">"I need to research what GST filing trends mean for MSME credit."</div>
+        <div class="quiz-a">✅ Copilot Chat</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--text-muted);font-size:1.2rem;margin-top:2rem;">Click each card to reveal the answer</p>
+  </div>
+</section>
+
+<!-- ─── OPL PROMPT FRAMEWORK ─── -->
+<section class="slide" id="slide-8" data-module="Meet Copilot"
+  data-trainer-say="The framework that will make every Copilot session 10x better. Write this in your workbook. We will use it for every single activity today."
+  data-trainer-time="5 min">
+  <div class="full-slide">
+    <div class="eyebrow">OPL PROMPT FRAMEWORK</div>
+    <div class="prompt-framework">
+      <div class="pf-block"><span class="pf-letter">T</span><span class="pf-word">TASK</span><span class="pf-desc">What do you want Copilot to do?</span></div>
+      <div class="pf-plus">+</div>
+      <div class="pf-block"><span class="pf-letter">C</span><span class="pf-word">CONTEXT</span><span class="pf-desc">Who is the audience? What is the goal?</span></div>
+      <div class="pf-plus">+</div>
+      <div class="pf-block"><span class="pf-letter">S</span><span class="pf-word">SOURCE</span><span class="pf-desc">Which files or data should it use?</span></div>
+      <div class="pf-plus">+</div>
+      <div class="pf-block"><span class="pf-letter">C</span><span class="pf-word">CONSTRAINT</span><span class="pf-desc">What limits? Only use provided data?</span></div>
+      <div class="pf-plus">+</div>
+      <div class="pf-block"><span class="pf-letter">O</span><span class="pf-word">OUTPUT</span><span class="pf-desc">Format, length, tone?</span></div>
+      <div class="pf-plus">+</div>
+      <div class="pf-block pf-block-check"><span class="pf-letter">✓</span><span class="pf-word">CHECK</span><span class="pf-desc">What must a human verify?</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BAD vs GOOD PROMPT ─── -->
+<section class="slide" id="slide-9" data-module="Meet Copilot"
+  data-trainer-say="Show both prompts. Ask which they would send to a banking stakeholder."
+  data-trainer-rescue="The good prompt is grounded: it specifies the role, the source, the constraints, and demands verification.">
+  <div class="full-slide">
+    <div class="eyebrow">PROMPT RESCUE — ACTIVITY</div>
+    <h2>Which prompt would you use?</h2>
+    <div class="prompt-compare">
+      <div class="prompt-bad">
+        <div class="pb-label">❌ WEAK PROMPT</div>
+        <div class="pb-text">"Analyze this loan data."</div>
+        <div class="pb-issues">
+          <span class="issue-tag">No role</span>
+          <span class="issue-tag">No source</span>
+          <span class="issue-tag">No constraints</span>
+          <span class="issue-tag">No output format</span>
+          <span class="issue-tag">No verification</span>
+        </div>
+      </div>
+      <div class="prompt-good">
+        <div class="pg-label">✅ OPL-STYLE PROMPT</div>
+        <div class="pg-text">"You are a lending operations analyst at a digital lending fintech.
+
+Using ONLY the attached synthetic MSME credit portfolio data, identify:
+1. Overall approval rate
+2. Which sector has the highest risk concentration
+3. Which region shows elevated DPD_30 counts
+4. Three early warning signals
+
+Do NOT invent values not present in the data.
+
+Output: bullet summary + one chart recommendation + three management actions.
+
+Flag anything that requires human verification before presenting to leadership."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DATA POLICY ─── -->
+<section class="slide" id="slide-10" data-module="Meet Copilot"
+  data-trainer-say="CRITICAL slide. This is OPL-specific. We have three categories of data in this training. Make sure everyone understands what is real, what is synthetic, and what must never be fabricated."
+  data-trainer-rescue="If anyone tries to pull in real OPL client data for the exercises — stop and redirect to the synthetic datasets.">
+  <div class="full-slide">
+    <div class="eyebrow">DATA CLASSIFICATION POLICY</div>
+    <h2>Know your data</h2>
+    <div class="data-policy-grid">
+      <div class="dp-card dp-public">
+        <div class="dp-icon">🌐</div>
+        <h3>PUBLIC OPL DATA</h3>
+        <p>Information from OPL's official website, public brochures and public product pages.</p>
+        <div class="dp-examples">
+          <div class="dp-ex">✓ 235+ partner banks</div>
+          <div class="dp-ex">✓ ₹6,00,000 Cr+ sanctioned</div>
+          <div class="dp-ex">✓ Product names (OAM+, BSA, MSME Risk Rank)</div>
+        </div>
+        <div class="badge-public" style="margin-top:1rem;">BADGE: PUBLIC</div>
+      </div>
+      <div class="dp-card dp-synthetic">
+        <div class="dp-icon">🔬</div>
+        <h3>SYNTHETIC OPL-ALIGNED DATA</h3>
+        <p>AI-generated training datasets designed to resemble realistic OPL business workflows.</p>
+        <div class="dp-examples">
+          <div class="dp-ex">✓ OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv</div>
+          <div class="dp-ex">✓ OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv</div>
+          <div class="dp-ex">✓ OPL_OAM_API_OPERATIONS_TRAINING.csv</div>
+        </div>
+        <div class="badge-synthetic" style="margin-top:1rem;">BADGE: SYNTHETIC</div>
+      </div>
+      <div class="dp-card dp-confidential">
+        <div class="dp-icon">🔒</div>
+        <h3>CLIENT CONFIDENTIAL DATA</h3>
+        <p>Real internal OPL operational data. <strong>Must NOT be fabricated.</strong> Must NOT be pasted into AI tools without proper approval.</p>
+        <div class="dp-examples">
+          <div class="dp-ex">✗ Actual customer records</div>
+          <div class="dp-ex">✗ Live portfolio figures</div>
+          <div class="dp-ex">✗ Actual vendor performance metrics</div>
+        </div>
+        <div class="badge-confidential" style="margin-top:1rem;">DO NOT FABRICATE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- MODULE 2 — COPILOT IN DAILY APPS (0:30–1:30) -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="slide" id="slide-11" data-module="Apps"
+  data-trainer-say="Module 2. One hour. We go app by app — Outlook, Word, Excel (3 data labs), PowerPoint, Teams. Every exercise uses OPL context."
+  data-trainer-time="0:30–1:30">
+  <div class="module-title-slide">
+    <div class="mod-number">MODULE 02</div>
+    <h1>COPILOT<br><span class="grad-text">IN DAILY APPS</span></h1>
+    <p>Outlook · Word · Excel · PowerPoint · Teams</p>
+    <div class="mod-time">60 MIN</div>
+  </div>
+</section>
+
+<!-- ─── OUTLOOK ─── -->
+<section class="slide" id="slide-12" data-module="Outlook"
+  data-trainer-say="Outlook scenario. Read the email thread from the data pack. Ask Copilot to summarise, identify decisions, extract actions and draft a reply."
+  data-trainer-time="10 min"
+  data-trainer-watch="If Copilot invents an owner or date not present in the thread — stop. Flag it as hallucination. Use [CONFIRM OWNER] and [CONFIRM DATE] placeholders.">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip outlook-chip">OUTLOOK</div>
+      <h2>Q3 MSME Portfolio Review — Email Thread Exercise</h2>
+    </div>
+    <div class="split-slide" style="margin-top:2rem;">
+      <div class="split-left">
+        <div class="email-mock">
+          <div class="em-header">
+            <strong>Subject:</strong> Q3 MSME Portfolio Review — Action Required<br>
+            <strong>Participants:</strong> Product · Engineering · Risk · Business · Operations
+          </div>
+          <div class="em-thread">
+            <div class="em-msg"><span class="em-from">Risk Lead:</span> "Portfolio review is overdue. Vendor_B API showing elevated failure rate impacting underwriting TAT. Need decisions by Friday."</div>
+            <div class="em-msg"><span class="em-from">Engineering Lead:</span> "We are investigating. The BSA parser also needs an update for new HDFC statement formats."</div>
+            <div class="em-msg"><span class="em-from">Product Manager:</span> "We need a summary deck for leadership. Can someone confirm who owns the OAM+ fix?"</div>
+            <div class="em-msg em-unresolved"><span class="em-from">Operations Lead:</span> "I will coordinate but need clarity on timeline."</div>
+          </div>
+        </div>
+        <div class="badge-synthetic" style="margin-top:1rem;">SYNTHETIC OPL-ALIGNED TRAINING DATA</div>
+      </div>
+      <div class="split-right">
+        <h3>Participant Tasks</h3>
+        <div class="task-list">
+          <div class="task-item">1. Summarise the thread in 5 bullets</div>
+          <div class="task-item">2. Identify all decisions made</div>
+          <div class="task-item">3. Extract action items with owners + dates</div>
+          <div class="task-item">4. List unresolved questions</div>
+          <div class="task-item task-critical">5. Draft a reply to the Product Manager</div>
+        </div>
+        <div class="warning-box">
+          ⚠️ If owner or date is not explicitly stated in the thread:<br>
+          Use <code>[CONFIRM OWNER]</code> and <code>[CONFIRM DATE]</code><br>
+          <strong>DO NOT INVENT.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WORD ─── -->
+<section class="slide" id="slide-13" data-module="Word"
+  data-trainer-say="Word exercise. Participants open the rough MSME Portfolio notes from the data pack and ask Copilot to transform it into an executive brief."
+  data-trainer-time="10 min">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip word-chip">WORD</div>
+      <h2>From Rough Notes to Executive Business Brief</h2>
+    </div>
+    <div class="split-slide" style="margin-top:2rem;">
+      <div class="split-left">
+        <div class="rough-notes">
+          <div class="rn-label">📝 Rough Notes Input</div>
+          <p>"MSME portfolio review notes. Portfolio grew 15% but retail sector showing issues. East region DPD up. BSA parser needs update. Vendor API slow. Leadership wants a deck. No timeline agreed."</p>
+        </div>
+        <div class="prompt-box-sm" style="margin-top:1.5rem;">"Transform these rough notes into a professional executive business brief. Include sections: Executive Summary, Portfolio Status, Key Risk Signals, Operational Issues, Recommendations, Next Steps. Tone: senior banking stakeholder."</div>
+      </div>
+      <div class="split-right">
+        <div class="word-output">
+          <div class="wo-header">📄 OPL MSME Portfolio Monitoring Review</div>
+          <div class="wo-section"><strong>Executive Summary</strong><br>The MSME lending portfolio grew 15% quarter-over-quarter. However, elevated DPD signals in the East region and Retail sector require immediate attention.</div>
+          <div class="wo-section"><strong>Key Risk Signals</strong><br>• Retail sector DPD_30 elevated<br>• Vendor_B API causing TAT delays<br>• BSA parser compatibility gap (HDFC format)</div>
+          <div class="wo-section"><strong>Recommendations</strong><br>• Tighten underwriting for Retail/East (via BRE)<br>• Escalate Vendor_B integration to Engineering<br>• Prioritise BSA parser update</div>
+        </div>
+        <div class="badge-illustrative" style="margin-top:1rem;">ILLUSTRATIVE CASE STUDY</div>
+        <div class="prompt-box-sm" style="margin-top:1rem;">"Now rewrite this for a senior banking stakeholder."<br>"Reduce this to one page."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXCEL INTRO ─── -->
+<section class="slide" id="slide-14" data-module="Excel"
+  data-trainer-say="Excel is the core data lab. We have 3 datasets — MSME Portfolio, Bank Statement Analyzer, OAM+ API Operations. Each has specific exercises."
+  data-trainer-time="2 min transition">
+  <div class="center-slide">
+    <div class="app-chip excel-chip" style="margin:0 auto 2rem;">EXCEL — 3 DATA LABS</div>
+    <h2>OPL Data Lab</h2>
+    <div class="three-col" style="margin-top:3rem;">
+      <div class="data-lab-card">
+        <div class="dlc-num">LAB 1</div>
+        <h3>MSME Credit Portfolio</h3>
+        <p>500 synthetic applications · Approval · Risk · DPD · Regional · Sector analysis</p>
+        <div class="badge-synthetic">SYNTHETIC</div>
+      </div>
+      <div class="data-lab-card">
+        <div class="dlc-num">LAB 2</div>
+        <h3>Bank Statement Analyzer</h3>
+        <p>1,000 synthetic transactions · Cash flow · Anomaly detection · Fraud signals</p>
+        <div class="badge-synthetic">SYNTHETIC</div>
+      </div>
+      <div class="data-lab-card">
+        <div class="dlc-num">LAB 3</div>
+        <h3>OAM+ API Operations</h3>
+        <p>500 synthetic API logs · Latency · Failure rate · Vendor reliability · Bottlenecks</p>
+        <div class="badge-synthetic">SYNTHETIC</div>
+      </div>
+    </div>
+    <div class="disclaimer-bar">These CSV files are in the datasets/ folder. Open them in Excel for the hands-on exercises.</div>
+  </div>
+</section>
+
+<!-- ─── EXCEL LAB 1 ─── -->
+<section class="slide" id="slide-15" data-module="Excel"
+  data-trainer-say="Open OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv in Excel. Format as a table. Ask Copilot each question one at a time and validate the answer."
+  data-trainer-time="15 min"
+  data-trainer-watch="Do not let participants accept Copilot's answer without checking it against the actual data. Ask: what evidence supports this?">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip excel-chip">LAB 1</div>
+      <h2>MSME Credit Portfolio Analysis</h2>
+      <div class="badge-synthetic" style="margin-left:auto;">SYNTHETIC OPL-ALIGNED DATA</div>
+    </div>
+    <div class="split-slide" style="margin-top:1rem;">
+      <div class="split-left">
+        <div class="exercise-list">
+          <div class="ex-item"><span class="ex-num">01</span>"What is the overall approval rate?"</div>
+          <div class="ex-item"><span class="ex-num">02</span>"Which sector has the highest loan demand?"</div>
+          <div class="ex-item"><span class="ex-num">03</span>"Which region has the highest average approved loan?"</div>
+          <div class="ex-item"><span class="ex-num">04</span>"Which sector has the highest risk concentration?"</div>
+          <div class="ex-item"><span class="ex-num">05</span>"What is the average processing TAT?"</div>
+          <div class="ex-item"><span class="ex-num">06</span>"Which applications show early warning signals?"</div>
+          <div class="ex-item"><span class="ex-num">07</span>"What is the relationship between cash flow and approval?"</div>
+          <div class="ex-item"><span class="ex-num">08</span>"Which segments show elevated DPD_30?"</div>
+          <div class="ex-item"><span class="ex-num">09</span>"Create a chart: monthly application trend"</div>
+          <div class="ex-item ex-item-key"><span class="ex-num">10</span>"Create a chart: approval rate by sector"</div>
+          <div class="ex-item ex-item-key"><span class="ex-num">11</span>"Summarise the portfolio for a senior executive"</div>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="verify-card">
+          <h3>⚑ ALWAYS VERIFY</h3>
+          <p>After Copilot responds, ask:</p>
+          <div class="verify-prompt">"What evidence in the dataset supports this conclusion? Show me the specific rows or calculations."</div>
+          <div style="margin-top:1.5rem; color:var(--text-muted); font-size:1.4rem;">This teaches: AI + Data + Human Verification</div>
+        </div>
+        <div class="mini-chart" style="margin-top:1.5rem;">
+          <div class="mc-label">Approval Rate by Sector (Simulated)</div>
+          <div class="bar-row"><span>Manufacturing</span><div class="bar-fill" style="width:82%;">82%</div></div>
+          <div class="bar-row"><span>Retail</span><div class="bar-fill" style="width:61%;background:var(--amber);">61%</div></div>
+          <div class="bar-row"><span>Services</span><div class="bar-fill" style="width:88%;">88%</div></div>
+          <div class="bar-row"><span>Technology</span><div class="bar-fill" style="width:87%;">87%</div></div>
+          <div class="bar-row"><span>Agriculture</span><div class="bar-fill" style="width:65%;background:var(--amber);">65%</div></div>
+          <div class="badge-synthetic" style="margin-top:1rem;">Source: Synthetic training data only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXCEL LAB 2 ─── -->
+<section class="slide" id="slide-16" data-module="Excel"
+  data-trainer-say="BSA lab. OPL's Bank Statement Analyzer is one of their core products. This synthetic dataset simulates what BSA sees — inflows, outflows, EMI patterns, anomalies."
+  data-trainer-time="10 min">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip excel-chip">LAB 2</div>
+      <h2>Bank Statement Analyzer (BSA) Intelligence</h2>
+      <div class="badge-synthetic" style="margin-left:auto;">SYNTHETIC OPL-ALIGNED DATA</div>
+    </div>
+    <div class="split-slide" style="margin-top:1rem;">
+      <div class="split-left">
+        <p class="body-lead">Open <code>OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv</code></p>
+        <div class="exercise-list">
+          <div class="ex-item"><span class="ex-num">01</span>"What is the average monthly cash inflow?"</div>
+          <div class="ex-item"><span class="ex-num">02</span>"Which months show outflow exceeding inflow?"</div>
+          <div class="ex-item"><span class="ex-num">03</span>"How many transactions are flagged as Anomaly?"</div>
+          <div class="ex-item"><span class="ex-num">04</span>"What category dominates anomaly transactions?"</div>
+          <div class="ex-item"><span class="ex-num">05</span>"Are there any Round_Trip or Bounce flags?"</div>
+          <div class="ex-item"><span class="ex-num">06</span>"Show a chart of transaction category by total value"</div>
+          <div class="ex-item ex-item-key"><span class="ex-num">07</span>"Create a monthly cash-flow trend chart"</div>
+          <div class="ex-item ex-item-key"><span class="ex-num">08</span>"What does this cash-flow behaviour suggest about the borrower's business health?"</div>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="opl-product-callout">
+          <h3>About OPL's BSA</h3>
+          <p>OPL publicly describes its Bank Statement Analyzer as supporting:</p>
+          <ul>
+            <li>Cash-flow based lending</li>
+            <li>Business revenue verification</li>
+            <li>EMI obligation analysis</li>
+            <li>Anomaly and fraud signal detection</li>
+            <li>Alternative credit assessment</li>
+          </ul>
+          <div class="badge-public" style="margin-top:1rem;">PUBLIC OPL DESCRIPTION</div>
+        </div>
+        <div class="warning-box" style="margin-top:1.5rem;">
+          ⚠️ Ask: "What evidence supports this financial health conclusion?"<br>
+          Do NOT accept narrative without numbers.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXCEL LAB 3 ─── -->
+<section class="slide" id="slide-17" data-module="Excel"
+  data-trainer-say="OAM+ lab. This is more technical — targeted at the IT and Engineering participants. Walk through the API latency and failure rate analysis."
+  data-trainer-time="10 min">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip excel-chip">LAB 3</div>
+      <h2>OAM+ API Operations Intelligence</h2>
+      <div class="badge-synthetic" style="margin-left:auto;">SYNTHETIC OPL-ALIGNED DATA</div>
+    </div>
+    <div class="split-slide" style="margin-top:1rem;">
+      <div class="split-left">
+        <p class="body-lead">Open <code>OPL_OAM_API_OPERATIONS_TRAINING.csv</code></p>
+        <div class="exercise-list">
+          <div class="ex-item"><span class="ex-num">01</span>"Which API endpoint has the highest average latency?"</div>
+          <div class="ex-item"><span class="ex-num">02</span>"Which vendor has the highest failure rate?"</div>
+          <div class="ex-item"><span class="ex-num">03</span>"What percentage of requests required retries?"</div>
+          <div class="ex-item"><span class="ex-num">04</span>"Which service has the most 5xx errors?"</div>
+          <div class="ex-item"><span class="ex-num">05</span>"Which time period shows highest API traffic?"</div>
+          <div class="ex-item"><span class="ex-num">06</span>"Create a latency distribution chart by vendor"</div>
+          <div class="ex-item"><span class="ex-num">07</span>"Create a vendor reliability chart"</div>
+          <div class="ex-item ex-item-key"><span class="ex-num">08</span>"Recommend three engineering actions based ONLY on this dataset."</div>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="opl-product-callout">
+          <h3>About OPL's OAM+</h3>
+          <p>OPL publicly describes OAM+ as supporting:</p>
+          <ul>
+            <li>One-stop API integration management</li>
+            <li>Multi-vendor data source connectivity</li>
+            <li>GST · Bureau · KYC · Bank · Document APIs</li>
+            <li>Microservices architecture</li>
+            <li>API monitoring + sandbox</li>
+          </ul>
+          <div class="badge-public" style="margin-top:1rem;">PUBLIC OPL DESCRIPTION</div>
+        </div>
+        <div class="mini-chart" style="margin-top:1.5rem;">
+          <div class="mc-label">Avg API Latency by Vendor (Simulated)</div>
+          <div class="bar-row"><span>Vendor_A</span><div class="bar-fill" style="width:12%;">120ms</div></div>
+          <div class="bar-row"><span>Vendor_B</span><div class="bar-fill" style="width:85%;background:var(--danger);">850ms</div></div>
+          <div class="bar-row"><span>Vendor_C</span><div class="bar-fill" style="width:20%;">200ms</div></div>
+          <div class="bar-row"><span>Vendor_D</span><div class="bar-fill" style="width:15%;">150ms</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── POWERPOINT ─── -->
+<section class="slide" id="slide-18" data-module="PowerPoint"
+  data-trainer-say="Three PowerPoint generation scenarios. Participants pick one. Walk through the OAM+ deck generation as the live demo."
+  data-trainer-time="10 min">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip ppt-chip">POWERPOINT</div>
+      <h2>Generate Executive Decks from OPL Documents</h2>
+    </div>
+    <div class="three-col" style="margin-top:2rem;">
+      <div class="ppt-scenario">
+        <div class="ppt-num">PPT 1</div>
+        <h3>"OPL Digital Lending Infrastructure at a Glance"</h3>
+        <p><strong>Input:</strong> company_profile.md + company_metrics.md</p>
+        <p><strong>Output:</strong> 8-slide executive overview</p>
+        <div class="ppt-prompt">"Create an 8-slide executive presentation from these OPL public materials. Label all metrics as 'Publicly stated by OPL'."</div>
+      </div>
+      <div class="ppt-scenario ppt-highlight">
+        <div class="ppt-num">PPT 2</div>
+        <h3>"OAM+ Simplifying Digital Lending Integration"</h3>
+        <p><strong>Input:</strong> oam_plus.md + OAM API data</p>
+        <p><strong>Output:</strong> 10-slide architecture + analysis deck</p>
+        <div class="ppt-prompt">"Create a 10-slide presentation covering OAM+ integration concept, API architecture, and a synthetic operations analysis. Include charts for latency and reliability."</div>
+      </div>
+      <div class="ppt-scenario">
+        <div class="ppt-num">PPT 3</div>
+        <h3>"AI-Native Lending — From Data to Decision"</h3>
+        <p><strong>Input:</strong> omr_fit_rank.md + bsa.md + portfolio data</p>
+        <p><strong>Output:</strong> 12-slide AI lending narrative</p>
+        <div class="ppt-prompt">"Create a 12-slide presentation on AI-native lending using OPL's publicly described capabilities and the attached synthetic data analysis."</div>
+      </div>
+    </div>
+    <div class="disclaimer-bar">Feature availability may vary by licence. Speaker notes should always be reviewed by a human before presenting to leadership.</div>
+  </div>
+</section>
+
+<!-- ─── TEAMS ─── -->
+<section class="slide" id="slide-19" data-module="Teams"
+  data-trainer-say="Teams meeting transcript exercise. Open the synthetic meeting file. Ask Copilot to extract decisions, actions, open questions."
+  data-trainer-time="10 min"
+  data-trainer-rescue="Deliberately some owners and dates are missing in the transcript. If Copilot invents them — this is the hallucination detection teaching moment.">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip teams-chip">TEAMS</div>
+      <h2>Monthly MSME Portfolio Review Meeting</h2>
+      <div class="badge-synthetic" style="margin-left:auto;">SYNTHETIC TRANSCRIPT</div>
+    </div>
+    <div class="split-slide" style="margin-top:1.5rem;">
+      <div class="split-left">
+        <div class="meeting-transcript">
+          <div class="mt-label">📋 OPL_MSME_PORTFOLIO_REVIEW_MEETING.txt</div>
+          <div class="mt-line"><span class="mt-name">Product Manager:</span> "MSME portfolio grew 15% QoQ. We need to act on the Retail DPD signal."</div>
+          <div class="mt-line"><span class="mt-name">Risk Lead:</span> "I recommend tightening underwriting for Retail in East region. High DPD_30 concentration."</div>
+          <div class="mt-line"><span class="mt-name">Engineering Lead:</span> "The BSA parser needs an update — new HDFC format. Timeline not confirmed yet."</div>
+          <div class="mt-line"><span class="mt-name">Operations Lead:</span> "I'll coordinate with partner banks but need someone to own the Vendor_B API fix."</div>
+          <div class="mt-line mt-unresolved"><span class="mt-name">Business Lead:</span> "Who is the owner for the OAM+ vendor escalation? No date agreed yet."</div>
+        </div>
+      </div>
+      <div class="split-right">
+        <h3>Copilot Task</h3>
+        <div class="prompt-box-sm">"From this meeting transcript, extract:
+1. DECISIONS made
+2. ACTION ITEMS (owner + due date)
+3. OPEN QUESTIONS
+4. Where owner is unknown → use [CONFIRM OWNER]
+5. Where date is unknown → use [CONFIRM DATE]
+DO NOT invent information."</div>
+        <div class="hallucination-alert" style="margin-top:1.5rem;">
+          <h4>🚨 SPOT THE HALLUCINATION</h4>
+          <p>If Copilot assigns an owner that is not stated in the transcript — that is a hallucination. A real team would send incorrect action items.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- BREAK -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="slide" id="slide-20" data-module="Break">
+  <div class="center-slide">
+    <h1 style="font-size:8rem;">☕</h1>
+    <h2>BREAK — 10 MINUTES</h2>
+    <p>1:30 — 1:40</p>
+    <p style="margin-top:2rem; color:var(--text-muted);">Review your workbook notes. What was your strongest prompt so far?</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- MODULE 3 — CROSS-APP + ADVANCED (1:40–2:30) -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="slide" id="slide-21" data-module="Cross-App"
+  data-trainer-say="Module 3. The WOW module. We chain everything together and demonstrate the real power of Copilot across multiple applications."
+  data-trainer-time="1:40–2:30">
+  <div class="module-title-slide">
+    <div class="mod-number">MODULE 03</div>
+    <h1>CROSS-APP<br><span class="grad-text">WORKFLOWS</span></h1>
+    <p>Advanced Grounding · Hallucination Detection · IT Track · Product Track · GitHub Copilot</p>
+    <div class="mod-time">50 MIN</div>
+  </div>
+</section>
+
+<!-- ─── CROSS-APP WORKFLOW ─── -->
+<section class="slide" id="slide-22" data-module="Cross-App"
+  data-trainer-say="This is the WOW moment. One business question — the monthly review — flows through 5 apps and produces an executive decision pack."
+  data-trainer-time="10 min demo">
+  <div class="full-slide">
+    <div class="eyebrow">THE CROSS-APP OPL WORKFLOW</div>
+    <h2>Monthly MSME Portfolio Review → Executive Decision Pack</h2>
+    <div class="workflow-chain">
+      <div class="wf-node">
+        <div class="wf-icon teams-bg">T</div>
+        <div class="wf-label">Teams</div>
+        <div class="wf-action">Extract decisions + actions from meeting</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-node">
+        <div class="wf-icon excel-bg">X</div>
+        <div class="wf-label">Excel</div>
+        <div class="wf-action">Analyse portfolio data → identify trends</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-node">
+        <div class="wf-icon word-bg">W</div>
+        <div class="wf-label">Word</div>
+        <div class="wf-action">Create management brief from findings</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-node">
+        <div class="wf-icon ppt-bg">P</div>
+        <div class="wf-label">PowerPoint</div>
+        <div class="wf-action">Generate executive deck from brief</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-node">
+        <div class="wf-icon outlook-bg">O</div>
+        <div class="wf-label">Outlook</div>
+        <div class="wf-action">Draft stakeholder update email</div>
+      </div>
+    </div>
+    <div class="result-banner">
+      <span class="rb-icon">✓</span>
+      <span class="rb-text">RESULT: EXECUTIVE DECISION PACK</span>
+      <span class="rb-sub">What would take 3–5 hours now takes &lt;30 minutes with Copilot (and human verification)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ADVANCED GROUNDING ─── -->
+<section class="slide" id="slide-23" data-module="Cross-App"
+  data-trainer-say="The most important slide in the whole training. Grounding. Every prompt must specify its source. Every output must be verified."
+  data-trainer-time="8 min">
+  <div class="full-slide">
+    <div class="eyebrow">ADVANCED GROUNDING</div>
+    <h2>Source + Question + Constraint + Verification</h2>
+    <div class="grounding-demo">
+      <div class="gd-step gd-step-1">
+        <div class="gd-num">1</div>
+        <h3>GROUND THE PROMPT</h3>
+        <div class="prompt-box-sm">"Using ONLY the supplied OPL public company profile and the attached synthetic portfolio dataset, prepare a management summary. Do NOT invent OPL statistics. Clearly separate: PUBLIC FACTS from SYNTHETIC ANALYSIS."</div>
+      </div>
+      <div class="gd-step gd-step-2">
+        <div class="gd-num">2</div>
+        <h3>VERIFY THE OUTPUT</h3>
+        <div class="prompt-box-sm">"List every conclusion in your summary that is NOT directly supported by the data I provided. Flag them clearly."</div>
+      </div>
+      <div class="gd-step gd-step-3">
+        <div class="gd-num">3</div>
+        <h3>HUMAN DECISION</h3>
+        <div class="human-decides">The analyst reviews flagged items. Removes or marks as unverified. Presents the clean output to leadership.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PUBLIC vs SYNTHETIC ACTIVITY ─── -->
+<section class="slide" id="slide-24" data-module="Cross-App"
+  data-trainer-say="Interactive activity. Read each statement. Ask the room: is this a public OPL fact, synthetic training data, or an unsupported claim?"
+  data-trainer-time="5 min">
+  <div class="full-slide">
+    <div class="eyebrow">ACTIVITY — Fact or Synthetic?</div>
+    <h2>Classify each statement</h2>
+    <div class="classify-grid">
+      <div class="cl-item" onclick="this.classList.toggle('revealed')">
+        <div class="cl-statement">"OPL has 235+ partner banks."</div>
+        <div class="cl-answer cl-public">✅ PUBLIC OPL DATA (oplinnovate.com)</div>
+      </div>
+      <div class="cl-item" onclick="this.classList.toggle('revealed')">
+        <div class="cl-statement">"The West region shows an 87% approval rate."</div>
+        <div class="cl-answer cl-synthetic">🔬 SYNTHETIC TRAINING DATA — from our generated dataset</div>
+      </div>
+      <div class="cl-item" onclick="this.classList.toggle('revealed')">
+        <div class="cl-statement">"Vendor_B is OPL's slowest production API provider."</div>
+        <div class="cl-answer cl-unsupported">❌ NOT ESTABLISHED — Do not claim this. Our dataset is synthetic.</div>
+      </div>
+      <div class="cl-item" onclick="this.classList.toggle('revealed')">
+        <div class="cl-statement">"The synthetic portfolio suggests higher DPD in the Retail sector."</div>
+        <div class="cl-answer cl-synthetic">🔬 SYNTHETIC ANALYSIS — valid within this training context</div>
+      </div>
+      <div class="cl-item" onclick="this.classList.toggle('revealed')">
+        <div class="cl-statement">"OPL processed ₹6,00,000 Crore+ in sanctioned loans."</div>
+        <div class="cl-answer cl-public">✅ PUBLIC OPL DATA (oplinnovate.com)</div>
+      </div>
+      <div class="cl-item" onclick="this.classList.toggle('revealed')">
+        <div class="cl-statement">"OPL's average API latency is 850ms."</div>
+        <div class="cl-answer cl-unsupported">❌ NOT ESTABLISHED — This is from a SYNTHETIC dataset only.</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--text-muted);font-size:1.2rem;margin-top:1.5rem;">Click each card to reveal</p>
+  </div>
+</section>
+
+<!-- ─── HALLUCINATION DETECTION ─── -->
+<section class="slide" id="slide-25" data-module="Cross-App"
+  data-trainer-say="Hallucination is the most dangerous AI risk in a fintech context. This activity makes it visceral."
+  data-trainer-time="5 min">
+  <div class="full-slide">
+    <div class="eyebrow">🚨 SPOT THE UNSUPPORTED CLAIM</div>
+    <h2>Can we claim this?</h2>
+    <div class="hallucination-scenario">
+      <div class="hs-copilot">
+        <div class="hs-label">Copilot Output:</div>
+        <div class="hs-text">"Based on the portfolio analysis, OPL's Vendor_B API has a documented failure rate of 12%. This is significantly above the industry standard of 2%, and explains the 18% underwriting TAT delay seen in Q3."</div>
+      </div>
+      <div class="hs-verdict">
+        <div class="verdict-q">Can we send this to leadership?</div>
+        <div class="verdict-a">
+          <div class="va-no">❌ NO — Not without verification.</div>
+          <div class="va-reasons">
+            <div class="vr-item">• "12% failure rate" — only appears in SYNTHETIC training data, not confirmed OPL production data</div>
+            <div class="vr-item">• "18% underwriting TAT delay" — not present in any provided document</div>
+            <div class="vr-item">• "industry standard of 2%" — source unknown</div>
+          </div>
+        </div>
+        <div class="prompt-box-sm" style="margin-top:1.5rem;">"List every statistic in your previous response and tell me the exact source document for each one."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRODUCT TRACK ─── -->
+<section class="slide" id="slide-26" data-module="Product Track"
+  data-trainer-say="Product Manager scenarios. Walk through the customer feedback → roadmap flow."
+  data-trainer-time="5 min">
+  <div class="full-slide">
+    <div class="eyebrow">PRODUCT TRACK</div>
+    <h2>Copilot for Product Managers</h2>
+    <div class="track-flow">
+      <div class="tf-step"><div class="tf-icon">📧</div><div class="tf-label">Customer Feedback</div><div class="tf-arrow">→ Themes</div></div>
+      <div class="tf-step"><div class="tf-icon">📋</div><div class="tf-label">Themes</div><div class="tf-arrow">→ Roadmap Summary</div></div>
+      <div class="tf-step"><div class="tf-icon">📄</div><div class="tf-label">Roadmap Notes</div><div class="tf-arrow">→ Word Brief</div></div>
+      <div class="tf-step"><div class="tf-icon">📊</div><div class="tf-label">Brief</div><div class="tf-arrow">→ PowerPoint</div></div>
+      <div class="tf-step"><div class="tf-icon">📈</div><div class="tf-label">Metrics</div><div class="tf-arrow">→ Executive Insight</div></div>
+    </div>
+    <div class="opl-example-box">
+      <h3>OPL Product Scenario</h3>
+      <p>The OPL product team receives 50+ pieces of partner bank feedback about LOS workflow friction. Use Copilot to extract themes, rank by impact, draft a product brief, and prepare a stakeholder slide.</p>
+      <div class="prompt-box-sm">"You are a product manager. Analyse the attached partner feedback. Group into themes. Rank by frequency. Draft a 1-page product brief for the engineering lead."</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── IT TRACK ─── -->
+<section class="slide" id="slide-27" data-module="IT Track"
+  data-trainer-say="IT scenarios. This is the engineering-specific section. Start with the incident meeting → brief flow."
+  data-trainer-time="5 min">
+  <div class="full-slide">
+    <div class="eyebrow">IT TRACK</div>
+    <h2>Copilot for Engineering &amp; IT Teams</h2>
+    <div class="track-flow">
+      <div class="tf-step"><div class="tf-icon">💬</div><div class="tf-label">Incident Meeting</div><div class="tf-arrow">→ Summary</div></div>
+      <div class="tf-step"><div class="tf-icon">📄</div><div class="tf-label">Technical Brief</div><div class="tf-arrow">→ Stakeholder Email</div></div>
+      <div class="tf-step"><div class="tf-icon">📊</div><div class="tf-label">API Data</div><div class="tf-arrow">→ Excel Analysis</div></div>
+      <div class="tf-step"><div class="tf-icon">💻</div><div class="tf-label">Code</div><div class="tf-arrow">→ GitHub Copilot</div></div>
+    </div>
+    <div class="opl-example-box">
+      <h3>OPL IT Scenario</h3>
+      <p>An OAM+ API integration with Vendor_B is causing elevated latency and retry storms in the lending workflow. The team needs to analyse the API logs, draft an incident brief, and communicate to business stakeholders.</p>
+      <div class="prompt-box-sm">"Analyse the attached API operations data. Identify latency outliers, failure patterns and retry concentration. Draft a 3-action engineering recommendation for the Tech Lead."</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GITHUB COPILOT ─── -->
+<section class="slide" id="slide-28" data-module="GitHub Copilot"
+  data-trainer-say="Open api_service.java from company-data/code/. Ask GitHub Copilot: Explain this code. Find the intentional code smell. Generate missing tests."
+  data-trainer-time="8 min"
+  data-trainer-rescue="The code smell is the empty catch block that swallows exceptions silently. The missing test is the failure case scenario.">
+  <div class="app-slide">
+    <div class="app-header-row">
+      <div class="app-chip github-chip">GITHUB COPILOT</div>
+      <h2>OPL API Service Code Review</h2>
+    </div>
+    <div class="split-slide" style="margin-top:2rem;">
+      <div class="split-left">
+        <div class="code-block">
+          <div class="cb-header">api_service.java <span class="cb-tag">Synthetic OPL-style code</span></div>
+          <pre><code>public class ApiService {
+  public void processRequest(
+      String vendor, int status) {
+    if (status == 200) {
+      System.out.println(
+        "Success: " + vendor);
+    } else {
+      try {
+        throw new Exception("Failed");
+      } catch (Exception e) {
+        <span class="code-smell">// DO NOTHING ← CODE SMELL</span>
+      }
+    }
+  }
+}</code></pre>
+        </div>
+      </div>
+      <div class="split-right">
+        <h3>GitHub Copilot Tasks</h3>
+        <div class="task-list">
+          <div class="task-item"><span class="gh-badge">Explain</span>"Explain what this service does, line by line."</div>
+          <div class="task-item"><span class="gh-badge">Find</span>"Identify the code smell and explain its risk."</div>
+          <div class="task-item"><span class="gh-badge">Refactor</span>"Refactor the error handling with proper logging."</div>
+          <div class="task-item task-critical"><span class="gh-badge">Test</span>"Generate unit tests including the missing failure case."</div>
+          <div class="task-item"><span class="gh-badge">Edge</span>"What edge cases are not handled?"</div>
+        </div>
+        <div class="warning-box" style="margin-top:1.5rem;">
+          ⚠️ Developer still reviews and approves all generated code before merging.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HUMAN IN THE LOOP ─── -->
+<section class="slide" id="slide-29" data-module="Human-in-Loop"
+  data-trainer-say="This is the core philosophy. Copilot generates the first draft. Human reviews, verifies, and decides.">
+  <div class="center-slide">
+    <div class="eyebrow">THE CORE PRINCIPLE</div>
+    <h1>HUMAN<br>IN THE LOOP</h1>
+    <div class="hitl-flow">
+      <div class="hitl-step hitl-ai"><div class="hitl-icon">🤖</div><div class="hitl-label">GENERATE</div><div class="hitl-desc">Copilot produces the first pass</div></div>
+      <div class="hitl-arrow">→</div>
+      <div class="hitl-step hitl-human"><div class="hitl-icon">👁️</div><div class="hitl-label">REVIEW</div><div class="hitl-desc">Human reads the output</div></div>
+      <div class="hitl-arrow">→</div>
+      <div class="hitl-step hitl-verify"><div class="hitl-icon">✓</div><div class="hitl-label">VERIFY</div><div class="hitl-desc">Check facts and sources</div></div>
+      <div class="hitl-arrow">→</div>
+      <div class="hitl-step hitl-decide"><div class="hitl-icon">⚖️</div><div class="hitl-label">DECIDE</div><div class="hitl-desc">Human owns the decision</div></div>
+    </div>
+    <div class="hitl-opl">
+      <div class="hitl-opl-item"><strong>Credit Analysis:</strong> AI summarises → Analyst verifies → Credit team decides</div>
+      <div class="hitl-opl-item"><strong>Risk Signal:</strong> AI flags pattern → Risk analyst validates → Risk decision</div>
+      <div class="hitl-opl-item"><strong>Engineering:</strong> AI generates code → Developer reviews → Tests → Merge</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CAPSTONE (2:30–2:50) -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="slide" id="slide-30" data-module="Capstone"
+  data-trainer-say="Capstone. 20 minutes. Participants choose their track — Product or IT — and build a complete Copilot workflow from raw inputs to final output."
+  data-trainer-time="2:30–2:50">
+  <div class="module-title-slide">
+    <div class="mod-number">CAPSTONE</div>
+    <h1>YOUR<br><span class="grad-text">OPL WORKFLOW</span></h1>
+    <p>Product Track · IT Track</p>
+    <div class="mod-time">20 MIN</div>
+  </div>
+</section>
+
+<!-- ─── CAPSTONE OPTIONS ─── -->
+<section class="slide" id="slide-31" data-module="Capstone"
+  data-trainer-say="Give them 15 minutes to build. Then 5 minutes to showcase. Score using the rubric on the next slide."
+  data-trainer-time="15 min work + 5 min showcase">
+  <div class="full-slide">
+    <div class="eyebrow">CAPSTONE CHALLENGE</div>
+    <h2>Build a complete Copilot workflow from raw inputs</h2>
+    <div class="capstone-grid">
+      <div class="cap-option">
+        <div class="cap-track">OPTION A — PRODUCT</div>
+        <div class="cap-inputs">
+          <strong>Inputs:</strong>
+          <span class="cap-input-tag">Customer feedback</span>
+          <span class="cap-input-tag">Portfolio metrics</span>
+          <span class="cap-input-tag">Roadmap notes</span>
+        </div>
+        <div class="cap-deliverables">
+          <strong>Deliver:</strong>
+          <div class="cap-del-item">📊 Excel insight from portfolio data</div>
+          <div class="cap-del-item">📄 Word product brief</div>
+          <div class="cap-del-item">📋 PowerPoint for leadership</div>
+          <div class="cap-del-item">📧 Stakeholder Outlook email</div>
+        </div>
+      </div>
+      <div class="cap-option cap-option-it">
+        <div class="cap-track">OPTION B — IT</div>
+        <div class="cap-inputs">
+          <strong>Inputs:</strong>
+          <span class="cap-input-tag">API operations data</span>
+          <span class="cap-input-tag">Teams incident notes</span>
+          <span class="cap-input-tag">Technical notes</span>
+        </div>
+        <div class="cap-deliverables">
+          <strong>Deliver:</strong>
+          <div class="cap-del-item">📊 Excel API analysis</div>
+          <div class="cap-del-item">📄 Word incident brief</div>
+          <div class="cap-del-item">📋 Engineering recommendations deck</div>
+          <div class="cap-del-item">📧 Business stakeholder email</div>
+        </div>
+      </div>
+    </div>
+    <div class="timer-hint">⏱ Use the timer button below → set 15 minutes</div>
+  </div>
+</section>
+
+<!-- ─── CAPSTONE RUBRIC ─── -->
+<section class="slide" id="slide-32" data-module="Capstone"
+  data-trainer-say="Score each submission. A beautiful deck without evidence MUST NOT receive a high data-grounding score."
+  data-trainer-watch="The most common mistake: high output quality + zero data grounding = not a good score.">
+  <div class="full-slide">
+    <div class="eyebrow">CAPSTONE SCORING RUBRIC</div>
+    <h2>Score out of 30</h2>
+    <div class="rubric-grid">
+      <div class="rub-item">
+        <div class="rub-score">5</div>
+        <div class="rub-name">Problem Clarity</div>
+        <div class="rub-desc">Is the business problem clearly defined?</div>
+      </div>
+      <div class="rub-item rub-key">
+        <div class="rub-score">5</div>
+        <div class="rub-name">Data Grounding</div>
+        <div class="rub-desc">Are all claims supported by actual data? No invented statistics?</div>
+      </div>
+      <div class="rub-item rub-key">
+        <div class="rub-score">5</div>
+        <div class="rub-name">Prompt Quality</div>
+        <div class="rub-desc">Did they use the TASK+CONTEXT+SOURCE+CONSTRAINT framework?</div>
+      </div>
+      <div class="rub-item">
+        <div class="rub-score">5</div>
+        <div class="rub-name">Output Quality</div>
+        <div class="rub-desc">Is the final output professional and structured?</div>
+      </div>
+      <div class="rub-item">
+        <div class="rub-score">5</div>
+        <div class="rub-name">Business Value</div>
+        <div class="rub-desc">Would this output lead to a better business decision?</div>
+      </div>
+      <div class="rub-item rub-key">
+        <div class="rub-score">5</div>
+        <div class="rub-name">Verification</div>
+        <div class="rub-desc">Did they explicitly verify the AI output before presenting?</div>
+      </div>
+    </div>
+    <div class="warning-box" style="margin-top:2rem;">⚠️ Beautiful output without evidence = low data-grounding score. The rubric rewards responsible AI use.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SHOWCASE + Q&A (2:50–3:00) -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="slide" id="slide-33" data-module="Showcase"
+  data-trainer-say="Each team gets 60–90 seconds. Ask: what was the prompt? What did you verify? What would you do differently?">
+  <div class="center-slide">
+    <div class="eyebrow">2:50 — 3:00</div>
+    <h1>SHOWCASE<br><span class="grad-text">&amp; Q&amp;A</span></h1>
+    <p style="margin-top:2rem;">Share your Copilot workflow. What did you build? What did you learn?</p>
+    <div class="debrief-questions">
+      <div class="dq-item">"What was your strongest prompt?"</div>
+      <div class="dq-item">"What did Copilot get wrong that you caught?"</div>
+      <div class="dq-item">"Which workflow will you use on Monday?"</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FINAL MESSAGE ─── -->
+<section class="slide" id="slide-34" data-module="Close">
+  <div class="center-slide">
+    <div class="eyebrow">THE FINAL MESSAGE</div>
+    <h2 class="grad-text" style="font-size:5rem;font-weight:900;">"Copilot is not the destination.<br>Better work is."</h2>
+    <div class="final-flow">
+      <span class="ff-step">DATA</span>
+      <span class="ff-arrow">→</span>
+      <span class="ff-step">UNDERSTAND</span>
+      <span class="ff-arrow">→</span>
+      <span class="ff-step">CREATE</span>
+      <span class="ff-arrow">→</span>
+      <span class="ff-step ff-step-verify">VERIFY</span>
+      <span class="ff-arrow">→</span>
+      <span class="ff-step ff-step-decide">DECIDE</span>
+    </div>
+    <div class="innovation-footer">
+      <div class="if-top">INNOVATION IS GOOD</div>
+      <div class="if-bottom">RESPONSIBLE INNOVATION IS BETTER.</div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <span>OPL Innovate × Be10x | Microsoft Copilot — Day 2</span>
+    <span class="badge-sim">OFFLINE TRAINING MODE</span>
+  </div>
+</section>
+
+</div><!-- /presentation-container -->
+
+<!-- ─── UI LAYER ─── -->
+<div id="ui-layer">
+  <div class="ui-left">
+    <a href="../index.html" class="ui-btn" title="Home">🏠</a>
+    <button class="ui-btn" id="btn-prev">← Prev</button>
+    <span id="slide-counter">1 / 34</span>
+  </div>
+
+  <div id="timer-container" class="timer-hidden">
+    <div class="timer-presets">
+      <button onclick="setTimer(3)">3m</button>
+      <button onclick="setTimer(5)">5m</button>
+      <button onclick="setTimer(8)">8m</button>
+      <button onclick="setTimer(10)">10m</button>
+      <button onclick="setTimer(15)">15m</button>
+    </div>
+    <div id="timer-display">00:00</div>
+    <div class="timer-controls">
+      <button onclick="toggleTimer()" id="btn-play">▶</button>
+      <button onclick="resetTimer()">⟲</button>
+      <button onclick="hideTimer()">✕</button>
+    </div>
+  </div>
+
+  <div class="ui-right">
+    <button class="ui-btn" onclick="showTimer()" title="Timer">⏱ Timer</button>
+    <button class="ui-btn ui-source" onclick="toggleSourceDrawer()" title="Source">📖 Source</button>
+    <button class="ui-btn" id="btn-next">Next →</button>
+  </div>
+</div>
+
+<!-- ─── SOURCE DRAWER ─── -->
+<div id="source-drawer" class="drawer-hidden">
+  <div class="sd-header">
+    <h4>📖 Source Registry</h4>
+    <button onclick="toggleSourceDrawer()">✕</button>
+  </div>
+  <div class="sd-body">
+    <div class="sd-section">
+      <div class="sd-title">PUBLIC OPL SOURCES</div>
+      <div class="sd-item sd-public"><span>🌐</span> OPL Innovate Official Website — oplinnovate.com</div>
+      <div class="sd-item sd-public"><span>🌐</span> OPL Public Product Pages — oplinnovate.com/products</div>
+    </div>
+    <div class="sd-section">
+      <div class="sd-title">MICROSOFT SOURCES</div>
+      <div class="sd-item sd-ms"><span>🔷</span> Microsoft 365 Copilot Documentation — learn.microsoft.com</div>
+      <div class="sd-item sd-ms"><span>🔷</span> GitHub Copilot Documentation — docs.github.com</div>
+    </div>
+    <div class="sd-section">
+      <div class="sd-title">SYNTHETIC TRAINING DATASETS</div>
+      <div class="sd-item sd-synth"><span>🔬</span> OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv — Generated, seed=42, 500 rows</div>
+      <div class="sd-item sd-synth"><span>🔬</span> OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv — Generated, seed=42, 1000 rows</div>
+      <div class="sd-item sd-synth"><span>🔬</span> OPL_OAM_API_OPERATIONS_TRAINING.csv — Generated, seed=42, 500 rows</div>
+    </div>
+    <div class="sd-disclaimer">All synthetic datasets are fictional training materials. They do not represent actual OPL customer or operational data.</div>
+  </div>
+</div>
+
+<!-- ─── TRAINER OVERLAY ─── -->
+<div id="trainer-overlay" class="trainer-hidden">
+  <div class="trainer-header">
+    <span class="trainer-badge">⚡ TRAINER MODE</span>
+    <span id="trainer-module-tag">Module</span>
+    <button onclick="toggleTrainer()" class="trainer-close">✕</button>
+  </div>
+  <div class="trainer-body">
+    <div class="trainer-row">
+      <div class="tr-label">OBJECTIVE</div>
+      <div id="t-objective" class="tr-value">—</div>
+    </div>
+    <div class="trainer-row">
+      <div class="tr-label">SAY</div>
+      <div id="t-say" class="tr-value tr-say">—</div>
+    </div>
+    <div class="trainer-row" id="t-rescue-row" style="display:none;">
+      <div class="tr-label">⚑ WATCH / RESCUE</div>
+      <div id="t-rescue" class="tr-value tr-rescue">—</div>
+    </div>
+    <div class="trainer-row">
+      <div class="tr-label">TIMING</div>
+      <div id="t-time" class="tr-value">As needed</div>
+    </div>
+  </div>
+  <div class="trainer-footer">Shift+T to close</div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/trainer.js"></script>
+<script>
+// Inline JS for activities not relying on the module files
+function toggleSourceDrawer() {
+  const d = document.getElementById('source-drawer');
+  d.classList.toggle('drawer-hidden');
+  d.classList.toggle('drawer-visible');
+}
+</script>
 </body>
 </html>

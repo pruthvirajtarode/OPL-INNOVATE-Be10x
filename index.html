@@ -1,73 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft Copilot: From Prompt to Productivity | OPL Innovate × Be10x</title>
-    <meta name="description" content="Corporate AI Upskilling Project: Microsoft Copilot Training Module for IT & Product teams.">
-    <link rel="stylesheet" href="assets/css/landing.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPL Innovate × Be10x | Microsoft Copilot — Day 2</title>
+  <meta name="description" content="OPL Innovate Microsoft Copilot Day 2 Corporate Training — From Data to Decision. 3 Hours, 5 Core Apps, 4 Case Studies, 1 Capstone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0B1D3A;
+      --navy-deep: #060F21;
+      --surface: #122447;
+      --amber: #F59E0B;
+      --amber-dim: rgba(245,158,11,0.12);
+      --text: #F8FAFC;
+      --text-muted: #64748B;
+      --text-secondary: #94A3B8;
+      --success: #10b981;
+      --border: rgba(255,255,255,0.08);
+      --font: 'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      background: var(--navy-deep);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(26,50,96,0.8) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 30% at 80% 80%, rgba(245,158,11,0.06) 0%, transparent 60%);
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 900px; }
+    .partner-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 0.6rem 1.5rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+    .partner-badge span { color: var(--amber); }
+
+    h1 {
+      font-size: clamp(3.5rem, 9vw, 7rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+    .grad { background: linear-gradient(135deg, var(--amber) 0%, #F97316 50%, #EC4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .sub {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      color: var(--text-secondary);
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+
+    /* STATS ROW */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
+    .stat {
+      text-align: center;
+      padding: 1.2rem 2rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      min-width: 120px;
+    }
+    .stat-val { font-size: 2.2rem; font-weight: 900; color: var(--amber); }
+    .stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem; }
+
+    /* NAVIGATION GRID */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 700px) { .nav-grid { grid-template-columns: 1fr; } }
+
+    .nav-card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      text-decoration: none;
+      color: var(--text);
+      text-align: left;
+      transition: border-color 0.2s, transform 0.2s, background 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .nav-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--amber);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .nav-card:hover { border-color: rgba(245,158,11,0.4); transform: translateY(-3px); background: rgba(18,36,71,0.9); }
+    .nav-card:hover::before { opacity: 1; }
+
+    .nav-card.primary { border-color: rgba(245,158,11,0.4); background: rgba(245,158,11,0.06); }
+    .nav-card.primary::before { opacity: 1; }
+    .nav-card.primary .nc-icon { color: var(--amber); }
+
+    .nc-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+    .nc-title { font-size: 1.05rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .nc-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      line-height: 1.8;
+    }
+    footer strong { color: var(--text-secondary); }
+
+    /* DATA CLASSIFICATION INFO */
+    .classify-strip {
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cs-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .cs-public { background: rgba(16,185,129,0.1); color: #6EE7B7; border: 1px solid rgba(16,185,129,0.2); }
+    .cs-synth { background: rgba(245,158,11,0.1); color: var(--amber); border: 1px solid rgba(245,158,11,0.2); }
+    .cs-conf { background: rgba(239,68,68,0.08); color: #FCA5A5; border: 1px solid rgba(239,68,68,0.2); }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <span class="eyebrow">OPL INNOVATE × Be10x</span>
-            <h1>MICROSOFT COPILOT</h1>
-            <h2>From Prompt to Productivity</h2>
-        </header>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="partner-badge">OPL INNOVATE <span>×</span> Be10x</div>
+      <h1>MICROSOFT<br><span class="grad">COPILOT</span></h1>
+      <p class="sub">Day 2 — From Data to Decision</p>
 
-        <div class="stats">
-            <div class="stat-item">
-                <span class="stat-value">3</span>
-                <span class="stat-label">Hours</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">5</span>
-                <span class="stat-label">Core Apps</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">1</span>
-                <span class="stat-label">Cross-App Workflow</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">1</span>
-                <span class="stat-label">Capstone</span>
-            </div>
-        </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-val">3</div><div class="stat-lbl">Hours</div></div>
+        <div class="stat"><div class="stat-val">5</div><div class="stat-lbl">Core Apps</div></div>
+        <div class="stat"><div class="stat-val">3</div><div class="stat-lbl">Data Labs</div></div>
+        <div class="stat"><div class="stat-val">4</div><div class="stat-lbl">Case Studies</div></div>
+        <div class="stat"><div class="stat-val">1</div><div class="stat-lbl">Capstone</div></div>
+      </div>
 
-        <div class="grid">
-            <a href="deck/index.html" class="card primary">
-                <h3>START SESSION</h3>
-                <p>Launch the interactive presentation deck</p>
-            </a>
-            
-            <a href="trainer/index.html" class="card">
-                <h3>TRAINER MODE</h3>
-                <p>Open trainer dashboard and fact checker</p>
-            </a>
-            
-            <a href="workbook/index.html" class="card" target="_blank">
-                <h3>WORKBOOK</h3>
-                <p>Open the interactive participant workbook</p>
-            </a>
-            
-            <a href="quick-reference/index.html" class="card" target="_blank">
-                <h3>QUICK REFERENCE</h3>
-                <p>View the cheat sheet and 10 rescue lines</p>
-            </a>
-        
-            <a href="charts/index.html" class="card" target="_blank">
-                <h3>DATA LAB</h3>
-                <p>View OPL synthetic training data charts</p>
-            </a>
-        
-        </div>
+      <div class="classify-strip">
+        <div class="cs-item cs-public">🌐 PUBLIC OPL DATA</div>
+        <div class="cs-item cs-synth">🔬 SYNTHETIC OPL-ALIGNED DATA</div>
+        <div class="cs-item cs-conf">🔒 CONFIDENTIAL: DO NOT FABRICATE</div>
+      </div>
 
-        <footer>
-            <p>Built for OPL Innovate × Be10x. Offline-first training application.</p>
-            <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.6;">
-                Copilot features, integrations and availability may vary by Microsoft 365 license, tenant configuration, permissions and product version.
-            </p>
-        </footer>
+      <div class="nav-grid">
+        <a href="deck/index.html" class="nav-card primary">
+          <span class="nc-icon">🚀</span>
+          <div class="nc-title">Start Workshop</div>
+          <div class="nc-desc">Launch the full interactive 34-slide presentation deck</div>
+        </a>
+        <a href="deck/index.html?trainer=true" class="nav-card">
+          <span class="nc-icon">🎓</span>
+          <div class="nc-title">Trainer Mode</div>
+          <div class="nc-desc">Deck + facilitator notes overlay (Shift+T to toggle)</div>
+        </a>
+        <a href="workbook/index.html" class="nav-card" target="_blank">
+          <span class="nc-icon">📓</span>
+          <div class="nc-title">Workbook</div>
+          <div class="nc-desc">Participant workbook — all exercises, prompt builder, action plan</div>
+        </a>
+        <a href="quick-reference/index.html" class="nav-card" target="_blank">
+          <span class="nc-icon">⚡</span>
+          <div class="nc-title">Quick Reference</div>
+          <div class="nc-desc">OPL Field Guide — 50+ prompts, rescue lines, framework cards</div>
+        </a>
+        <a href="charts/index.html" class="nav-card" target="_blank">
+          <span class="nc-icon">📊</span>
+          <div class="nc-title">Data Lab</div>
+          <div class="nc-desc">Visualise the 3 synthetic OPL training datasets</div>
+        </a>
+        <a href="trainer/index.html" class="nav-card" target="_blank">
+          <span class="nc-icon">🔍</span>
+          <div class="nc-title">Fact Checker</div>
+          <div class="nc-desc">Trainer utility to verify public vs synthetic claims</div>
+        </a>
+      </div>
     </div>
+  </section>
+
+  <footer>
+    <strong>OPL Innovate × Be10x</strong> — Microsoft Copilot — Day 2 — Corporate Training<br>
+    Feature availability may vary by Microsoft 365 licence, tenant configuration, permissions and product version.<br>
+    All training datasets are synthetic. They do not represent actual OPL customer or operational data.<br>
+    Public OPL facts sourced from: <strong>oplinnovate.com</strong>
+  </footer>
 </body>
 </html>

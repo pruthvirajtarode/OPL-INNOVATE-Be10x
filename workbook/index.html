@@ -1,133 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participant Workbook - Microsoft Copilot Training</title>
-    <meta name="description" content="Participant workbook for the Microsoft Copilot interactive training session.">
-    <link rel="stylesheet" href="css/workbook.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participant Workbook | OPL Innovate × Be10x — Copilot Day 2</title>
+  <meta name="description" content="Participant workbook for OPL Innovate Microsoft Copilot Day 2 training.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/workbook.css">
 </head>
 <body>
-    <div class="container">
-        <!-- COVER -->
-        <header>
-            <span class="eyebrow">OPL INNOVATE × Be10x</span>
-            <h1>MICROSOFT COPILOT</h1>
-            <p>From Prompt to Productivity</p>
-        </header>
+  <div class="wb-container">
 
-        <div class="cover-fields">
-            <div class="form-group">
-                <label for="participant-name">Participant:</label>
-                <input type="text" id="participant-name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label for="participant-dept">Department:</label>
-                <input type="text" id="participant-dept" placeholder="Your Department">
-            </div>
-            <div class="form-group">
-                <label for="participant-role">Role:</label>
-                <input type="text" id="participant-role" placeholder="Your Role">
-            </div>
-            <div class="form-group">
-                <label for="session-date">Date:</label>
-                <input type="text" id="session-date" placeholder="Session Date">
-            </div>
-        </div>
-        
-        <div class="form-group" style="margin-top: 40px; padding: 20px; background-color: var(--bg-color); border-radius: 8px;">
-            <label for="workflow-target" style="color: var(--accent); font-size: 1.2rem;">My Workflow Target:</label>
-            <input type="text" id="workflow-target" placeholder="e.g. Weekly Status Report">
-        </div>
+    <!-- COVER -->
+    <header class="wb-cover">
+      <div class="wb-eyebrow">OPL INNOVATE × Be10x</div>
+      <h1>MICROSOFT COPILOT</h1>
+      <div class="wb-sub">Day 2 — From Data to Decision</div>
+      <div class="wb-cover-fields">
+        <div class="wb-field"><label for="p-name">Name</label><input type="text" id="p-name" placeholder="Your Name"></div>
+        <div class="wb-field"><label for="p-dept">Department</label><input type="text" id="p-dept" placeholder="IT / Product / Risk / ..."></div>
+        <div class="wb-field"><label for="p-role">Role</label><input type="text" id="p-role" placeholder="Your Role"></div>
+        <div class="wb-field"><label for="p-date">Date</label><input type="text" id="p-date" placeholder="Session Date"></div>
+      </div>
+      <a href="../index.html" class="wb-home-btn">← Back to Home</a>
+    </header>
 
-        <div class="page-break"><span>Page 1</span></div>
+    <!-- SECTION 1: WORKFLOW TARGET -->
+    <section class="wb-section">
+      <div class="wb-section-num">01</div>
+      <h2>My Workflow Target</h2>
+      <p class="wb-section-desc">Identify ONE workflow you want to improve with Copilot today.</p>
+      <div class="wb-grid-2">
+        <div class="wb-field wb-field-lg"><label for="wt-task">The task I repeat every week:</label><textarea id="wt-task" placeholder="e.g. Compiling the weekly MSME portfolio summary from Excel..."></textarea></div>
+        <div>
+          <div class="wb-field"><label for="wt-time">How long it takes manually:</label><input type="text" id="wt-time" placeholder="e.g. 3–4 hours"></div>
+          <div class="wb-field"><label for="wt-pain">What makes it frustrating:</label><input type="text" id="wt-pain" placeholder="e.g. Data is in 3 different places"></div>
+          <div class="wb-field wb-field-highlight"><label for="wt-target">My Copilot target time:</label><input type="text" id="wt-target" placeholder="e.g. Under 30 minutes"></div>
+        </div>
+      </div>
+    </section>
 
-        <!-- PAGE 1: REPEATED TASK -->
-        <h2>My Repeated Task</h2>
-        <div class="form-group">
-            <label for="task-desc">What task do I repeat every week?</label>
-            <textarea id="task-desc"></textarea>
+    <!-- SECTION 2: OPL CONTEXT -->
+    <section class="wb-section">
+      <div class="wb-section-num">02</div>
+      <h2>OPL Business Context — What I Know</h2>
+      <p class="wb-section-desc">Fill in the OPL context that is relevant to your role.</p>
+      <div class="wb-grid-3">
+        <div class="wb-info-card wb-info-public">
+          <div class="wb-info-badge">PUBLIC OPL DATA</div>
+          <ul>
+            <li>235+ Partner Banks</li>
+            <li>₹6,00,000 Cr+ Sanctioned</li>
+            <li>360+ Employees</li>
+            <li>30L+ MSMEs Onboarded</li>
+            <li>70+ Products Built</li>
+          </ul>
+          <small>Source: oplinnovate.com</small>
         </div>
-        <div class="form-group">
-            <label for="task-time">How long does it take?</label>
-            <input type="text" id="task-time">
-        </div>
-        <div class="form-group">
-            <label for="task-frustration">What makes it frustrating?</label>
-            <textarea id="task-frustration"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="task-help">Where could Copilot help?</label>
-            <textarea id="task-help"></textarea>
-        </div>
+        <div class="wb-field wb-field-lg" style="grid-column: span 2;"><label for="opl-products">OPL products most relevant to my role:</label><textarea id="opl-products" placeholder="e.g. OAM+, Bank Statement Analyzer, MSME Risk Rank..."></textarea></div>
+      </div>
+    </section>
 
-        <div class="page-break"><span>Page 2</span></div>
+    <!-- SECTION 3: PROMPT BUILDER -->
+    <section class="wb-section">
+      <div class="wb-section-num">03</div>
+      <h2>OPL Prompt Framework Builder</h2>
+      <p class="wb-section-desc">Build a prompt using the TASK + CONTEXT + SOURCE + CONSTRAINT + OUTPUT + CHECK framework.</p>
+      <div class="wb-prompt-builder">
+        <div class="wb-pf-item"><label for="pf-task"><span class="pf-letter">T</span> TASK</label><input type="text" id="pf-task" placeholder="What do you want Copilot to do?"></div>
+        <div class="wb-pf-item"><label for="pf-ctx"><span class="pf-letter">C</span> CONTEXT</label><input type="text" id="pf-ctx" placeholder="Who is the audience? What is the goal?"></div>
+        <div class="wb-pf-item"><label for="pf-src"><span class="pf-letter">S</span> SOURCE</label><input type="text" id="pf-src" placeholder="Which files or data should it use?"></div>
+        <div class="wb-pf-item"><label for="pf-con"><span class="pf-letter">C</span> CONSTRAINT</label><input type="text" id="pf-con" placeholder="What limits? 'Use only provided data'"></div>
+        <div class="wb-pf-item"><label for="pf-out"><span class="pf-letter">O</span> OUTPUT</label><input type="text" id="pf-out" placeholder="Format, length, tone?"></div>
+        <div class="wb-pf-item wb-pf-check"><label for="pf-chk"><span class="pf-letter" style="color:#10b981;">✓</span> CHECK</label><input type="text" id="pf-chk" placeholder="What must a human verify?"></div>
+      </div>
+      <div class="wb-field" style="margin-top:1rem;">
+        <label for="pf-full" style="font-weight:700; color:var(--amber);">MY COMPLETE PROMPT:</label>
+        <textarea id="pf-full" rows="5" placeholder="Combine all elements into one coherent prompt here..."></textarea>
+      </div>
+    </section>
 
-        <!-- PAGE 2: PROMPT BUILDER -->
-        <h2>Prompt Builder</h2>
-        <div class="form-group">
-            <label for="prompt-task">TASK:</label>
-            <input type="text" id="prompt-task" placeholder="What do you want it to do?">
-        </div>
-        <div class="form-group">
-            <label for="prompt-context">CONTEXT:</label>
-            <input type="text" id="prompt-context" placeholder="Audience / Goal?">
-        </div>
-        <div class="form-group">
-            <label for="prompt-source">SOURCE:</label>
-            <input type="text" id="prompt-source" placeholder="Which files/data?">
-        </div>
-        <div class="form-group">
-            <label for="prompt-constraint">CONSTRAINT:</label>
-            <input type="text" id="prompt-constraint" placeholder="Limits or rules?">
-        </div>
-        <div class="form-group">
-            <label for="prompt-output">OUTPUT:</label>
-            <input type="text" id="prompt-output" placeholder="Format / Tone / Length?">
-        </div>
-        <div class="form-group" style="margin-top: 30px;">
-            <label for="prompt-final" style="color: var(--accent);">MY PROMPT:</label>
-            <textarea id="prompt-final" placeholder="Combine them here..."></textarea>
-        </div>
+    <!-- SECTION 4: OUTLOOK EXERCISE -->
+    <section class="wb-section">
+      <div class="wb-section-num">04</div>
+      <h2>📧 Outlook Exercise</h2>
+      <div class="wb-app-badge" style="background:rgba(0,120,212,0.1);border-color:rgba(0,120,212,0.3);color:#60A5FA;">OUTLOOK</div>
+      <p class="wb-section-desc">Open the synthetic OPL Q3 MSME Portfolio email thread. Use Copilot to answer each question.</p>
+      <div class="wb-field wb-field-lg"><label for="out-sum">1. Thread summary (5 bullets):</label><textarea id="out-sum" placeholder="•&#10;•&#10;•&#10;•&#10;•"></textarea></div>
+      <div class="wb-field"><label for="out-dec">2. Decisions made in the thread:</label><textarea id="out-dec"></textarea></div>
+      <div class="wb-field"><label for="out-act">3. Action items (owner + date — use [CONFIRM] where missing):</label><textarea id="out-act"></textarea></div>
+      <div class="wb-field"><label for="out-uq">4. Unresolved questions:</label><textarea id="out-uq"></textarea></div>
+      <div class="wb-field"><label for="out-rep">5. My draft reply (then verify before sending):</label><textarea id="out-rep"></textarea></div>
+      <div class="wb-alert">⚠️ If an owner or date was not stated in the email — did you use [CONFIRM OWNER] / [CONFIRM DATE]?</div>
+    </section>
 
-        <div class="page-break"><span>Page 3</span></div>
+    <!-- SECTION 5: WORD EXERCISE -->
+    <section class="wb-section">
+      <div class="wb-section-num">05</div>
+      <h2>📄 Word Exercise</h2>
+      <div class="wb-app-badge" style="background:rgba(43,87,154,0.1);border-color:rgba(43,87,154,0.3);color:#93C5FD;">WORD</div>
+      <p class="wb-section-desc">Transform the rough MSME portfolio notes into a structured executive brief.</p>
+      <div class="wb-field wb-field-lg"><label for="wd-prompt">My prompt for the transformation:</label><textarea id="wd-prompt" placeholder="You are a senior lending operations analyst at OPL Innovate..."></textarea></div>
+      <div class="wb-field"><label for="wd-sections">Sections in my output:</label><input type="text" id="wd-sections" placeholder="Executive Summary, Risk Signals, Next Steps..."></div>
+      <div class="wb-field"><label for="wd-verify">What I verified before sharing the brief:</label><textarea id="wd-verify"></textarea></div>
+    </section>
 
-        <!-- OUTLOOK -->
-        <h2>Outlook</h2>
-        <div class="form-group"><label for="out-summary">Email summary:</label><textarea id="out-summary"></textarea></div>
-        <div class="form-group"><label for="out-decisions">Decisions:</label><textarea id="out-decisions"></textarea></div>
-        <div class="form-group"><label for="out-actions">Actions:</label><textarea id="out-actions"></textarea></div>
-        <div class="form-group"><label for="out-draft">Draft reply:</label><textarea id="out-draft"></textarea></div>
-        <div class="form-group"><label for="out-tone">Tone adjustment:</label><input type="text" id="out-tone"></div>
+    <!-- SECTION 6: EXCEL LAB -->
+    <section class="wb-section">
+      <div class="wb-section-num">06</div>
+      <h2>📊 Excel Lab — MSME Portfolio</h2>
+      <div class="wb-app-badge" style="background:rgba(33,115,70,0.1);border-color:rgba(33,115,70,0.3);color:#6EE7B7;">EXCEL — SYNTHETIC DATA</div>
+      <p class="wb-section-desc">Record your findings from <code>OPL_MSME_CREDIT_PORTFOLIO_TRAINING.csv</code></p>
+      <div class="wb-metric-grid">
+        <div class="wb-metric"><label for="ex-apr">Approval Rate</label><input type="text" id="ex-apr" placeholder="___%"></div>
+        <div class="wb-metric"><label for="ex-sec">Highest Risk Sector</label><input type="text" id="ex-sec" placeholder="Sector"></div>
+        <div class="wb-metric"><label for="ex-reg">Highest DPD Region</label><input type="text" id="ex-reg" placeholder="Region"></div>
+        <div class="wb-metric"><label for="ex-tat">Avg Processing TAT</label><input type="text" id="ex-tat" placeholder="hours"></div>
+      </div>
+      <div class="wb-field wb-field-lg"><label for="ex-insights">3 key insights from Copilot (with evidence):</label><textarea id="ex-insights" placeholder="1. [INSIGHT] — Evidence: [SPECIFIC DATA POINT]&#10;2.&#10;3."></textarea></div>
+      <div class="wb-field"><label for="ex-mgmt">My management recommendation:</label><textarea id="ex-mgmt"></textarea></div>
+      <div class="wb-alert wb-alert-synth">🔬 Remember: All these numbers are from SYNTHETIC training data only.</div>
+    </section>
 
-        <div class="page-break"><span>Page 4</span></div>
+    <!-- SECTION 7: BSA LAB -->
+    <section class="wb-section">
+      <div class="wb-section-num">07</div>
+      <h2>🏦 BSA Lab — Bank Statement Analysis</h2>
+      <div class="wb-app-badge" style="background:rgba(33,115,70,0.1);border-color:rgba(33,115,70,0.3);color:#6EE7B7;">EXCEL — SYNTHETIC BSA DATA</div>
+      <p class="wb-section-desc">Record your findings from <code>OPL_BANK_STATEMENT_ANALYZER_TRAINING.csv</code></p>
+      <div class="wb-field"><label for="bsa-anom">Number of anomaly transactions found:</label><input type="text" id="bsa-anom"></div>
+      <div class="wb-field"><label for="bsa-cat">Primary anomaly category:</label><input type="text" id="bsa-cat"></div>
+      <div class="wb-field wb-field-lg"><label for="bsa-health">What the cash-flow pattern suggests about borrower health:</label><textarea id="bsa-health"></textarea></div>
+    </section>
 
-        <!-- CAPSTONE -->
-        <h2>Capstone Challenge</h2>
-        <div class="form-group"><label for="cap-problem">Problem:</label><input type="text" id="cap-problem"></div>
-        <div class="form-group"><label for="cap-input">Input Data:</label><input type="text" id="cap-input"></div>
-        <div class="form-group"><label for="cap-output">Desired Output:</label><input type="text" id="cap-output"></div>
-        <div class="form-group"><label for="cap-workflow">Copilot Workflow (Steps):</label><textarea id="cap-workflow"></textarea></div>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; padding: 20px; background: #f0fdf4; border-radius: 8px;">
-            <div class="form-group" style="margin-bottom: 0;">
-                <label for="cap-before">Time Before:</label>
-                <input type="text" id="cap-before">
-            </div>
-            <div class="form-group" style="margin-bottom: 0;">
-                <label for="cap-after">Time After (with Copilot):</label>
-                <input type="text" id="cap-after">
-            </div>
+    <!-- SECTION 8: OAM+ LAB -->
+    <section class="wb-section">
+      <div class="wb-section-num">08</div>
+      <h2>⚙️ OAM+ API Operations Lab</h2>
+      <div class="wb-app-badge" style="background:rgba(33,115,70,0.1);border-color:rgba(33,115,70,0.3);color:#6EE7B7;">EXCEL — SYNTHETIC API DATA</div>
+      <div class="wb-field"><label for="oam-vendor">Highest latency vendor:</label><input type="text" id="oam-vendor" placeholder="Vendor_?"></div>
+      <div class="wb-field"><label for="oam-svc">Highest failure rate service:</label><input type="text" id="oam-svc"></div>
+      <div class="wb-field wb-field-lg"><label for="oam-rec">3 engineering actions I would recommend (based only on data):</label><textarea id="oam-rec" placeholder="1.&#10;2.&#10;3."></textarea></div>
+    </section>
+
+    <!-- SECTION 9: POWERPOINT EXERCISE -->
+    <section class="wb-section">
+      <div class="wb-section-num">09</div>
+      <h2>📋 PowerPoint Exercise</h2>
+      <div class="wb-app-badge" style="background:rgba(196,62,28,0.1);border-color:rgba(196,62,28,0.3);color:#FCA5A5;">POWERPOINT</div>
+      <div class="wb-field"><label for="ppt-choice">Which PPT scenario did I choose?</label>
+        <select id="ppt-choice"><option>PPT 1 — OPL Digital Lending Overview</option><option>PPT 2 — OAM+ Architecture + Data</option><option>PPT 3 — AI-Native Lending</option></select>
+      </div>
+      <div class="wb-field wb-field-lg"><label for="ppt-prompt">My Copilot prompt:</label><textarea id="ppt-prompt"></textarea></div>
+      <div class="wb-field"><label for="ppt-slides">Number of slides generated:</label><input type="text" id="ppt-slides"></div>
+      <div class="wb-field wb-field-lg"><label for="ppt-verify">What I changed or corrected in the deck before sharing:</label><textarea id="ppt-verify"></textarea></div>
+    </section>
+
+    <!-- SECTION 10: TEAMS EXERCISE -->
+    <section class="wb-section">
+      <div class="wb-section-num">10</div>
+      <h2>💬 Teams Exercise</h2>
+      <div class="wb-app-badge" style="background:rgba(80,89,201,0.1);border-color:rgba(80,89,201,0.3);color:#A5B4FC;">TEAMS</div>
+      <div class="wb-field wb-field-lg"><label for="tm-dec">Decisions extracted from the MSME Review meeting:</label><textarea id="tm-dec"></textarea></div>
+      <div class="wb-field wb-field-lg"><label for="tm-act">Action items (use [CONFIRM OWNER] / [CONFIRM DATE] where missing):</label><textarea id="tm-act"></textarea></div>
+      <div class="wb-field"><label for="tm-hall">Did Copilot hallucinate any owner or date? What did you catch?</label><textarea id="tm-hall"></textarea></div>
+    </section>
+
+    <!-- SECTION 11: GROUNDING -->
+    <section class="wb-section">
+      <div class="wb-section-num">11</div>
+      <h2>⚑ Grounding &amp; Hallucination Exercise</h2>
+      <p class="wb-section-desc">Classify each statement. Write PUBLIC, SYNTHETIC, or UNSUPPORTED.</p>
+      <div class="wb-classify-grid">
+        <div class="wb-cl-item">
+          <div class="wb-cl-q">"OPL has 235+ partner banks."</div>
+          <div class="wb-field" style="margin-top:0.5rem;"><input type="text" placeholder="PUBLIC / SYNTHETIC / UNSUPPORTED"></div>
         </div>
-
-        <!-- FOOTER ACTIONS -->
-        <div class="footer-actions">
-            <a href="../index.html" class="btn secondary" style="text-decoration: none;">🏠 Home</a>
-            <button class="btn" onclick="printWorkbook()">🖨️ Print / Save PDF</button>
-            <button class="btn secondary" onclick="resetWorkbook()">Reset Session</button>
+        <div class="wb-cl-item">
+          <div class="wb-cl-q">"Vendor_B API has a 12% failure rate."</div>
+          <div class="wb-field" style="margin-top:0.5rem;"><input type="text" placeholder="PUBLIC / SYNTHETIC / UNSUPPORTED"></div>
         </div>
+        <div class="wb-cl-item">
+          <div class="wb-cl-q">"West region shows 87% approval in our dataset."</div>
+          <div class="wb-field" style="margin-top:0.5rem;"><input type="text" placeholder="PUBLIC / SYNTHETIC / UNSUPPORTED"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: CAPSTONE -->
+    <section class="wb-section">
+      <div class="wb-section-num">12</div>
+      <h2>🏆 Capstone</h2>
+      <div class="wb-field">
+        <label>Track chosen:</label>
+        <div class="wb-radio-group">
+          <label><input type="radio" name="cap-track" value="product"> Option A — Product</label>
+          <label><input type="radio" name="cap-track" value="it"> Option B — IT</label>
+        </div>
+      </div>
+      <div class="wb-field wb-field-lg"><label for="cap-prob">Business problem I solved:</label><textarea id="cap-prob"></textarea></div>
+      <div class="wb-field wb-field-lg"><label for="cap-wf">My Copilot workflow (step by step):</label><textarea id="cap-wf" placeholder="Step 1: Teams → ...&#10;Step 2: Excel → ...&#10;Step 3: Word → ...&#10;Step 4: PowerPoint → ...&#10;Step 5: Outlook → ..."></textarea></div>
+      <div class="wb-metric-grid">
+        <div class="wb-metric"><label for="cap-before">Time before Copilot:</label><input type="text" id="cap-before" placeholder="e.g. 4 hours"></div>
+        <div class="wb-metric"><label for="cap-after">Time with Copilot:</label><input type="text" id="cap-after" placeholder="e.g. 45 minutes"></div>
+        <div class="wb-metric"><label for="cap-verify">Verified by human?</label><input type="text" id="cap-verify" placeholder="Yes / No"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 13: ACTION PLAN -->
+    <section class="wb-section wb-section-final">
+      <div class="wb-section-num">13</div>
+      <h2>🎯 My Personal Action Plan</h2>
+      <div class="wb-field"><label for="ap-tom">Tomorrow I will use Copilot for:</label><input type="text" id="ap-tom"></div>
+      <div class="wb-field"><label for="ap-wf">The first workflow I will automate:</label><input type="text" id="ap-wf"></div>
+      <div class="wb-field"><label for="ap-verify">The data I must always verify:</label><input type="text" id="ap-verify"></div>
+      <div class="wb-field"><label for="ap-out">The output I will review before using:</label><input type="text" id="ap-out"></div>
+      <div class="wb-field"><label for="ap-val">The business value I expect:</label><input type="text" id="ap-val"></div>
+      <div class="wb-final-msg">
+        <p class="wb-quote">"Copilot is not the destination. Better work is."</p>
+        <p style="color:var(--amber); font-weight:700; font-size:1rem; margin-top:0.5rem;">INNOVATION IS GOOD. RESPONSIBLE INNOVATION IS BETTER.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER ACTIONS -->
+    <div class="wb-actions">
+      <a href="../index.html" class="wb-btn wb-btn-secondary">🏠 Home</a>
+      <button class="wb-btn wb-btn-primary" onclick="window.print()">🖨️ Print / Save PDF</button>
+      <button class="wb-btn wb-btn-danger" onclick="resetWorkbook()">⟳ Reset Session</button>
     </div>
 
-    <script src="js/workbook.js"></script>
+  </div>
+
+  <script src="js/workbook.js"></script>
 </body>
 </html>

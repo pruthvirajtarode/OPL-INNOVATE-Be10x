@@ -1,73 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Reference - Microsoft Copilot</title>
-    <meta name="description" content="Quick reference guide and rescue lines for Microsoft Copilot prompting.">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPL Copilot Field Guide | Quick Reference</title>
+  <meta name="description" content="OPL Innovate × Be10x Microsoft Copilot Day 2 — Prompt field guide, rescue lines and OPL-specific prompt cards.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0B1D3A; --navy-deep: #060F21; --surface: #122447;
+      --amber: #F59E0B; --amber-dim: rgba(245,158,11,0.1);
+      --success: #10b981; --danger: #ef4444;
+      --text: #F8FAFC; --text-muted: #64748B; --text-secondary: #94A3B8;
+      --border: rgba(255,255,255,0.08); --border-amber: rgba(245,158,11,0.3);
+      --font: 'Inter', sans-serif; --mono: 'JetBrains Mono', monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--navy-deep); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
+    /* HEADER */
+    .qr-header {
+      background: var(--navy);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 3rem;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .qr-header-left .eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.25em; color: var(--amber); text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+    .qr-header-left h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.02em; }
+    .qr-header-left h1 span { color: var(--amber); }
+    .back-btn { background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text-secondary); padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: background 0.15s; }
+    .back-btn:hover { background: rgba(255,255,255,0.1); color: var(--text); }
+
+    /* MAIN LAYOUT */
+    .qr-body { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; display: flex; flex-direction: column; gap: 3rem; }
+
+    /* SECTIONS */
+    h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.3rem; }
+    .section-sub { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+
+    /* FRAMEWORK BOX */
+    .framework-box {
+      background: var(--surface); border: 1px solid var(--border-amber);
+      border-radius: 16px; padding: 2.5rem;
+      display: flex; flex-wrap: wrap; gap: 0; align-items: stretch;
+    }
+    .fw-item {
+      flex: 1; min-width: 130px;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      padding: 1.5rem 1rem; border-right: 1px solid var(--border);
+    }
+    .fw-item:last-child { border-right: none; }
+    .fw-letter { font-size: 3rem; font-weight: 900; color: var(--amber); line-height: 1; }
+    .fw-word { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin: 0.3rem 0; }
+    .fw-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+    .fw-check { border-color: var(--success); }
+    .fw-check .fw-letter { color: var(--success); }
+
+    /* RESCUE GRID */
+    .rescue-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+    .rescue-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 1.2rem; position: relative;
+    }
+    .rescue-num { font-family: var(--mono); font-size: 0.7rem; color: var(--amber); font-weight: 600; margin-bottom: 0.5rem; }
+    .rescue-text { font-family: var(--mono); font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+    .rescue-card.rescue-key { border-color: rgba(245,158,11,0.4); }
+    .rescue-card.rescue-key .rescue-text { color: var(--text); }
+
+    /* PROMPT CARDS GRID */
+    .prompt-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .pc-card {
+      border-radius: 12px; padding: 1.5rem;
+      border: 1px solid var(--border); background: var(--surface);
+    }
+    .pc-tag { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.8rem; display: block; }
+    .pc-tag-analyze { color: #60A5FA; }
+    .pc-tag-verify { color: #FCA5A5; }
+    .pc-tag-exec { color: var(--amber); }
+    .pc-tag-email { color: #6EE7B7; }
+    .pc-tag-meet { color: #A5B4FC; }
+    .pc-tag-opl { color: #FCD34D; }
+    .pc-prompt { font-family: var(--mono); font-size: 0.8rem; color: var(--text-secondary); line-height: 1.7; white-space: pre-line; }
+
+    /* BIG PROMPT LIBRARY */
+    .prompt-lib { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .pl-item { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; }
+    .pl-cat { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.4rem; }
+    .pl-prompt { font-family: var(--mono); font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
+
+    /* DATA POLICY REMINDER */
+    .policy-bar {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 12px; padding: 1.5rem 2rem; align-items: center;
+    }
+    .policy-icon { font-size: 1.5rem; }
+    .policy-text { flex: 1; font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); }
+    .policy-text strong { color: var(--text); }
+
+    /* DISCLAIMER */
+    .qr-footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.78rem; line-height: 1.8; }
+
+    @media (max-width: 900px) {
+      .rescue-grid { grid-template-columns: repeat(2, 1fr); }
+      .prompt-cards-grid { grid-template-columns: 1fr; }
+      .prompt-lib { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; color: #0f172a; }
+      .qr-header, .back-btn { background: white !important; }
+      .framework-box, .rescue-card, .pc-card, .pl-item { background: #f8fafc !important; border-color: #e2e8f0 !important; }
+      .qr-footer { border-color: #e2e8f0; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <span style="color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em;">OPL INNOVATE × Be10x</span>
-            <h1>Copilot Quick Reference</h1>
-            <p style="color: var(--text-secondary);">Keep this open during your daily workflow.</p>
-            <div style="margin-top: 20px;">
-                <a href="../index.html" style="color: var(--accent); text-decoration: none; font-weight: bold; border: 1px solid var(--border); padding: 8px 16px; border-radius: 4px; display: inline-block;">🏠 Back to Home</a>
-            </div>
-        </header>
 
-        <h2>The Prompt Formula</h2>
-        <div class="formula-box">
-            TASK + CONTEXT + SOURCE + CONSTRAINT + OUTPUT + CHECK
-        </div>
+<header class="qr-header">
+  <div class="qr-header-left">
+    <span class="eyebrow">OPL INNOVATE × Be10x</span>
+    <h1>OPL COPILOT <span>FIELD GUIDE</span></h1>
+  </div>
+  <a href="../index.html" class="back-btn">← Back to Home</a>
+</header>
 
-        <h2>10 Copilot Rescue Lines</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 30px;">Use these exact phrases when Copilot's first answer isn't quite right.</p>
-        
-        <div class="grid">
-            <div class="card">
-                <div class="card-number">01</div>
-                <div class="card-text">"Make this more concise."</div>
-            </div>
-            <div class="card">
-                <div class="card-number">02</div>
-                <div class="card-text">"Give me the answer in a table."</div>
-            </div>
-            <div class="card">
-                <div class="card-number">03</div>
-                <div class="card-text">"What assumptions did you make?"</div>
-            </div>
-            <div class="card">
-                <div class="card-number">04</div>
-                <div class="card-text">"Use only the information I provided."</div>
-            </div>
-            <div class="card">
-                <div class="card-number">05</div>
-                <div class="card-text">"Show me the evidence for each claim."</div>
-            </div>
-            <div class="card">
-                <div class="card-number">06</div>
-                <div class="card-text">"Rewrite this for a senior executive."</div>
-            </div>
-            <div class="card">
-                <div class="card-number">07</div>
-                <div class="card-text">"Give me three alternatives."</div>
-            </div>
-            <div class="card">
-                <div class="card-number">08</div>
-                <div class="card-text">"What information is missing?"</div>
-            </div>
-            <div class="card">
-                <div class="card-number">09</div>
-                <div class="card-text">"Flag anything that needs human confirmation."</div>
-            </div>
-            <div class="card" style="border-color: var(--warning);">
-                <div class="card-number">10</div>
-                <div class="card-text">"Do not invent dates, numbers, owners or commitments."</div>
-            </div>
-        </div>
+<div class="qr-body">
+
+  <!-- FRAMEWORK -->
+  <section>
+    <h2>The OPL Prompt Framework</h2>
+    <p class="section-sub">Use this structure for every prompt. Every element matters.</p>
+    <div class="framework-box">
+      <div class="fw-item"><div class="fw-letter">T</div><div class="fw-word">Task</div><div class="fw-desc">What do you want Copilot to do?</div></div>
+      <div class="fw-item"><div class="fw-letter">C</div><div class="fw-word">Context</div><div class="fw-desc">Who is the audience? What is the goal?</div></div>
+      <div class="fw-item"><div class="fw-letter">S</div><div class="fw-word">Source</div><div class="fw-desc">Which specific files or data to use?</div></div>
+      <div class="fw-item"><div class="fw-letter">C</div><div class="fw-word">Constraint</div><div class="fw-desc">What limits? "Only use provided data"</div></div>
+      <div class="fw-item"><div class="fw-letter">O</div><div class="fw-word">Output</div><div class="fw-desc">Format, length, tone?</div></div>
+      <div class="fw-item fw-check"><div class="fw-letter">✓</div><div class="fw-word">Check</div><div class="fw-desc">What must a human verify?</div></div>
     </div>
+  </section>
+
+  <!-- 10 RESCUE LINES -->
+  <section>
+    <h2>10 Rescue Lines</h2>
+    <p class="section-sub">When Copilot's first answer isn't right — use these exact phrases.</p>
+    <div class="rescue-grid">
+      <div class="rescue-card"><div class="rescue-num">01</div><div class="rescue-text">"Make this more concise. Maximum 5 bullet points."</div></div>
+      <div class="rescue-card"><div class="rescue-num">02</div><div class="rescue-text">"Give me this in a table format."</div></div>
+      <div class="rescue-card"><div class="rescue-num">03</div><div class="rescue-text">"What assumptions did you make? List them."</div></div>
+      <div class="rescue-card rescue-key"><div class="rescue-num">04</div><div class="rescue-text">"Use ONLY the information I provided. Nothing else."</div></div>
+      <div class="rescue-card rescue-key"><div class="rescue-num">05</div><div class="rescue-text">"Show me the evidence for each claim."</div></div>
+      <div class="rescue-card"><div class="rescue-num">06</div><div class="rescue-text">"Rewrite this for a senior banking stakeholder."</div></div>
+      <div class="rescue-card"><div class="rescue-num">07</div><div class="rescue-text">"Give me three alternative approaches."</div></div>
+      <div class="rescue-card"><div class="rescue-num">08</div><div class="rescue-text">"What information is missing from this analysis?"</div></div>
+      <div class="rescue-card rescue-key"><div class="rescue-num">09</div><div class="rescue-text">"Flag anything that needs human confirmation before sharing."</div></div>
+      <div class="rescue-card rescue-key"><div class="rescue-num">10</div><div class="rescue-text">"Do NOT invent dates, numbers, owners, or commitments."</div></div>
+    </div>
+  </section>
+
+  <!-- OPL PROMPT CARDS -->
+  <section>
+    <h2>OPL Copilot Prompt Cards</h2>
+    <p class="section-sub">Copy these prompts for specific OPL workflows.</p>
+    <div class="prompt-cards-grid">
+      <div class="pc-card">
+        <span class="pc-tag pc-tag-analyze">ANALYZE</span>
+        <div class="pc-prompt">"Using only this synthetic MSME portfolio dataset, identify the three most important portfolio trends and cite the supporting data points. Do not invent values."</div>
+      </div>
+      <div class="pc-card">
+        <span class="pc-tag pc-tag-verify">VERIFY</span>
+        <div class="pc-prompt">"List every conclusion you just made that is NOT directly supported by the data I provided. Flag each as UNVERIFIED."</div>
+      </div>
+      <div class="pc-card">
+        <span class="pc-tag pc-tag-exec">EXECUTIVE</span>
+        <div class="pc-prompt">"Turn these portfolio findings into a six-slide executive summary. Clearly label: PUBLIC OPL FACTS vs SYNTHETIC ANALYSIS. Include next steps."</div>
+      </div>
+      <div class="pc-card">
+        <span class="pc-tag pc-tag-email">EMAIL</span>
+        <div class="pc-prompt">"Draft a concise stakeholder update based ONLY on these findings. Tone: professional, banking context. Flag items that need confirmation before sending."</div>
+      </div>
+      <div class="pc-card">
+        <span class="pc-tag pc-tag-meet">MEETING</span>
+        <div class="pc-prompt">"From this meeting transcript, extract: DECISIONS, ACTIONS (owner + date), OPEN QUESTIONS. Use [CONFIRM OWNER] and [CONFIRM DATE] where not stated. DO NOT invent."</div>
+      </div>
+      <div class="pc-card">
+        <span class="pc-tag pc-tag-opl">OPL GROUNDING</span>
+        <div class="pc-prompt">"Using only the supplied OPL public company profile and this synthetic dataset, write a management summary. Separate PUBLIC FACTS from SYNTHETIC ANALYSIS. Do not invent OPL statistics."</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 50+ PROMPT LIBRARY -->
+  <section>
+    <h2>50+ OPL-Specific Prompts</h2>
+    <p class="section-sub">Organized by category. Always add your CONSTRAINT and CHECK before sending.</p>
+    <div class="prompt-lib">
+      <div class="pl-item"><div class="pl-cat">COMPANY RESEARCH</div><div class="pl-prompt">"Summarize the publicly available information about OPL Innovate from the provided company profile. Do not add information from outside the document."</div></div>
+      <div class="pl-item"><div class="pl-cat">EMAIL — SUMMARY</div><div class="pl-prompt">"Summarize this email thread. What was decided? What is still open? What requires my action?"</div></div>
+      <div class="pl-item"><div class="pl-cat">EMAIL — DRAFT</div><div class="pl-prompt">"Draft a reply that addresses the open action items. Tone: professional, direct. I will verify before sending."</div></div>
+      <div class="pl-item"><div class="pl-cat">WORD — TRANSFORM</div><div class="pl-prompt">"Rewrite these rough notes into an executive business brief. Sections: Executive Summary, Key Findings, Risk Signals, Recommendations, Next Steps."</div></div>
+      <div class="pl-item"><div class="pl-cat">WORD — STAKEHOLDER</div><div class="pl-prompt">"Rewrite this document for a senior banking executive. Tone: confident, data-led, action-oriented. Maximum 1 page."</div></div>
+      <div class="pl-item"><div class="pl-cat">EXCEL — APPROVAL</div><div class="pl-prompt">"From this MSME portfolio dataset, calculate the overall approval rate. Show the calculation steps."</div></div>
+      <div class="pl-item"><div class="pl-cat">EXCEL — RISK</div><div class="pl-prompt">"Which sector in this synthetic dataset has the highest concentration of High MSME_Risk_Rank? Cite the row counts."</div></div>
+      <div class="pl-item"><div class="pl-cat">EXCEL — REGIONAL</div><div class="pl-prompt">"Compare DPD_30_Count across regions. Which region shows the highest DPD signal? Do not invent numbers."</div></div>
+      <div class="pl-item"><div class="pl-cat">EXCEL — CASH FLOW</div><div class="pl-prompt">"Is there a pattern between Monthly_Cash_Inflow and Approval_Status? Describe the relationship you observe in the data."</div></div>
+      <div class="pl-item"><div class="pl-cat">EXCEL — CHART</div><div class="pl-prompt">"Create a bar chart showing approval rate by MSME_Sector. Label the axes. Source this from the provided dataset only."</div></div>
+      <div class="pl-item"><div class="pl-cat">EXCEL — EXECUTIVE</div><div class="pl-prompt">"Summarize this synthetic MSME portfolio for a senior credit officer. 5 bullets. Each bullet must cite a data point."</div></div>
+      <div class="pl-item"><div class="pl-cat">BSA — ANOMALY</div><div class="pl-prompt">"How many transactions in this bank statement dataset are flagged as Anomaly? What is the dominant transaction category for those anomalies?"</div></div>
+      <div class="pl-item"><div class="pl-cat">BSA — CASHFLOW</div><div class="pl-prompt">"Create a monthly cash inflow vs outflow chart from this BSA dataset. Highlight months where outflow exceeds inflow."</div></div>
+      <div class="pl-item"><div class="pl-cat">BSA — HEALTH</div><div class="pl-prompt">"Based only on the BSA transaction data provided, describe what the cash-flow pattern suggests about this borrower's business health. Do not make assumptions beyond the data."</div></div>
+      <div class="pl-item"><div class="pl-cat">OAM+ — LATENCY</div><div class="pl-prompt">"Which vendor in this synthetic API dataset has the highest average Latency_ms? Show the average for each vendor."</div></div>
+      <div class="pl-item"><div class="pl-cat">OAM+ — FAILURE</div><div class="pl-prompt">"What percentage of API requests in this dataset have a non-200 HTTP_Status? Break this down by vendor."</div></div>
+      <div class="pl-item"><div class="pl-cat">OAM+ — ENGINEERING</div><div class="pl-prompt">"Based only on this API operations dataset, recommend three engineering actions. Each recommendation must cite a specific data finding."</div></div>
+      <div class="pl-item"><div class="pl-cat">PPT — OVERVIEW</div><div class="pl-prompt">"Create an 8-slide presentation from this OPL company profile. Label all publicly stated metrics clearly. Include speaker notes."</div></div>
+      <div class="pl-item"><div class="pl-cat">PPT — TECHNICAL</div><div class="pl-prompt">"Create a 10-slide technical architecture presentation for OAM+. Include slides for: integration challenge, concept, architecture, scalability, security, synthetic analysis, recommendations."</div></div>
+      <div class="pl-item"><div class="pl-cat">TEAMS — ACTIONS</div><div class="pl-prompt">"Extract all action items from this meeting transcript. For each item: owner, due date, priority. Use [CONFIRM] for any missing information."</div></div>
+      <div class="pl-item"><div class="pl-cat">TEAMS — FOLLOW-UP</div><div class="pl-prompt">"Draft a meeting follow-up message based on this transcript. Include: decisions made, open items, next steps. I will verify before sending."</div></div>
+      <div class="pl-item"><div class="pl-cat">PRODUCT — FEEDBACK</div><div class="pl-prompt">"Analyse this product feedback. Group into themes. Rank themes by frequency. Draft a 1-page product brief for the engineering lead."</div></div>
+      <div class="pl-item"><div class="pl-cat">PRODUCT — ROADMAP</div><div class="pl-prompt">"From these roadmap notes, create a prioritized list of features with rationale. Tone: for a product strategy review."</div></div>
+      <div class="pl-item"><div class="pl-cat">IT — INCIDENT</div><div class="pl-prompt">"From this incident meeting transcript, draft an incident brief. Sections: Impact, Root Cause (preliminary), Actions Taken, Open Items, Next Steps."</div></div>
+      <div class="pl-item"><div class="pl-cat">GITHUB — EXPLAIN</div><div class="pl-prompt">"Explain what this code does, line by line, in plain language for a non-developer."</div></div>
+      <div class="pl-item"><div class="pl-cat">GITHUB — REFACTOR</div><div class="pl-prompt">"Identify the code smell in this function. Suggest a refactored version with proper error handling and logging."</div></div>
+      <div class="pl-item"><div class="pl-cat">GROUNDING</div><div class="pl-prompt">"List every claim in your previous response and tell me the exact source document for each one. If you cannot cite it, flag it as UNVERIFIED."</div></div>
+      <div class="pl-item"><div class="pl-cat">VERIFICATION</div><div class="pl-prompt">"Before I use this output, identify any numbers, dates or names that require human verification. List them explicitly."</div></div>
+    </div>
+  </section>
+
+  <!-- DATA POLICY REMINDER -->
+  <section>
+    <div class="policy-bar">
+      <div class="policy-icon">🔒</div>
+      <div class="policy-text">
+        <strong>Critical Corporate AI Policy Reminder:</strong>
+        Do not paste confidential OPL client data into unapproved AI tools.
+        Do not fabricate company statistics. Do not accept AI output as final without human review.
+        Always verify financial calculations, dates, owners and business recommendations.
+        All training datasets used today are <strong>SYNTHETIC</strong> — they do not represent actual OPL operational data.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="qr-footer">
+  OPL Innovate × Be10x | Microsoft Copilot — Day 2 | Corporate Training<br>
+  Feature availability varies by Microsoft 365 licence, tenant, permissions and product version.<br>
+  Public OPL facts sourced from oplinnovate.com | All training datasets are synthetic.
+</footer>
 </body>
 </html>

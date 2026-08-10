@@ -1,71 +1,86 @@
-// Reusable Timer Logic
+// Timer Logic for OPL Copilot Training Deck
 
-let timerInterval;
-let timeRemaining = 0;
-let isTimerRunning = false;
+let timerInterval = null;
+let timerSeconds = 0;
+let timerRunning = false;
 
 function showTimer() {
-    document.getElementById('timer-container').classList.add('active');
+  document.getElementById('timer-container').classList.remove('timer-hidden');
 }
 
 function hideTimer() {
-    document.getElementById('timer-container').classList.remove('active');
+  clearInterval(timerInterval);
+  timerRunning = false;
+  timerSeconds = 0;
+  updateTimerDisplay();
+  document.getElementById('timer-container').classList.add('timer-hidden');
 }
 
 function setTimer(minutes) {
-    clearInterval(timerInterval);
-    timeRemaining = minutes * 60;
-    isTimerRunning = false;
-    updateTimerDisplay();
-    document.getElementById('btn-timer-play').textContent = '▶';
-    showTimer();
+  clearInterval(timerInterval);
+  timerRunning = false;
+  timerSeconds = minutes * 60;
+  const btn = document.getElementById('btn-play');
+  if (btn) btn.textContent = '▶';
+  updateTimerDisplay();
 }
 
 function toggleTimer() {
-    if (timeRemaining <= 0) return;
-    
-    if (isTimerRunning) {
+  if (timerRunning) {
+    clearInterval(timerInterval);
+    timerRunning = false;
+    const btn = document.getElementById('btn-play');
+    if (btn) btn.textContent = '▶';
+  } else {
+    if (timerSeconds <= 0) return;
+    timerRunning = true;
+    const btn = document.getElementById('btn-play');
+    if (btn) btn.textContent = '⏸';
+    timerInterval = setInterval(() => {
+      timerSeconds--;
+      updateTimerDisplay();
+      if (timerSeconds <= 0) {
         clearInterval(timerInterval);
-        isTimerRunning = false;
-        document.getElementById('btn-timer-play').textContent = '▶';
-    } else {
-        isTimerRunning = true;
-        document.getElementById('btn-timer-play').textContent = '⏸';
-        timerInterval = setInterval(() => {
-            timeRemaining--;
-            updateTimerDisplay();
-            
-            if (timeRemaining <= 0) {
-                clearInterval(timerInterval);
-                isTimerRunning = false;
-                document.getElementById('btn-timer-play').textContent = '▶';
-                alert('Time is up!'); // Simple offline alert
-            }
-        }, 1000);
-    }
+        timerRunning = false;
+        const btn = document.getElementById('btn-play');
+        if (btn) btn.textContent = '▶';
+        const display = document.getElementById('timer-display');
+        if (display) {
+          display.textContent = "TIME'S UP";
+          display.classList.add('timer-urgent');
+          setTimeout(() => {
+            display.textContent = '00:00';
+            display.classList.remove('timer-urgent');
+          }, 5000);
+        }
+      }
+    }, 1000);
+  }
 }
 
 function resetTimer() {
-    clearInterval(timerInterval);
-    timeRemaining = 0;
-    isTimerRunning = false;
-    updateTimerDisplay();
-    document.getElementById('btn-timer-play').textContent = '▶';
+  clearInterval(timerInterval);
+  timerRunning = false;
+  const btn = document.getElementById('btn-play');
+  if (btn) btn.textContent = '▶';
+  updateTimerDisplay();
 }
 
 function updateTimerDisplay() {
-    const mins = Math.floor(timeRemaining / 60);
-    const secs = timeRemaining % 60;
-    document.getElementById('timer-display').textContent = 
-        `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-        
-    // Visual warning near completion (under 1 min)
-    const display = document.getElementById('timer-display');
-    if (timeRemaining > 0 && timeRemaining <= 60) {
-        display.style.color = 'var(--warning)';
-    } else if (timeRemaining === 0) {
-        display.style.color = 'var(--danger)';
-    } else {
-        display.style.color = 'var(--text-primary)';
-    }
+  const display = document.getElementById('timer-display');
+  if (!display) return;
+  const m = Math.floor(Math.abs(timerSeconds) / 60);
+  const s = Math.abs(timerSeconds) % 60;
+  display.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  display.classList.remove('timer-urgent');
+  if (timerSeconds > 0 && timerSeconds <= 60 && timerRunning) {
+    display.classList.add('timer-urgent');
+  }
 }
+
+// Expose globally
+window.setTimer = setTimer;
+window.toggleTimer = toggleTimer;
+window.resetTimer = resetTimer;
+window.showTimer = showTimer;
+window.hideTimer = hideTimer;

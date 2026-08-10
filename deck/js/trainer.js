@@ -25,9 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Expose toggleTrainer globally for the close button onclick
+window.toggleTrainer = toggleTrainerMode;
+
 function toggleTrainerMode(forceState = null) {
     const overlay = document.getElementById('trainer-overlay');
-    
+    if (!overlay) return;
+
     if (forceState !== null) {
         isTrainerMode = forceState;
     } else {
@@ -35,40 +39,46 @@ function toggleTrainerMode(forceState = null) {
     }
 
     if (isTrainerMode) {
-        overlay.classList.add('active');
+        overlay.classList.remove('trainer-hidden');
+        overlay.classList.add('trainer-active');
         // Initial update for current slide
         const currentActive = document.querySelector('.slide.active');
         if (currentActive) updateTrainerDashboard(currentActive);
     } else {
-        overlay.classList.remove('active');
+        overlay.classList.remove('trainer-active');
+        overlay.classList.add('trainer-hidden');
     }
 }
 
 function updateTrainerDashboard(slide) {
-    // Get dataset from slide
     const module = slide.dataset.module || 'Unknown Module';
-    const obj = slide.dataset.trainerObjective || 'N/A';
-    const say = slide.dataset.trainerSay || 'N/A';
+    const obj   = slide.dataset.trainerObjective || '—';
+    const say   = slide.dataset.trainerSay || '—';
     const watch = slide.dataset.trainerWatch || '';
     const rescue = slide.dataset.trainerRescue || '';
-    const time = slide.dataset.trainerTime || 'As needed';
+    const time  = slide.dataset.trainerTime || 'As needed';
 
-    // Update DOM
-    document.getElementById('trainer-module-badge').textContent = module;
-    document.getElementById('trainer-obj').textContent = obj;
-    document.getElementById('trainer-say').textContent = say;
-    document.getElementById('trainer-time').textContent = time;
+    const tag = document.getElementById('trainer-module-tag');
+    const tObj = document.getElementById('t-objective');
+    const tSay = document.getElementById('t-say');
+    const tTime = document.getElementById('t-time');
+    const tRescue = document.getElementById('t-rescue');
+    const tRescueRow = document.getElementById('t-rescue-row');
 
-    const rescueContainer = document.getElementById('trainer-rescue-container');
-    const rescueText = document.getElementById('trainer-rescue');
-    
-    if (watch || rescue) {
-        rescueContainer.style.display = 'block';
-        let content = '';
-        if (watch) content += `<strong>Watch For:</strong> ${watch}<br>`;
-        if (rescue) content += `<strong>Rescue:</strong> ${rescue}`;
-        rescueText.innerHTML = content;
-    } else {
-        rescueContainer.style.display = 'none';
+    if (tag) tag.textContent = module;
+    if (tObj) tObj.textContent = obj;
+    if (tSay) tSay.textContent = say;
+    if (tTime) tTime.textContent = time;
+
+    if (tRescueRow && tRescue) {
+        if (watch || rescue) {
+            tRescueRow.style.display = 'flex';
+            let content = '';
+            if (watch) content += `Watch For: ${watch}\n`;
+            if (rescue) content += `Rescue: ${rescue}`;
+            tRescue.textContent = content.trim();
+        } else {
+            tRescueRow.style.display = 'none';
+        }
     }
 }
